@@ -4,23 +4,25 @@ import { shuffle, zip } from "lodash";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
 
-import Aus from "../../media/aus.jpg";
-import Boats from "../../media/boats.jpg";
-import SF from "../../media/sf.jpg";
-import Singapore from "../../media/singapore.jpg";
-import CentralPark from "../../media/centralpark.jpg";
-import Port from "../../media/port.jpg";
-import Gardens from "../../media/gardens.jpg";
+import Aus from "../../media/bgs/aus.jpg";
+import Boats from "../../media/bgs/boats.jpg";
+import SF from "../../media/bgs/sf.jpg";
+import Singapore from "../../media/bgs/singapore.jpg";
+import CentralPark from "../../media/bgs/centralpark.jpg";
+import Port from "../../media/bgs/port.jpg";
+import Gardens from "../../media/bgs/gardens.jpg";
+import Bangkok from "../../media/bgs/bangkok.jpg";
 
-const bgs = [Aus, Boats, Singapore, Port, CentralPark, SF, Gardens];
+const bgs = [Aus, Boats, Singapore, Port, CentralPark, SF, Gardens, Bangkok];
 const descriptions = [
-  "Coogee to Bondi Walk in Sydney",
-  "Damnoen Saduak Floating Market in Bangkok",
+  "Coogee to Bondi Walk, Sydney",
+  "Damnoen Saduak Floating Market, Bangkok",
   "Merlion Park, Singapore",
-  "Praça do Comércio in Lisbon",
+  "Praça do Comércio, Lisbon",
   "Central Park, New York City",
   "From the Golden Gate Bridge, San Francisco",
   "Gardens by the Bay, Singapore",
+  "Ratchathewi, Bangkok"
 ];
 
 const zipBg = shuffle(zip(bgs, descriptions));
