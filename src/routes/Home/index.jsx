@@ -30,6 +30,7 @@ function Home(props) {
   const isMobile = window.innerWidth <= 800;
   const numBgs = bgs.length;
   const [index, setIndex] = useState(0);
+
   return (
     <div
       className={classes.component}
@@ -64,24 +65,28 @@ function Home(props) {
         </div>
         <div className={classes.image}>
           <p className={classes.p}>Image: {zipBg[index][1]}</p>
-          {index !== 0 && (
-            <a
-              className={classes.p}
-              href={"#"}
-              onClick={() => setIndex(Math.max(0, index - 1))}
-            >
-              Back
-            </a>
-          )}{" "}
-          {index !== numBgs - 1 && (
-            <a
-              className={classes.p}
-              href={"#"}
-              onClick={() => setIndex(Math.min(numBgs - 1, index + 1))}
-            >
-              Next
-            </a>
-          )}
+          <p className={classes.p}>
+            {" "}
+            {index !== 0 && (
+              <a
+                className={classes.p}
+                href={"#"}
+                onClick={() => setIndex(Math.max(0, index - 1))}
+              >
+                {"<"} Back
+              </a>
+            )}{" "}
+            {index + 1} {"/"} {numBgs}{" "}
+            {index !== numBgs - 1 && (
+              <a
+                className={classes.p}
+                href={"#"}
+                onClick={() => setIndex(Math.min(numBgs - 1, index + 1))}
+              >
+                Next {">"}
+              </a>
+            )}
+          </p>
         </div>
       </div>
     </div>

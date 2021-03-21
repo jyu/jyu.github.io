@@ -55,10 +55,9 @@ function Food(props) {
           and as a small way to give back to the cultures behind them.
         </p>
         <p className={classes.p}>
-          If you made it this far, thanks a lot for reading my ramblings. I’m
-          not a great writer but I hope you try out some of the food featured in
-          this blog. They are made by passionate people who pour their hearts
-          into their food.
+          If you made it this far, thanks a lot for reading my ramblings. I hope 
+          you try out some of the food featured in this blog. They are made by 
+          passionate people who pour their hearts into their food.
         </p>
       </div>
     </div>
