@@ -7,6 +7,7 @@ const styles = (theme) => ({
     width: "50%",
     marginLeft: "auto",
     marginRight: "auto",
+    minHeight: "100vh"
   },
   containerMobile: {
     padding: "2em",

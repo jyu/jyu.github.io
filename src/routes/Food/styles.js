@@ -1,6 +1,7 @@
 const styles = (theme) => ({
   component: {
     backgroundColor: "#222",
+    minHeight: '100vh'
   },
   container: {
     padding: "2em 8em",
