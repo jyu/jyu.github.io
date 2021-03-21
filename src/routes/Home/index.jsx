@@ -41,6 +41,18 @@ function Home(props) {
         <div className={classes.intro}>
           <h1 className={classes.h1}>Jerry Yu</h1>
           <p className={classes.p}>Software Engineer at Instagram</p>
+          <p className={classes.p}>
+            I like{" "}
+            <a className={classes.a} href="/food">
+              eating
+            </a>{" "}
+            and{" "}
+            <a className={classes.a} href="/projects">
+              building stuff
+            </a>
+            .
+          </p>
+
           <a
             className={classes.a}
             href={process.env.PUBLIC_URL + "/resume.pdf"}

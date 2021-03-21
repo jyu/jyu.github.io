@@ -31,27 +31,26 @@ const styles = (theme) => ({
     justifyContent: "space-evenly",
   },
   projectImage: {
-    width: '200px',
-    marginBottom: '10px',
+    width: "200px",
+    marginBottom: "10px",
   },
-  project:{
-    display: 'block',
-    textAlign: 'left',
-    width: '200px',
-    fontSize: '1em',
-    marginBottom: '12px',
+  project: {
+    display: "block",
+    textAlign: "left",
+    width: "200px",
+    fontSize: "1em",
+    marginBottom: "12px",
   },
   projectName: {
-    marginBottom:'10px',
-    fontWeight: '500',
-    color: '#c2c2c2'
+    marginBottom: "10px",
+    fontWeight: "500",
+    color: "#c2c2c2",
   },
-  flow:{
-    marginBottom: '10px',
-    color: '#c2c2c2',
-    textDecoration: 'none',
-  }
-  
+  flow: {
+    marginBottom: "10px",
+    color: "#c2c2c2",
+    textDecoration: "none",
+  },
 });
 
 export default styles;
