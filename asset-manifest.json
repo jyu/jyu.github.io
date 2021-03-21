@@ -1,29 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.4f793624.chunk.js",
-    "main.js.map": "/static/js/main.4f793624.chunk.js.map",
+    "main.css": "/static/css/main.647ecd75.chunk.css",
+    "main.js": "/static/js/main.47131d7e.chunk.js",
+    "main.js.map": "/static/js/main.47131d7e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8bc62eb1.js",
     "runtime-main.js.map": "/static/js/runtime-main.8bc62eb1.js.map",
-    "static/js/2.79823144.chunk.js": "/static/js/2.79823144.chunk.js",
-    "static/js/2.79823144.chunk.js.map": "/static/js/2.79823144.chunk.js.map",
+    "static/js/2.ab18b262.chunk.js": "/static/js/2.ab18b262.chunk.js",
+    "static/js/2.ab18b262.chunk.js.map": "/static/js/2.ab18b262.chunk.js.map",
     "static/js/3.f31b7206.chunk.js": "/static/js/3.f31b7206.chunk.js",
     "static/js/3.f31b7206.chunk.js.map": "/static/js/3.f31b7206.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.79823144.chunk.js.LICENSE.txt": "/static/js/2.79823144.chunk.js.LICENSE.txt",
+    "static/css/main.647ecd75.chunk.css.map": "/static/css/main.647ecd75.chunk.css.map",
+    "static/js/2.ab18b262.chunk.js.LICENSE.txt": "/static/js/2.ab18b262.chunk.js.LICENSE.txt",
     "static/media/aus.6f70500e.jpg": "/static/media/aus.6f70500e.jpg",
     "static/media/boats.7d7a16a9.jpg": "/static/media/boats.7d7a16a9.jpg",
+    "static/media/cake.4af4b147.jpg": "/static/media/cake.4af4b147.jpg",
+    "static/media/caltra.0c442b52.png": "/static/media/caltra.0c442b52.png",
+    "static/media/cards.3f76a571.png": "/static/media/cards.3f76a571.png",
     "static/media/centralpark.ccfa2f68.jpg": "/static/media/centralpark.ccfa2f68.jpg",
+    "static/media/cookiebot.e4349e16.png": "/static/media/cookiebot.e4349e16.png",
+    "static/media/fudmaps.4a38507d.png": "/static/media/fudmaps.4a38507d.png",
     "static/media/gardens.09f8c072.jpg": "/static/media/gardens.09f8c072.jpg",
+    "static/media/localization.dd0a5a85.png": "/static/media/localization.dd0a5a85.png",
+    "static/media/nlp.566b11c9.png": "/static/media/nlp.566b11c9.png",
     "static/media/port.aa48e114.jpg": "/static/media/port.aa48e114.jpg",
+    "static/media/portrait.2234d497.png": "/static/media/portrait.2234d497.png",
     "static/media/sf.e4f7cdff.jpg": "/static/media/sf.e4f7cdff.jpg",
-    "static/media/singapore.bc4b749c.jpg": "/static/media/singapore.bc4b749c.jpg"
+    "static/media/singapore.bc4b749c.jpg": "/static/media/singapore.bc4b749c.jpg",
+    "static/media/spotrecs.d00dbfa5.png": "/static/media/spotrecs.d00dbfa5.png",
+    "static/media/tldw.0e945b78.png": "/static/media/tldw.0e945b78.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8bc62eb1.js",
-    "static/js/2.79823144.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.4f793624.chunk.js"
+    "static/js/2.ab18b262.chunk.js",
+    "static/css/main.647ecd75.chunk.css",
+    "static/js/main.47131d7e.chunk.js"
   ]
 }
