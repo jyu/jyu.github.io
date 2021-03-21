@@ -43,11 +43,11 @@ function Home(props) {
           <p className={classes.p}>Software Engineer at Instagram</p>
           <p className={classes.p}>
             I like{" "}
-            <a className={classes.a} href={process.env.PUBLIC_URL + "/food"}>
+            <a className={classes.a} href="/food">
               eating
             </a>{" "}
             and{" "}
-            <a className={classes.a} href={process.env.PUBLIC_URL + "/projects"}>
+            <a className={classes.a} href="/projects">
               building stuff
             </a>
             .
