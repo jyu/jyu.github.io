@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { shuffle, zip } from 'lodash';
+import { shuffle, zip } from "lodash";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -20,15 +20,15 @@ const descriptions = [
   "Praça do Comércio in Lisbon",
   "Central Park, New York City",
   "From the Golden Gate Bridge, San Francisco",
-  "Gardens by the Bay, Singapore"
+  "Gardens by the Bay, Singapore",
 ];
 
-const zipBg = shuffle(zip(bgs, descriptions))
-console.log(zipBg)
+const zipBg = shuffle(zip(bgs, descriptions));
+console.log(zipBg);
 function Home(props) {
   const { classes } = props;
   const isMobile = window.innerWidth <= 800;
-  const numBgs = bgs.length
+  const numBgs = bgs.length;
   const [index, setIndex] = useState(0);
   return (
     <div
@@ -52,20 +52,24 @@ function Home(props) {
         </div>
         <div className={classes.image}>
           <p className={classes.p}>Image: {zipBg[index][1]}</p>
-          {index !== 0 && <a
-            className={classes.p}
-            href={"#"}
-            onClick={() => setIndex(Math.max(0, index - 1))}
-          >
-            Back
-          </a>}{" "}
-          {index !== numBgs - 1 && <a
-            className={classes.p}
-            href={"#"}
-            onClick={() => setIndex(Math.min(numBgs - 1, index + 1))}
-          >
-            Next
-          </a>}
+          {index !== 0 && (
+            <a
+              className={classes.p}
+              href={"#"}
+              onClick={() => setIndex(Math.max(0, index - 1))}
+            >
+              Back
+            </a>
+          )}{" "}
+          {index !== numBgs - 1 && (
+            <a
+              className={classes.p}
+              href={"#"}
+              onClick={() => setIndex(Math.min(numBgs - 1, index + 1))}
+            >
+              Next
+            </a>
+          )}
         </div>
       </div>
     </div>
