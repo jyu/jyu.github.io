@@ -12,19 +12,11 @@ function Home(props) {
 
   return (
     <div className={!isMobile ? classes.component : classes.componentMobile}>
-      {!isMobile && (
-        <Grid container spacing={24} className={classes.row}>
-          <Grid item xs={5} className={classes.left}>
             <h1 className={classes.h1}>Jerry Yu</h1>
             <p className={classes.p}>
               Software Engineer at Instagram
             </p>
-          </Grid>
-          <Grid item xs={6}>
-            {/* <img src={Landing} alt="Caltra" className={classes.image} /> */}
-          </Grid>
-        </Grid>
-      )}
+            <a href={process.env.PUBLIC_URL + "/resume.pdf"}>Resume</a>
     </div>
   );
 }
