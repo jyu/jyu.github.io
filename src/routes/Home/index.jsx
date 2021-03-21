@@ -24,7 +24,7 @@ const descriptions = [
 ];
 
 const zipBg = shuffle(zip(bgs, descriptions));
-console.log(zipBg);
+
 function Home(props) {
   const { classes } = props;
   const isMobile = window.innerWidth <= 800;

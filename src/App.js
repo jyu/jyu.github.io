@@ -4,12 +4,13 @@ import Food from "./routes/Food";
 import Projects from "./routes/Projects";
 
 function App() {
+  console.log(process.env.PUBLIC_URL)
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/food" component={Food} />
-        <Route exact path="/projects" component={Projects} />
+        <Route exact path={process.env.PUBLIC_URL + "/food"} component={Food} />
+        <Route exact path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
       </Switch>
     </Router>
   );
