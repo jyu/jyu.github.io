@@ -25,7 +25,6 @@ const styles = (theme) => ({
     color: "#c2c2c2",
   },
   image: {
-    float: "bottom",
     position: "absolute",
     bottom: "4em",
   },

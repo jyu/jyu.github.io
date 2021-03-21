@@ -14,7 +14,7 @@ import Gardens from "../../media/gardens.jpg";
 
 const bgs = [Aus, Boats, Singapore, Port, CentralPark, SF, Gardens];
 const descriptions = [
-  "Coogee to Bondi walk in Sydney",
+  "Coogee to Bondi Walk in Sydney",
   "Damnoen Saduak Floating Market in Bangkok",
   "Merlion Park, Singapore",
   "Praça do Comércio in Lisbon",
