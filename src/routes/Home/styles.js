@@ -1,9 +1,13 @@
 const styles = (theme) => ({
   component: {
-    padding: "4em 6em",
     overflow: "hidden",
+    backgroundSize: "cover",
+    height: "100vh",
   },
-  componentMobile: {
+  container: {
+    padding: "4em 6em",
+  },
+  containerMobile: {
     padding: "2em",
   },
   h1: {
@@ -11,6 +15,13 @@ const styles = (theme) => ({
     fontWeight: 500,
     marginTop: 0,
     marginBottom: "0.5rem",
+    color: "#fff",
+  },
+  p: {
+    color: "#c2c2c2",
+  },
+  a: {
+    color: "#c2c2c2",
   },
 });
 
