@@ -3,6 +3,7 @@ const styles = (theme) => ({
     overflow: "hidden",
     backgroundSize: "cover",
     height: "100vh",
+    backgroundPosition: "center",
   },
   container: {
     padding: "4em 6em",
@@ -22,6 +23,11 @@ const styles = (theme) => ({
   },
   a: {
     color: "#c2c2c2",
+  },
+  image: {
+    float: "bottom",
+    position: "absolute",
+    bottom: "4em",
   },
 });
 
