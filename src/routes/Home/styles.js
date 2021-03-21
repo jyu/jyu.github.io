@@ -9,7 +9,7 @@ const styles = (theme) => ({
     padding: "4em 6em",
   },
   containerMobile: {
-    padding: "1em",
+    padding: "2em",
   },
   h1: {
     fontSize: "3em",
