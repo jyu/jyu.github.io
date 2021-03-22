@@ -4,7 +4,7 @@ const styles = (theme) => ({
     minHeight: "100vh",
   },
   container: {
-    padding: "2em 8em",
+    padding: "0em 8em 2em 8em",
   },
   containerText: {
     width: "50vw",
@@ -33,7 +33,7 @@ const styles = (theme) => ({
   },
   header: {
     color: "#c2c2c2",
-    marginBottom: '0.5em',
+    marginBottom: "0.5em",
   },
   a: {
     color: "#c2c2c2",
@@ -59,7 +59,26 @@ const styles = (theme) => ({
     flexWrap: "wrap",
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: '2em',
+    marginTop: "2em",
+  },
+  appbar: {
+    backgroundColor: "#222",
+  },
+  toolbar: {
+    display: "flex",
+  },
+  leftAppbar: {
+    textAlign: "right",
+    flexGrow: "1",
+  },
+  leftSegment: {
+    color: "#c2c2c2",
+    display: "inline",
+  },
+  segment: {
+    color: "#c2c2c2",
+    marginLeft: "3vw",
+    display: "inline",
   },
 });
 

@@ -18,10 +18,10 @@ const restaurants = {
       "We had such a great experience we ended up going 3 times during our stay in Bangkok. Would strongly recommend visiting if you ever are in Bangkok. And I can’t wait to go back again.",
     ],
     dishes: [
-      "Pad Thai (pork/shrimp) - See me raving about it above. With $2 for pork and $3 for shrimp, all I can say here is that it’s amazing.",
+      "★ Pad Thai (pork/shrimp) - See me raving about it above. With $2 for pork and $3 for shrimp, all I can say here is that it’s amazing.",
+      "★ Pad Thai wrapped in an egg - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
+      "★ Bael/Roselle Juice - A lifesaver to have when it was 90+ degrees outside in Thailand. Roselle tasted similar to a hibiscus or flower tea. Bael was mildly sweet and a bit bitter, but super refreshing. You can see in the picture we finished around half of our drinks before the food got to us.",
       "Radish stir fry (chicken) - A fried radish stir fry cooked with similar flavors to the pad thai. Each radish cube was crisp on the outside with a soft inside, making it a surprisingly great vehicle for the spices and flavors in the stir fry.",
-      "Pad Thai wrapped in an egg - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
-      "Bael/Roselle Juice - A lifesaver to have when it was 90+ degrees outside in Thailand. Roselle tasted similar to a hibiscus or flower tea. Bael was mildly sweet and a bit bitter, but super refreshing. You can see in the picture we finished around half of our drinks before the food got to us.",
     ],
     images: 3,
     style: "Thai",
@@ -42,13 +42,13 @@ const restaurants = {
       "At Supanniga, I felt like I was getting a crash course in the best ingredients around Thailand, with the rich proteins and herbs I’ve never heard before. I learned a lot and it was a treat to enjoy the chef’s wealth of knowledge around the local ingredients of Thailand.",
     ],
     dishes: [
-      "Gaeng Crab Meat Bai Cha Plu - Amazing rich crab curry with Cha Plu leaves. A must get here.",
+      "★ Gaeng Crab Meat Bai Cha Plu - Amazing rich crab curry with Cha Plu leaves. A must get here.",
       "Moo Cha Muang - A flavorful braised pork cooked with Cha Muang leaves, but some pieces were a little too tough.",
       "Tom Yum Mushroom - The broth was too spicy for me, so my tastebuds prevented me from fullying enjoying the dish. But there was a large selection of mushrooms and herbs.",
     ],
     images: 4,
     style: "Thai",
-    michelin: "Guide",
+    michelin: "Guide Thailand",
   },
 };
 
