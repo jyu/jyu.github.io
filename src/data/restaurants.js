@@ -48,6 +48,7 @@ const restaurants = {
     ],
     images: 4,
     style: "Thai",
+    michelin: "Guide",
   },
 };
 

@@ -29,10 +29,11 @@ const styles = (theme) => ({
     marginBottom: "1em",
   },
   headers: {
-    marginBottom: "2em",
+    marginBottom: "1em",
   },
   header: {
     color: "#c2c2c2",
+    marginBottom: '0.5em',
   },
   a: {
     color: "#c2c2c2",
@@ -58,7 +59,7 @@ const styles = (theme) => ({
     flexWrap: "wrap",
     flexDirection: "row",
     justifyContent: "center",
-    // alignItems: 'center',
+    marginTop: '2em',
   },
 });
 

@@ -50,11 +50,12 @@ function Restaurant(props) {
           <h1 className={classes.h1}>{data.name}</h1>
           <div className={classes.headers}>
             <div className={classes.header}>Location: {data.location}</div>
-            <div className={classes.header}>Rating: {data.rating} / 10</div>
+            <div className={classes.header}>Rating: {data.rating}/10</div>
             <div className={classes.header}>Price: {prices[data.price]}</div>
             <div className={classes.header}>
               Last Visited: {data.lastVisited}
             </div>
+            {data.michelin && <div className={classes.header}>Michelin {data.michelin}</div>}
           </div>
         </div>
         <div
@@ -62,7 +63,7 @@ function Restaurant(props) {
             !isMobile ? classes.containerText : classes.containerTextMobile
           }
         >
-          {images}
+          {!isMobile && images}
           {data.text.map((t) => (
             <p className={classes.p}>{t}</p>
           ))}
