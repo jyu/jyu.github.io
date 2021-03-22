@@ -5,7 +5,7 @@ const styles = (theme) => ({
   },
   container: {
     padding: "2em 8em",
-    width: "70%",
+    width: "50%",
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -25,9 +25,19 @@ const styles = (theme) => ({
   a: {
     color: "#c2c2c2",
   },
-  table: {
-    color: "#c2c2c2 !important",
-    cursor: 'pointer',
+  img: {
+    width: "300px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block",
+    marginBottom: "1em",
+  },
+  imgMobile: {
+    width: "100%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block",
+    marginBottom: "1em",
   },
 });
 

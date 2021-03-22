@@ -22,7 +22,7 @@ const descriptions = [
   "Central Park, New York City",
   "From the Golden Gate Bridge, San Francisco",
   "Gardens by the Bay, Singapore",
-  "Ratchathewi, Bangkok"
+  "Ratchathewi, Bangkok",
 ];
 
 const zipBg = shuffle(zip(bgs, descriptions));
