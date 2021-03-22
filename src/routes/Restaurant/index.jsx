@@ -1,5 +1,13 @@
-import React from "react";
+import React, {
+  forwardRef,
+  useRef,
+  useEffect,
+  createRef,
+  Fragment,
+} from "react";
 import { range } from "lodash";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -25,39 +33,72 @@ function Restaurant(props) {
   const isMobile = window.innerWidth <= 800;
   const data = restaurants[name];
 
+  const [elRefs, setElRefs] = React.useState([]);
+  useEffect(() => {
+    // add or remove refs
+    setElRefs((elRefs) =>
+      Array(data.images)
+        .fill()
+        .map((_, i) => elRefs[i] || createRef())
+    );
+  }, [data.images]);
+
+  const [headElRefs, setHeadElRefs] = React.useState([]);
+  useEffect(() => {
+    // add or remove refs
+    setHeadElRefs((headElRefs) =>
+      Array(Math.min(2, data.images))
+        .fill()
+        .map((_, i) => headElRefs[i] || createRef())
+    );
+  }, [Math.min(2, data.images)]);
+
+  const Image = forwardRef((props, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={!isMobile ? classes.imgBox : classes.imgBoxMobile}
+      >
+        <ModalImage
+          key={props.i}
+          small={requestImageFile(`./${name}/${props.i}.jpg`).default}
+          large={requestImageFile(`./${name}/${props.i}.jpg`).default}
+          className={!isMobile ? classes.img : classes.imgMobile}
+          alt={data.captions[props.i]}
+        />
+      </div>
+    );
+  });
   const images = (
     <div className={classes.images}>
-      {range(data.images).map((i) => (
-        <div className={!isMobile ? classes.imgBox : classes.imgBoxMobile}>
-          <ModalImage
-            key={i}
-            small={requestImageFile(`./${name}/${i}.jpg`).default}
-            large={requestImageFile(`./${name}/${i}.jpg`).default}
-            alt={name + String(i)}
-            className={!isMobile ? classes.img : classes.imgMobile}
-            alt={data.captions[i]}
-          />
-        </div>
-      ))}
+      {range(data.images).map((i) => {
+        return (
+          <div>
+            <Image ref={elRefs[i]} i={i} />
+            <Tippy
+              content={data.captions[i]}
+              reference={elRefs[i]}
+              theme="material"
+            />
+          </div>
+        );
+      })}
     </div>
   );
-  const imagesTwo = (
+  const imagesHead = (
     <div className={classes.images}>
-      {range(data.images).map(
-        (i) =>
-          i < 2 && (
-            <div className={!isMobile ? classes.imgBox : classes.imgBoxMobile}>
-              <ModalImage
-                key={i}
-                small={requestImageFile(`./${name}/${i}.jpg`).default}
-                large={requestImageFile(`./${name}/${i}.jpg`).default}
-                alt={name + String(i)}
-                className={!isMobile ? classes.img : classes.imgMobile}
-                alt={data.captions[i]}
-              />
-            </div>
-          )
-      )}
+      {range(2).map((i) => {
+        return (
+          <div>
+            <Image ref={headElRefs[i]} i={i} />
+            <Tippy
+              content={data.captions[i]}
+              reference={headElRefs[i]}
+              theme="material"
+            />
+          </div>
+        );
+      })}
     </div>
   );
 
@@ -86,7 +127,7 @@ function Restaurant(props) {
               )}
             </div>
           </div>
-          {!isMobile && imagesTwo}
+          {!isMobile && imagesHead}
           <div
             className={
               !isMobile ? classes.containerText : classes.containerTextMobile

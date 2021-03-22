@@ -26,9 +26,9 @@ const restaurants = {
     images: 3,
     style: "Thai",
     captions: [
-      "Radish Stir Fry to the left, Roast Pork Pad Thai on the right, and juices in the back.",
+      "Radish Stir Fry, Roast Pork Pad Thai, Juices",
       "Shrimp Pad Thai",
-      "Egg Wrapped Pad Thai in the front, Roast Pork Pad Thai in the back",
+      "Egg Wrapped Pad Thai. Roast Pork Pad Thai",
     ],
   },
   supanniga: {
@@ -58,7 +58,7 @@ const restaurants = {
       "Gaeng Crab Meat Bai Cha Plu - Crab Curry",
       "Moo Cha Muang",
       "Tom Yum Mushroom",
-      "Is it Michelin rated if there's no sticker to flex?",
+      "Is it Michelin rated if there's no sticker?",
     ],
   },
 };
