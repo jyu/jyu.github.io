@@ -71,7 +71,7 @@ function Restaurant(props) {
   });
   const images = (
     <div className={classes.images}>
-      {range(data.images).map((i) => {
+      {range(2, data.images).map((i) => {
         return (
           <div>
             <Image ref={elRefs[i]} i={i} />
@@ -116,12 +116,7 @@ function Restaurant(props) {
           >
             <h1 className={classes.h1}>{data.name}</h1>
             <div className={classes.headers}>
-              <div className={classes.header}>
-                Location:{" "}
-                <a className={classes.a} href={data.googleMaps}>
-                  {data.location}
-                </a>
-              </div>
+              <div className={classes.header}>Location: <a className={classes.a} href={data.googleMaps}>{data.location}</a></div>
               <div className={classes.header}>Rating: {data.rating}/10</div>
               <div className={classes.header}>Price: {prices[data.price]}</div>
               <div className={classes.header}>
