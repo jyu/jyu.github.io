@@ -35,6 +35,17 @@ const restaurants = {
     rating: "7",
     price: "1",
     lastVisited: "2019-01-02",
+    text: [
+      "Supanniga was the first Michelin guide restaurant I’ve been to. Despite my unrealistic expectations, Supanniga delivered great food at an affordable price. A short walk from the nearby train line along a busy street, Supanniga provided a cozy and lively atmosphere inside. Their menu was huge, but each page was filled with giant images for each item, one of my favorite parts of Asian restaurants. Thai curries went for less than 10 USD, half of what they would go for in the US.",
+      "The star of our meal was “Gaeng Crab Meat Bai Cha Plu”, a rich crab curry jam-packed with flavor. The crab is sourced from the province of Surat Thani in Southern Thailand and had an incredibly sweet yet umami flavor. The crab is further amplified by the powerful spices and chilis in the curry. And in return, the curry inherits the deep crab flavor. The curry also came with Cha Plu leaves, which are usually used in wraps and part of the peppercorn family. The Cha Plu brought an element of freshness that counterbalances the heaviness of the crab.",
+      "I also really enjoyed “Moo Cha Muang”, with pieces of roast pork jammed with a spicy and sweet curry. The pork reminded me of the Chinese recipe of “Red Braised Pork Belly”, carrying over similar deep flavors of fatty sweet pork. The pork is cooked with Cha Muang leaves, a sour herbal leaf from the Cowa tree from the Eastern coast of Thailand. Once again, I was impressed by the selection of local herbs and ingredients and how each pair with different dishes. My small nitpick is that some pieces were a little tougher, but overall was enjoyable.",
+      "At Supanniga, I felt like I was getting a crash course in the best ingredients around Thailand, with the rich proteins and herbs I’ve never heard before. I learned a lot and it was a treat to enjoy the chef’s wealth of knowledge around the local ingredients of Thailand.",
+    ],
+    dishes: [
+      "Gaeng Crab Meat Bai Cha Plu - Amazing rich crab curry with Cha Plu leaves. A must get here.",
+      "Moo Cha Muang - A flavorful braised pork cooked with Cha Muang leaves, but some pieces were a little too tough.",
+      "Tom Yum Mushroom - The broth was too spicy for me, so my tastebuds prevented me from fullying enjoying the dish. But there was a large selection of mushrooms and herbs.",
+    ],
     images: 4,
     style: "Thai",
   },

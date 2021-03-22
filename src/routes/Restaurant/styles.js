@@ -5,7 +5,9 @@ const styles = (theme) => ({
   },
   container: {
     padding: "2em 8em",
-    width: "50%",
+  },
+  containerText: {
+    width: "50vw",
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -22,6 +24,16 @@ const styles = (theme) => ({
   p: {
     color: "#c2c2c2",
   },
+  li: {
+    color: "#c2c2c2",
+    marginBottom: "1em",
+  },
+  headers: {
+    marginBottom: "2em",
+  },
+  header: {
+    color: "#c2c2c2",
+  },
   a: {
     color: "#c2c2c2",
   },
@@ -29,10 +41,10 @@ const styles = (theme) => ({
     height: "30vh",
     display: "block",
     marginBottom: "1em",
-    marginRight: "10px",
+    marginRight: "1em",
   },
   img: {
-    height: '100%',  
+    height: "100%",
   },
   imgMobile: {
     width: "100%",
@@ -45,7 +57,8 @@ const styles = (theme) => ({
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
+    // alignItems: 'center',
   },
 });
 
