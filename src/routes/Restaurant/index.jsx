@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { range } from "lodash";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
 import restaurants from "../../data/restaurants";
 import NavBar from "../../components/NavBar";
+import ModalImage from "react-modal-image";
 
 const requestImageFile = require.context(
   "../../media/restaurants",
@@ -28,12 +29,13 @@ function Restaurant(props) {
     <div className={classes.images}>
       {range(data.images).map((i) => (
         <div className={!isMobile ? classes.imgBox : classes.imgBoxMobile}>
-          <img
+          <ModalImage
             key={i}
-            src={requestImageFile(`./${name}/${i}.jpg`).default}
+            small={requestImageFile(`./${name}/${i}.jpg`).default}
+            large={requestImageFile(`./${name}/${i}.jpg`).default}
             alt={name + String(i)}
             className={!isMobile ? classes.img : classes.imgMobile}
-            alt="content"
+            alt={data.captions[i]}
           />
         </div>
       ))}
@@ -45,12 +47,13 @@ function Restaurant(props) {
         (i) =>
           i < 2 && (
             <div className={!isMobile ? classes.imgBox : classes.imgBoxMobile}>
-              <img
+              <ModalImage
                 key={i}
-                src={requestImageFile(`./${name}/${i}.jpg`).default}
+                small={requestImageFile(`./${name}/${i}.jpg`).default}
+                large={requestImageFile(`./${name}/${i}.jpg`).default}
                 alt={name + String(i)}
                 className={!isMobile ? classes.img : classes.imgMobile}
-                alt="content"
+                alt={data.captions[i]}
               />
             </div>
           )

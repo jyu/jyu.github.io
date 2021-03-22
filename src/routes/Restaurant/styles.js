@@ -45,7 +45,7 @@ const styles = (theme) => ({
     marginRight: "1em",
   },
   img: {
-    height: "100%",
+    height: "30vh",
   },
   imgMobile: {
     width: "100%",
@@ -60,6 +60,14 @@ const styles = (theme) => ({
     flexDirection: "row",
     justifyContent: "center",
     marginTop: "2em",
+  },
+  modal: {
+    // height: '70vh',
+    // width: '70vw',
+    // backgroundPosition: "center",
+  },
+  modalImage: {
+    width: "100%",
   },
 });
 

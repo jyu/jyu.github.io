@@ -18,13 +18,18 @@ const restaurants = {
       "We had such a great experience we ended up going 3 times during our stay in Bangkok. Would strongly recommend visiting if you ever are in Bangkok. And I can’t wait to go back again.",
     ],
     dishes: [
-      "★ Pad Thai (pork/shrimp) - See me raving about it above. With $2 for pork and $3 for shrimp, all I can say here is that it’s amazing.",
-      "★ Pad Thai wrapped in an egg - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
+      "★ Pad Thai (Roast Pork/Shrimp) - See me raving about it above. With $2 for pork and $3 for shrimp, all I can say here is that it’s amazing.",
+      "★ Pad Thai Wrapped in Egg - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
       "★ Bael/Roselle Juice - A lifesaver to have when it was 90+ degrees outside in Thailand. Roselle tasted similar to a hibiscus or flower tea. Bael was mildly sweet and a bit bitter, but super refreshing. You can see in the picture we finished around half of our drinks before the food got to us.",
-      "Radish stir fry (chicken) - A fried radish stir fry cooked with similar flavors to the pad thai. Each radish cube was crisp on the outside with a soft inside, making it a surprisingly great vehicle for the spices and flavors in the stir fry.",
+      "Radish Stir Fry (Chicken) - A fried radish stir fry cooked with similar flavors to the pad thai. Each radish cube was crisp on the outside with a soft inside, making it a surprisingly great vehicle for the spices and flavors in the stir fry.",
     ],
     images: 3,
     style: "Thai",
+    captions: [
+      "Radish Stir Fry to the left, Roast Pork Pad Thai on the right, and juices in the back.",
+      "Shrimp Pad Thai",
+      "Egg Wrapped Pad Thai in the front, Roast Pork Pad Thai in the back",
+    ],
   },
   supanniga: {
     id: 1,
@@ -49,6 +54,12 @@ const restaurants = {
     images: 4,
     style: "Thai",
     michelin: "Guide Thailand",
+    captions: [
+      "Gaeng Crab Meat Bai Cha Plu - Crab Curry",
+      "Moo Cha Muang",
+      "Tom Yum Mushroom",
+      "Is it Michelin rated if there's no sticker to flex?",
+    ],
   },
 };
 
