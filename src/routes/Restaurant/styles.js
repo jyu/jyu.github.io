@@ -25,12 +25,14 @@ const styles = (theme) => ({
   a: {
     color: "#c2c2c2",
   },
-  img: {
-    width: "300px",
-    marginLeft: "auto",
-    marginRight: "auto",
+  imgBox: {
+    height: "30vh",
     display: "block",
     marginBottom: "1em",
+    marginRight: "10px",
+  },
+  img: {
+    height: '100%',  
   },
   imgMobile: {
     width: "100%",
@@ -38,6 +40,12 @@ const styles = (theme) => ({
     marginRight: "auto",
     display: "block",
     marginBottom: "1em",
+  },
+  images: {
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
   },
 });
 

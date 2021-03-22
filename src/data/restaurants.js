@@ -2,7 +2,7 @@ const restaurants = {
   arsimp: {
     id: 0,
     url: "arsimp",
-    name: "AR Simp",
+    name: "AR-Simp",
     location: "Bangkok",
     googleMaps: "https://goo.gl/maps/xiPdKZAUQ5eQqXUN6",
     rating: "8",
