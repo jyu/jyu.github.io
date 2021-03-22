@@ -79,6 +79,7 @@ const styles = (theme) => ({
     color: "#c2c2c2",
     marginLeft: "3vw",
     display: "inline",
+    height: '100%',
   },
 });
 
