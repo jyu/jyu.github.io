@@ -10,6 +10,7 @@ import styles from "./styles";
 import { DataGrid } from "@material-ui/data-grid";
 import Pagination from "@material-ui/lab/Pagination";
 import PaginationItem from "@material-ui/lab/PaginationItem";
+import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/restaurants";
 
@@ -71,35 +72,38 @@ function Food(props) {
   const rows = values(restaurants);
   return (
     <ThemeProvider theme={theme}>
-      <div className={classes.component}>
-        <div
-          className={!isMobile ? classes.container : classes.containerMobile}
-        >
-          <div className={!isMobile ? classes.header : classes.headerMobile}>
-            <h1 className={classes.h1}>Food</h1>
-            <p className={classes.p}>
-              A list of food I've eaten. Start{" "}
-              <a className={classes.a} href="/intro">
-                here
-              </a>
-              .
-            </p>
+      <div>
+        <NavBar />
+        <div className={classes.component}>
+          <div
+            className={!isMobile ? classes.container : classes.containerMobile}
+          >
+            <div className={!isMobile ? classes.header : classes.headerMobile}>
+              <h1 className={classes.h1}>Food</h1>
+              <p className={classes.p}>
+                A list of food I've eaten. Start{" "}
+                <a className={classes.a} href="/intro">
+                  here
+                </a>
+                .
+              </p>
+            </div>
           </div>
-        </div>
-        <div className={!isMobile ? classes.grid : classes.gridMobile}>
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            pageSize={5}
-            className={classes.table}
-            disableSelectionOnClick
-            // components={{
-            // Pagination: CustomPagination,
-            // }}
-            onRowClick={(c) => {
-              window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
-            }}
-          />
+          <div className={!isMobile ? classes.grid : classes.gridMobile}>
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              pageSize={5}
+              className={classes.table}
+              disableSelectionOnClick
+              // components={{
+              // Pagination: CustomPagination,
+              // }}
+              onRowClick={(c) => {
+                window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
+              }}
+            />
+          </div>
         </div>
       </div>
     </ThemeProvider>

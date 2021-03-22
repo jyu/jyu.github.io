@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
 import { range } from "lodash";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
 import restaurants from "../../data/restaurants";
+import NavBar from "../../components/NavBar";
 
 const requestImageFile = require.context(
   "../../media/restaurants",
@@ -63,22 +60,7 @@ function Restaurant(props) {
 
   return (
     <div>
-      <AppBar position="static" className={classes.appbar}>
-        <Toolbar className={classes.toolbar} variant="dense">
-        <Link to="/" class="text-link">
-          <div className={classes.leftSegment}>Home</div>
-          </Link>
-          <div className={classes.leftAppbar}>
-          <Link to="/food" class="text-link">
-            <div className={classes.segment}>Food</div>
-            </Link>
-            <Link to="/food" class="text-link">
-            <div className={classes.segment}>Projects</div>
-            </Link>
-          </div>
-        </Toolbar>
-      </AppBar>
-
+      <NavBar />
       <div className={classes.component}>
         <div
           className={!isMobile ? classes.container : classes.containerMobile}

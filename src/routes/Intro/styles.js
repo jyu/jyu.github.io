@@ -4,7 +4,7 @@ const styles = (theme) => ({
     minHeight: "100vh",
   },
   container: {
-    padding: "2em 8em",
+    padding: "0em 8em 2em 8em",
     width: "50%",
     marginLeft: "auto",
     marginRight: "auto",
