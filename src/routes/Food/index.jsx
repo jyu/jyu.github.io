@@ -89,7 +89,7 @@ function Food(props) {
               </p>
             </div>
           </div>
-          <div className={!isMobile ? classes.grid : classes.gridMobile}>
+          <div className={classes.grid}>
             <DataGrid
               rows={rows}
               columns={columns}
