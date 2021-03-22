@@ -127,7 +127,7 @@ function Restaurant(props) {
               )}
             </div>
           </div>
-          {!isMobile && imagesHead}
+          {imagesHead}
           <div
             className={
               !isMobile ? classes.containerText : classes.containerTextMobile
