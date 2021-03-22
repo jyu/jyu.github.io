@@ -59,7 +59,9 @@ function Food(props) {
           you try out some of the food featured in this blog. They are made by
           passionate people who pour their hearts into their food.
         </p>
-        <a className={classes.a} href="/food">Back to the blog</a>
+        <a className={classes.a} href="/food">
+          Back to the blog
+        </a>
       </div>
     </div>
   );

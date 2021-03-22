@@ -5,7 +5,7 @@ const styles = (theme) => ({
   },
   container: {
     padding: "2em 8em",
-    width: "70%",
+    width: 850,
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -27,7 +27,12 @@ const styles = (theme) => ({
   },
   table: {
     color: "#c2c2c2 !important",
-    cursor: 'pointer',
+    cursor: "pointer",
+  },
+  grid: {
+    height: 400,
+    width: 850,
+    margin: "auto",
   },
 });
 

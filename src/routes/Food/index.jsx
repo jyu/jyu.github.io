@@ -78,28 +78,28 @@ function Food(props) {
           <div className={!isMobile ? classes.header : classes.headerMobile}>
             <h1 className={classes.h1}>Food</h1>
             <p className={classes.p}>
-              Welcome to my food blog. Start <a className={classes.a} href="/intro">here</a>.
+              A list of food I've eaten. Start{" "}
+              <a className={classes.a} href="/intro">
+                here
+              </a>
+              .
             </p>
-            <p className={classes.p}>
-              A list of food I've eaten.
-            </p>
-
           </div>
-          <div style={{ height: 400, width: "100%" }}>
-            <DataGrid
-              rows={rows}
-              columns={columns}
-              pageSize={5}
-              className={classes.table}
-              disableSelectionOnClick
-              // components={{
-              // Pagination: CustomPagination,
-              // }}
-              onRowClick={(c) => {
-                window.location.href = process.env.PUBLIC_URL + '/' + c.row.url
-              }}
-            />
-          </div>
+        </div>
+        <div className={!isMobile ? classes.grid : classes.gridMobile}>
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            pageSize={5}
+            className={classes.table}
+            disableSelectionOnClick
+            // components={{
+            // Pagination: CustomPagination,
+            // }}
+            onRowClick={(c) => {
+              window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
+            }}
+          />
         </div>
       </div>
     </ThemeProvider>

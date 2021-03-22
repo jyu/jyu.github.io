@@ -51,7 +51,13 @@
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
       (function (l) {
-        const nonHomeUrls = ["/food", "/projects", "/arsimp", "/supanniga", "/intro"];
+        const nonHomeUrls = [
+          "/food",
+          "/projects",
+          "/arsimp",
+          "/supanniga",
+          "/intro",
+        ];
         for (let i = 0; i < nonHomeUrls.length; i++) {
           const urlRegex = new RegExp(nonHomeUrls[i], "i");
           const verifyUrl = urlRegex.test(l.pathname);
