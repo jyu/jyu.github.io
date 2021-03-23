@@ -75,11 +75,11 @@ function Restaurant(props) {
         return (
           <div>
             <Image ref={elRefs[i]} i={i} />
-            <Tippy
+            {!isMobile && <Tippy
               content={data.captions[i]}
               reference={elRefs[i]}
               theme="material"
-            />
+            />}
           </div>
         );
       })}
@@ -91,11 +91,11 @@ function Restaurant(props) {
         return (
           <div>
             <Image ref={headElRefs[i]} i={i} />
-            <Tippy
+            {!isMobile && <Tippy
               content={data.captions[i]}
               reference={headElRefs[i]}
               theme="material"
-            />
+            />}
           </div>
         );
       })}
