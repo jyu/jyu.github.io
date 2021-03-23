@@ -1,10 +1,4 @@
-import React, {
-  forwardRef,
-  useRef,
-  useEffect,
-  createRef,
-  Fragment,
-} from "react";
+import React, { forwardRef, useEffect, createRef } from "react";
 import { range } from "lodash";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional

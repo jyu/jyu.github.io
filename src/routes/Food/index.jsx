@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { values, sortBy, reverse } from "lodash";
 
 import {
@@ -8,8 +8,8 @@ import {
 } from "@material-ui/core/styles";
 import styles from "./styles";
 import { DataGrid } from "@material-ui/data-grid";
-import Pagination from "@material-ui/lab/Pagination";
-import PaginationItem from "@material-ui/lab/PaginationItem";
+// import Pagination from "@material-ui/lab/Pagination";
+// import PaginationItem from "@material-ui/lab/PaginationItem";
 import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/restaurants";
