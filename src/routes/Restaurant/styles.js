@@ -39,13 +39,13 @@ const styles = (theme) => ({
     color: "#c2c2c2",
   },
   imgBox: {
-    height: "30vh",
+    height: "40vh",
     display: "block",
     marginBottom: "1em",
     marginRight: "1em",
   },
   img: {
-    height: "30vh",
+    height: "40vh",
   },
   imgMobile: {
     width: "100%",
