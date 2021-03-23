@@ -2,11 +2,11 @@ const styles = (theme) => ({
   component: {
     backgroundColor: "#222",
     minHeight: "100vh",
-    minWidth: "850px",
+    minWidth: "920px",
   },
   container: {
     padding: "0em 8em 1em 8em",
-    width: 850,
+    width: 920,
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -32,7 +32,7 @@ const styles = (theme) => ({
   },
   grid: {
     height: 400,
-    width: 850,
+    width: 920,
     margin: "auto",
   },
 });

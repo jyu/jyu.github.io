@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { values } from "lodash";
+import { values, sortBy, reverse } from "lodash";
 
 import {
   withStyles,
@@ -60,7 +60,7 @@ function Food(props) {
       field: "location",
       headerName: "Location",
       sortable: false,
-      width: 130,
+      width: 200,
     },
     {
       field: "lastVisited",
@@ -69,7 +69,7 @@ function Food(props) {
     },
   ];
 
-  const rows = values(restaurants);
+  const rows = reverse(sortBy(values(restaurants), (r) => r.lastVisited));
   return (
     <ThemeProvider theme={theme}>
       <div>

@@ -24,10 +24,11 @@ const requestImageFile = require.context(
 const prices = [
   "$ (1-10)",
   "$$ (10-30)",
-  "$$$ (30-50)",
-  "$$$$ (50-100)",
+  "$$$ (30-60)",
+  "$$$$ (60-120)",
   "$$$$$ (100+)",
 ];
+
 function Restaurant(props) {
   const { classes, name } = props;
   const isMobile = window.innerWidth <= 800;
@@ -75,11 +76,13 @@ function Restaurant(props) {
         return (
           <div>
             <Image ref={elRefs[i]} i={i} />
-            {!isMobile && <Tippy
-              content={data.captions[i]}
-              reference={elRefs[i]}
-              theme="material"
-            />}
+            {!isMobile && (
+              <Tippy
+                content={data.captions[i]}
+                reference={elRefs[i]}
+                theme="material"
+              />
+            )}
           </div>
         );
       })}
@@ -91,11 +94,13 @@ function Restaurant(props) {
         return (
           <div>
             <Image ref={headElRefs[i]} i={i} />
-            {!isMobile && <Tippy
-              content={data.captions[i]}
-              reference={headElRefs[i]}
-              theme="material"
-            />}
+            {!isMobile && (
+              <Tippy
+                content={data.captions[i]}
+                reference={headElRefs[i]}
+                theme="material"
+              />
+            )}
           </div>
         );
       })}
@@ -116,8 +121,14 @@ function Restaurant(props) {
           >
             <h1 className={classes.h1}>{data.name}</h1>
             <div className={classes.headers}>
-              <div className={classes.header}>Location: <a className={classes.a} href={data.googleMaps}>{data.location}</a></div>
+              <div className={classes.header}>
+                Location:{" "}
+                <a className={classes.a} href={data.googleMaps}>
+                  {data.location} {!!data.district && "- " + data.district}
+                </a>
+              </div>
               <div className={classes.header}>Rating: {data.rating}/10</div>
+              <div className={classes.header}>Style: {data.style}</div>
               <div className={classes.header}>Price: {prices[data.price]}</div>
               <div className={classes.header}>
                 Last Visited: {data.lastVisited}

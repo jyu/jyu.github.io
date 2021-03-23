@@ -33,7 +33,7 @@ const styles = (theme) => ({
   },
   header: {
     color: "#c2c2c2",
-    marginBottom: "0.5em",
+    marginBottom: "0.25em",
   },
   a: {
     color: "#c2c2c2",
