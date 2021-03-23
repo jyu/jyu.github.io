@@ -96,6 +96,7 @@ function Food(props) {
               pageSize={5}
               className={classes.table}
               disableSelectionOnClick
+              disableColumnMenu 
               // components={{
               // Pagination: CustomPagination,
               // }}
