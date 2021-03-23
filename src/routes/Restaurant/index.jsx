@@ -128,7 +128,7 @@ function Restaurant(props) {
                 Last Visited: {data.lastVisited}
               </div>
               {data.michelin && (
-                <div className={classes.header}>Michelin {data.michelin}</div>
+                <div className={classes.header}>{data.michelin}</div>
               )}
             </div>
           </div>

@@ -41,7 +41,7 @@ const restaurants = {
     price: "1",
     lastVisited: "2019-01-02",
     style: "Thai",
-    michelin: "Guide Thailand",
+    michelin: "Michelin Guide Thailand",
     text: [
       "Supanniga was the first Michelin guide restaurant I’ve been to. Despite my unrealistic expectations, Supanniga delivered great food at an affordable price. A short walk from the nearby train line along a busy street, Supanniga provided a cozy and lively atmosphere inside. Their menu was a little overwhelming, but each page was filled with descriptive images for each item. Thai curries went for less than 10 USD, half of what they would go for in the US.",
       "The star of our meal was Gaeng Crab Meat Bai Cha Plu, a rich crab curry jam-packed with flavor. The crab is sourced from the province of Surat Thani in Southern Thailand and had an incredibly sweet yet umami flavor. The crab is further amplified by the powerful spices and chilis in the curry. And in return, the curry inherits the deep crab flavor. The curry also came with Cha Plu leaves, which are part of the peppercorn family and counterbalanced the heaviness of the crab.",
@@ -72,7 +72,7 @@ const restaurants = {
     price: "2",
     style: "Asian Fusion",
     lastVisited: "2021-03-20",
-    michelin: "One Star",
+    michelin: "One Michelin Star",
     text: [
       "Tucked away by Tompkins Square Park, Tuome is a cozy little restaurant founded by Thomas Chen, an Asian American who quit his accountant job to work at Eleven Madison Park and then left to found Tuome. Inside, Tuome has a pre-war East Village vibe created by its warm candle lighting, exposed brick, and wood finishes all of which add to the coziness of the space. We dined outdoors and were thankful for the heat lamps keeping us warm along and plastic dividers to separate our table.",
       "I’m usually skeptical of fusion food because it often falls short to represent any of the cultures that are being fused. However, my worries were put to rest when I started eating.",
