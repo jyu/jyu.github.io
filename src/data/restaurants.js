@@ -19,9 +19,9 @@ const restaurants = {
       "We had such a great experience we ended up going 3 times during our stay in Bangkok. Would strongly recommend visiting if you ever are in Bangkok. And I can’t wait to go back again.",
     ],
     dishes: [
-      "★ Pad Thai (Roast Pork/Shrimp) - See me raving about it above. With $2 for pork and $3 for shrimp, all I can say here is that it’s amazing.",
-      "★ Pad Thai Wrapped in Egg - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
-      "★ Bael/Roselle Juice - A lifesaver to have when it was 90+ degrees outside in Thailand. Roselle tasted similar to a hibiscus or flower tea. Bael was mildly sweet and a bit bitter, but super refreshing. You can see in the picture we finished around half of our drinks before the food got to us.",
+      "★ Pad Thai Roast Pork ($2), Shrimp ($3)- See me raving about it above. For a few dollars, all I can say here is that it’s amazing.",
+      "★ Pad Thai Wrapped in Egg ($3) - One of my favorite variations of the pad thai was getting it wrapped in an egg. The presentation is beautiful inside of an egg wrap, and the egg brings everything together even more.",
+      "★ Bael/Roselle Juice (<$1)- A lifesaver to have when it was 90+ degrees outside in Thailand. Roselle tasted similar to a hibiscus or flower tea. Bael was mildly sweet and a bit bitter, but super refreshing. You can see in the picture we finished around half of our drinks before the food got to us.",
       "Radish Stir Fry (Chicken) - A fried radish stir fry cooked with similar flavors to the pad thai. Each radish cube was crisp on the outside with a soft inside, making it a surprisingly great vehicle for the spices and flavors in the stir fry.",
     ],
     images: 3,
@@ -37,7 +37,7 @@ const restaurants = {
     name: "Supanniga Eating Room",
     location: "Bangkok",
     googleMaps: "https://g.page/supannigaeatingroomthonglor",
-    rating: "7",
+    rating: "6.5",
     price: "1",
     lastVisited: "2019-01-02",
     style: "Thai",
@@ -49,9 +49,9 @@ const restaurants = {
       "At Supanniga, I felt like I was getting a crash course in the best ingredients around Thailand, with the rich proteins and herbs I’ve never heard before. I learned a lot and it was a treat to enjoy the chef’s wealth of knowledge around the local ingredients of Thailand.",
     ],
     dishes: [
-      "★ Gaeng Crab Meat Bai Cha Plu - Amazing rich crab curry with Cha Plu leaves. A must get here.",
-      "Moo Cha Muang - A flavorful braised pork cooked with Cha Muang leaves, but some pieces were a little too tough.",
-      "Tom Yum Mushroom - The broth was too spicy for me, so my tastebuds prevented me from fullying enjoying the dish. But there was a large selection of mushrooms and herbs.",
+      "★ Gaeng Crab Meat Bai Cha Plu ($20) - Amazing rich crab curry with Cha Plu leaves. A must get here.",
+      "Moo Cha Muang ($8) - A flavorful braised pork cooked with Cha Muang leaves, but some pieces were a little too tough.",
+      "Tom Yum Mushroom ($6) - The broth was too spicy for me, so my tastebuds prevented me from fullying enjoying the dish. But there was a large selection of mushrooms and herbs.",
     ],
     images: 4,
     captions: [
@@ -84,9 +84,9 @@ const restaurants = {
       "As an Asian American, fusion cuisine is my culture, made up of both Eastern and Western influences. And eating some of my favorite childhood foods combined with modern Western techniques made the food at Tuome resonate for me.",
     ],
     dishes: [
-      "★ Scallion Pancake Puffs with Ricotta - NYC Bagel meets airy scallion pancake",
-      "★ Octopus -  Grilled Octopus on a bed of pork XO sauce and brown butter with an aerated fingerling potato mash. A Western and Eastern sauce for a rculturally ambiguous Octopus.",
-      "★ Pig Out For Two - Crispy roast Berkshire pork, spicy peanut noodles, side salad, chili sauce, and scallion/ginger sauce. Pork with the emphasis on its crunch. A must-try here and in the top five of the best pork dishes I’ve had.",
+      "★ Scallion Pancake Puffs with Ricotta ($0) - NYC Bagel meets airy scallion pancake",
+      "★ Octopus ($24) -  Grilled Octopus on a bed of pork XO sauce and brown butter with an aerated fingerling potato mash. A Western and Eastern sauce for a rculturally ambiguous Octopus.",
+      "★ Pig Out For Two ($59)- Crispy roast Berkshire pork, spicy peanut noodles, side salad, chili sauce, and scallion/ginger sauce. Pork with the emphasis on its crunch. A must-try here and in the top five of the best pork dishes I’ve had.",
     ],
     images: 3,
     captions: [
