@@ -121,8 +121,8 @@ function Restaurant(props) {
                   {data.location} {!!data.district && "- " + data.district}
                 </a>
               </div>
-              <div className={classes.header}>Rating: {data.rating}/10</div>
               <div className={classes.header}>Style: {data.style}</div>
+              <div className={classes.header}>Rating: {data.rating}/10</div>
               <div className={classes.header}>Price: {prices[data.price]}</div>
               <div className={classes.header}>
                 Last Visited: {data.lastVisited}

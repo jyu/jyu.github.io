@@ -14,6 +14,14 @@ import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/restaurants";
 
+const prices = [
+  "$",
+  "$$",
+  "$$$",
+  "$$$$",
+  "$$$$$",
+];
+
 const theme = createMuiTheme({
   palette: {
     type: "dark",
@@ -49,18 +57,25 @@ function Food(props) {
   const { classes } = props;
   const isMobile = window.innerWidth <= 800;
   const columns = [
-    { field: "name", headerName: "Name", width: 300, sortable: false },
-    { field: "style", headerName: "Style", width: 130, sortable: false },
+    { field: "name", headerName: "Name", width: 250, sortable: false },
+    { field: "style", headerName: "Style", width: 150, sortable: false },
     {
       field: "rating",
       headerName: "Rating",
-      width: 130,
+      width: 100,
     },
     {
       field: "location",
       headerName: "Location",
       sortable: false,
-      width: 200,
+      width: 150,
+    },
+    {
+      field: "price",
+      headerName: "Price",
+      sortable: true,
+      width: 100,
+      valueGetter: (params) => prices[params.row.price]
     },
     {
       field: "lastVisited",
