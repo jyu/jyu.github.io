@@ -33,7 +33,7 @@ const restaurants = {
     ],
   },
   supanniga: {
-    id: -1,
+    id: 1,
     url: "supanniga",
     name: "Supanniga Eating Room",
     location: "Bangkok",
@@ -64,7 +64,7 @@ const restaurants = {
     ],
   },
   tuome: {
-    id: -2,
+    id: 2,
     url: "tuome",
     name: "Tuome",
     location: "New York City",
@@ -98,7 +98,7 @@ const restaurants = {
     ],
   },
   cote: {
-    id: -3,
+    id: 3,
     url: "cote",
     name: "Cote",
     location: "New York City",
@@ -131,6 +131,39 @@ const restaurants = {
       "American Wagyu and Prime Marinated Short Rib (Galbi).",
       "Kimchi Stew, Dwen-jang Stew, and Egg Souffle",
       "Round 2 spread",
+    ],
+  },
+  hawkerchan: {
+    id: 4,
+    url: "hawkerchan",
+    name: "Hawker Chan",
+    location: "Singapore",
+    district: "Chinatown",
+    googleMaps: "https://goo.gl/maps/6fT1fSAcNUikFfm87",
+    rating: "6",
+    price: "0",
+    style: "Chinese",
+    lastVisited: "2021-01-19",
+    michelin: "Michelin Guide Singapore",
+    text: [
+      "Hawker Chan was the famous hawker that received worldwide fame for his one Michelin star hawker stall known for selling $2 soya sauce chicken rice. Hawker Chan expanded his brand into a few restaurants, and his Chinatown location received a Michelin guide. The story goes that the prices are a dollar more to pay for air conditioning, which was very welcome under the Singapore heat and humidity.",
+      "We visited Hawker Chan’s restaurant on the day we arrived in Singapore. The prices were cheap and the food was delicious.",
+      "We started with the soya sauce chicken rice, their signature dish. The chicken was juicy and tender and the soy garlic glaze was great on top. The chicken skin added a richness to the dish and was great as the intersection of the sauce and chicken. There was a strong sweetness in the sauce that I didn’t expect and was one of the main flavors that differentiated it from other Chinese barbeque chickens I’ve had in the past.",
+      "The barbeque platter came with roast pork (shao rou), Chinese barbeque pork (cha shao), and soya sauce chicken. I’m a big fan of Chinese barbeque and it was great to get quality meats at a cheap price. The roast pork wasn’t particularly crispy, which could be because we went at around 7:30PM at the end of their day. The cha shao was juicy and with a nice char, and was my favorite meat out of the three we had.",
+      "Overall, the meats at Hawker Chan’s were done well but were comparable to the Chinese barbeque I’ve had at Chinese supermarkets in the Bay Area. I still enjoyed the food and the intensity of the sauce on the cha shao and soya sauce chicken. I’m glad to have paid the legendary Michelin star hawker a visit, and it set the tone for visiting many more hawkers and food stalls in Singapore.",
+    ],
+    dishes: [
+      "Soya sauce chicken rice ($3.70) - The signature dish. Juicy tender chicken with a sweet soy garlic glaze and rice.",
+      "★ Combo platter ($8.91) - Roast pork, barbeque pork, and soya chicken",
+      "Soya sauce chicken noodle ($4.45) - Soya chicken with noodles"
+    ],
+    images: 5,
+    captions: [
+      "Soya sauce chicken rice",
+      "Combo platter - Roast pork, barbeque pork, and soya chicken",
+      "Soya sauce chicken with noodles",
+      "Michelin flex",
+      "Busy storefront before closing",
     ],
   },
 };
