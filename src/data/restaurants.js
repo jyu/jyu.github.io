@@ -95,6 +95,42 @@ const restaurants = {
       "Crispy Roast Berkshire Pork, Spicy Peanut Noodles, Side Salad",
     ],
   },
+  cote: {
+    id: -3,
+    url: "cote",
+    name: "Cote",
+    location: "New York City",
+    district: "Flatiron",
+    googleMaps: "https://g.page/cotesteakhouse?share",
+    rating: "9",
+    price: "2",
+    style: "Korean",
+    lastVisited: "2021-03-06",
+    michelin: "One Michelin Star",
+    text: [
+      "Cote is the best KBBQ in New York City.",
+      "A few blocks away from Madison Square Park, Cote is a Korean steakhouse that combines powerful Korean flavors with high-quality cuts of steak. I was wowed by the food at Cote, but it was the superb service and covid safe setup that took Cote to the next level. ",
+      "Cote’s covid measures have been the nicest I’ve seen in a restaurant. We made a reservation for an outdoor cabana, a wooden room that we didn’t have to share with other parties. The cabana could easily fit 4 people and was extremely spacious for our party of 2. Hand sanitizer was provided and we were given a mask bag that we got to keep. A big bonus of the cabana was that there were heat lamps under the table that kept us warm. ",
+      "We ordered the butcher’s feast, which was $54 per person and came with a selection of 4 cuts of meats, banchan, 2 soups, an omelet, and a cup of soft serve.",
+      "The first two cuts that came were Prime Hanger Steak and Prime Dry-Age Ribeye. The steaks were incredibly tender and the fat in each piece melted in my mouth. The meat was cooked perfectly and I could taste the quality with each piece. My favorite condiment paired with the meat was the ssamjang fermented bean paste. Their saamjang was packed with flavor, joining together the umami from the bean paste, spiciness from the chilis, fragrance from sesame and scallions, and sweetness. I wish I could buy a jar of that ssamjang to eat with anything, but it was the perfect pairing with the meat.",
+      "The star of the meal for me was the banchan. We got a huge selection of banchan side dishes that provided the perfect level of acidity to accompany the meat. We were served a scallion salad with gochujang vinaigrette, pickled cauliflower, kimchi, pickled radish, marinated perilla leaves, and lettuce. My favorites were the cauliflower, scallion salad, and kimchi, all of which brought a freshness that cuts through the heaviness of the meat. Combining meat and pickles is a classic combination, but Cote executed that concept perfectly with the high quality of meats and their refined take on Korean banchan classics.",
+      "The next two cuts were American Wagyu and Prime Marinated Short Rib (Galbi). The wagyu was tender but not quite as much as Japanese Wagyu, which is to be expected. The galbi was interesting in that it came in thick pieces like a steak rather than the traditional thin-cut galbi at Korean barbeque. I was surprised that it didn’t have the fall in the apart feeling as I expected, but was fantastic as a cut of steak.",
+      "We also got a kimchi stew, dwen-jang stew, and egg souffle. Usually, I feel like it’s a crime to have kimchi soup at AYCE KBBQ places (too much stomach space!), but it was a joy to enjoy the deep umami flavors of the soup with rice and meat. The egg souffle with kelp reminded me of a dish I grew up eating: steamed egg with dried shrimp.",
+      "To finish off the meal, we had soft serve with caramel drizzled on top that was a great way to end our meal. Usually, 'high-end' restaurants serve tiny bits of food, but I was very glad to be satisfied after our meal at Cote. I enjoyed Cote because of their holistic approach to the meal. Every part from the service, outdoor dining setup, cut of meat, dry aging method, ssamjang flavoring, and the kimchi acidity worked together beautifully, and I could tell that each component was meticulously thought out. I would say they’re definitely deserving of their Michelin star and I’m happy to say that Cote was the first restaurant I’ve been to with a star! Definitely would recommend Cote and excited to come back to try more.",
+    ],
+    dishes: [
+      "★ Butcher's Feast ($54) -  MEAT: Prime Hanger Steak, Prime Dry-Age Ribeye, American Wagyu, and Prime Marinated Short Rib (Galbi), BANCHAN: scallion salad with gochujang vinaigrette, pickled cauliflower, kimchi, pickled radish, marinated perilla leaves, OTHER: kimchi stew, miso soup, an omelet, and a cup of soft serve.",
+    ],
+    images: 6,
+    captions: [
+      "Round 1 spread",
+      "Prime Hanger Steak and Prime Dry-Age Ribeye",
+      "Banchan! - scallion salad with gochujang vinaigrette, pickled cauliflower, kimchi, pickled radish, marinated perilla leaves, and lettuce",
+      "American Wagyu and Prime Marinated Short Rib (Galbi).",
+      "Kimchi Stew, Dwen-jang Stew, and Egg Souffle",
+      "Round 2 spread",
+    ],
+  },
 };
 
 export default restaurants;
