@@ -14,13 +14,7 @@ import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/restaurants";
 
-const prices = [
-  "$",
-  "$$",
-  "$$$",
-  "$$$$",
-  "$$$$$",
-];
+const prices = ["$", "$$", "$$$", "$$$$", "$$$$$"];
 
 const theme = createMuiTheme({
   palette: {
@@ -75,7 +69,7 @@ function Food(props) {
       headerName: "Price",
       sortable: true,
       width: 100,
-      valueGetter: (params) => prices[params.row.price]
+      valueGetter: (params) => prices[params.row.price],
     },
     {
       field: "lastVisited",

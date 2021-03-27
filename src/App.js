@@ -9,7 +9,6 @@ import Restaurant from "./routes/Restaurant";
 import restaurants from "./data/restaurants";
 
 function App() {
-  console.log(keys(restaurants));
   return (
     <Router>
       <Switch>

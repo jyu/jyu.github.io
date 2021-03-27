@@ -64,9 +64,10 @@ function Restaurant(props) {
       </div>
     );
   });
+  const numImagesHead = Math.min(data.images, 2);
   const images = (
     <div className={classes.images}>
-      {range(2, data.images).map((i) => {
+      {range(numImagesHead, data.images).map((i) => {
         return (
           <div>
             <Image ref={elRefs[i]} i={i} />
@@ -84,7 +85,7 @@ function Restaurant(props) {
   );
   const imagesHead = (
     <div className={classes.images}>
-      {range(2).map((i) => {
+      {range(numImagesHead).map((i) => {
         return (
           <div>
             <Image ref={headElRefs[i]} i={i} />

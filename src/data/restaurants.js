@@ -143,7 +143,7 @@ const restaurants = {
     rating: "6",
     price: "0",
     style: "Chinese",
-    lastVisited: "2021-01-19",
+    lastVisited: "2019-01-06",
     michelin: "Michelin Guide Singapore",
     text: [
       "Hawker Chan was the famous hawker that received worldwide fame for his one Michelin star hawker stall known for selling $2 soya sauce chicken rice. Hawker Chan expanded his brand into a few restaurants, and his Chinatown location received a Michelin guide. The story goes that the prices are a dollar more to pay for air conditioning, which was very welcome under the Singapore heat and humidity.",
@@ -155,7 +155,7 @@ const restaurants = {
     dishes: [
       "Soya sauce chicken rice ($3.70) - The signature dish. Juicy tender chicken with a sweet soy garlic glaze and rice.",
       "★ Combo platter ($8.91) - Roast pork, barbeque pork, and soya chicken",
-      "Soya sauce chicken noodle ($4.45) - Soya chicken with noodles"
+      "Soya sauce chicken noodle ($4.45) - Soya chicken with noodles",
     ],
     images: 5,
     captions: [
@@ -164,6 +164,33 @@ const restaurants = {
       "Soya sauce chicken with noodles",
       "Michelin flex",
       "Busy storefront before closing",
+    ],
+  },
+  foodloft: {
+    id: 5,
+    url: "foodloft",
+    name: "Food Loft",
+    location: "Singapore",
+    district: "Geylang",
+    googleMaps: "https://goo.gl/maps/VGsHEkDDLr4HpegF7",
+    rating: "7",
+    price: "0",
+    style: "Chinese",
+    lastVisited: "2019-01-09",
+    text: [
+      "Singaporean breakfast at Food Loft is so simple and so perfect.",
+      "Food Loft was part of a food court next to the Allujuned subway station in Singapore. It was a 5 min walk from our Airbnb and we always saw aunties and uncles eating there, so it was only natural for us to try their Singaporean breakfast.",
+      "At around $4, we got a soft-boiled egg, kaya toast, and iced coffee. The egg came raw with a pail of boiling water. The auntie there walked us through what time mapped to what consistency on the eggs, and recommended us to try some light soy sauce and pepper on top. The kaya toast came with two pieces of toast with a light coconut jam in the middle. Dipped in the soft-boiled egg and soy sauce, the toast was an incredible combination of sweet, savory, and creaminess.",
+      "What tied the breakfast together was the iced coffee, which was a godsend under the Singaporean sun. The caffeine was much needed as we were still a little jetlagged, and the bitterness helped counterbalance the strong flavors of the toast.",
+      "Singaporean breakfast isn’t unique to Food Loft, but these ingredients go together so well and is a testament to Singaporean food culture. We went back to Food Loft a couple more times during our stay as it was so convenient for us. On almost every street corner in our neighborhood, we saw food courts and gems like Food Loft inside. And having that availability of great food made Singapore so special for me.",
+      "Also, there are many more lunch and dinner options at Food Loft, but we didn't have time to try them. I'll have to come back!",
+    ],
+    dishes: [
+      "★ Singaporean Breakfast ($4) - Soft boiled egg, kaya toast, iced coffee",
+    ],
+    images: 1,
+    captions: [
+      "Singaporean Breakfast - Soft boiled egg, kaya toast, iced coffee",
     ],
   },
 };
