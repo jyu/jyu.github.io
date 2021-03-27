@@ -102,6 +102,9 @@ function Food(props) {
                 </a>
                 .
               </p>
+              <p className={classes.p}>
+                WIP, many more restaurants to come soon. :)
+              </p>
             </div>
           </div>
           <div className={classes.grid}>
