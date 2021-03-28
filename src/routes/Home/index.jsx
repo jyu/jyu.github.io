@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { shuffle, zip } from "lodash";
 import { isMobile } from "react-device-detect";
 
@@ -50,8 +50,23 @@ function Home(props) {
   const { classes } = props;
   const numBgs = bgs.length;
   const [index, setIndex] = useState(0);
+  const [timer, setTimer] = useState();
+
+  const startTimer = () => {
+    if (timer) {
+      clearInterval(timer);
+    }
+    const interval = setInterval(() => {
+      setIndex((index) => {
+        return index === numBgs - 1 ? 0 : index + 1;
+      });
+    }, 5000);
+    setTimer(interval);
+    return interval;
+  };
 
   const backFn = () => {
+    startTimer();
     if (index === 0) {
       setIndex(numBgs - 1);
     } else {
@@ -59,12 +74,18 @@ function Home(props) {
     }
   };
   const forwardFn = () => {
+    startTimer();
     if (index === numBgs - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);
     }
   };
+
+  useEffect(() => {
+    const interval = startTimer();
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div
