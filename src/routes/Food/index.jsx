@@ -121,8 +121,9 @@ function Food(props) {
           >
             <p className={classes.p}>Notes</p>
             <ul>
+              <li className={classes.li}>All prices are in USD.</li>
               <li className={classes.li}>
-                Prices are all in USD and for each person
+                A resturant's price estimate is for each person
               </li>
               <li className={classes.li}>
                 This blog is WIP, many more restaurants to come soon. :)
