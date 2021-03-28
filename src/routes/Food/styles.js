@@ -34,7 +34,7 @@ const styles = (theme) => ({
     height: 600,
     width: 920,
     margin: "auto",
-    paddingBottom: '2rem',
+    paddingBottom: "2rem",
   },
 });
 

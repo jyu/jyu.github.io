@@ -75,7 +75,7 @@ function Food(props) {
       field: "lastVisited",
       headerName: "Last Visit",
       width: 150,
-      type: 'date',
+      type: "date",
       valueGetter: (params) => new Date(params.row.lastVisited),
     },
   ];
