@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.722c5347.chunk.css",
-    "main.js": "/static/js/main.99387bf1.chunk.js",
-    "main.js.map": "/static/js/main.99387bf1.chunk.js.map",
+    "main.js": "/static/js/main.6db8d58b.chunk.js",
+    "main.js.map": "/static/js/main.6db8d58b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a3892fc4.js",
     "runtime-main.js.map": "/static/js/runtime-main.a3892fc4.js.map",
     "static/css/2.3ca2e7a5.chunk.css": "/static/css/2.3ca2e7a5.chunk.css",
-    "static/js/2.2117d0fa.chunk.js": "/static/js/2.2117d0fa.chunk.js",
-    "static/js/2.2117d0fa.chunk.js.map": "/static/js/2.2117d0fa.chunk.js.map",
+    "static/js/2.b8e8900a.chunk.js": "/static/js/2.b8e8900a.chunk.js",
+    "static/js/2.b8e8900a.chunk.js.map": "/static/js/2.b8e8900a.chunk.js.map",
     "static/js/3.637136af.chunk.js": "/static/js/3.637136af.chunk.js",
     "static/js/3.637136af.chunk.js.map": "/static/js/3.637136af.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.3ca2e7a5.chunk.css.map": "/static/css/2.3ca2e7a5.chunk.css.map",
     "static/css/main.722c5347.chunk.css.map": "/static/css/main.722c5347.chunk.css.map",
-    "static/js/2.2117d0fa.chunk.js.LICENSE.txt": "/static/js/2.2117d0fa.chunk.js.LICENSE.txt",
+    "static/js/2.b8e8900a.chunk.js.LICENSE.txt": "/static/js/2.b8e8900a.chunk.js.LICENSE.txt",
     "static/media/0.jpg": "/static/media/0.ecfd3ee0.jpg",
     "static/media/1.jpg": "/static/media/1.f898e303.jpg",
     "static/media/2.jpg": "/static/media/2.ee2256d9.jpg",
     "static/media/3.jpg": "/static/media/3.b91c43bd.jpg",
     "static/media/4.jpg": "/static/media/4.fd62712c.jpg",
     "static/media/5.jpg": "/static/media/5.f40803cc.jpg",
+    "static/media/ameya.dd786511.jpg": "/static/media/ameya.dd786511.jpg",
     "static/media/aus.6f70500e.jpg": "/static/media/aus.6f70500e.jpg",
     "static/media/bangkok.06b613d2.jpg": "/static/media/bangkok.06b613d2.jpg",
     "static/media/boats.7d7a16a9.jpg": "/static/media/boats.7d7a16a9.jpg",
@@ -37,13 +38,14 @@
     "static/media/sf.e4f7cdff.jpg": "/static/media/sf.e4f7cdff.jpg",
     "static/media/singapore.bc4b749c.jpg": "/static/media/singapore.bc4b749c.jpg",
     "static/media/spotrecs.d00dbfa5.png": "/static/media/spotrecs.d00dbfa5.png",
-    "static/media/tldw.0e945b78.png": "/static/media/tldw.0e945b78.png"
+    "static/media/tldw.0e945b78.png": "/static/media/tldw.0e945b78.png",
+    "static/media/tokyo.7eebee79.jpg": "/static/media/tokyo.7eebee79.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a3892fc4.js",
     "static/css/2.3ca2e7a5.chunk.css",
-    "static/js/2.2117d0fa.chunk.js",
+    "static/js/2.b8e8900a.chunk.js",
     "static/css/main.722c5347.chunk.css",
-    "static/js/main.99387bf1.chunk.js"
+    "static/js/main.6db8d58b.chunk.js"
   ]
 }
