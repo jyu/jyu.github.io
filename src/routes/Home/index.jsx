@@ -33,6 +33,21 @@ function Home(props) {
   const numBgs = bgs.length;
   const [index, setIndex] = useState(0);
 
+  const backFn = () => {
+    if (index === 0) {
+      setIndex(numBgs - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  };
+  const forwardFn = () => {
+    if (index === numBgs - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  };
+
   return (
     <div
       className={classes.component}
@@ -69,25 +84,13 @@ function Home(props) {
           <p className={classes.p}>Image: {zipBg[index][1]}</p>
           <p className={classes.p}>
             {" "}
-            {index !== 0 && (
-              <a
-                className={classes.p}
-                href={"#"}
-                onClick={() => setIndex(Math.max(0, index - 1))}
-              >
-                {"<"} Back
-              </a>
-            )}{" "}
+            <span className={classes.textButton} href={"#"} onClick={backFn}>
+              {"<"} Back
+            </span>{" "}
             {index + 1} {"/"} {numBgs}{" "}
-            {index !== numBgs - 1 && (
-              <a
-                className={classes.p}
-                href={"#"}
-                onClick={() => setIndex(Math.min(numBgs - 1, index + 1))}
-              >
-                Next {">"}
-              </a>
-            )}
+            <span className={classes.textButton} href={"#"} onClick={forwardFn}>
+              Next {">"}
+            </span>
           </p>
         </div>
       </div>

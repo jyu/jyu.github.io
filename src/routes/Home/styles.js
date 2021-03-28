@@ -24,6 +24,12 @@ const styles = (theme) => ({
   a: {
     color: "#c2c2c2",
   },
+  textButton: {
+    color: "#c2c2c2",
+    cursor: "pointer",
+    textDecoration: "underline",
+    display: "inline",
+  },
   image: {
     position: "absolute",
     bottom: "4em",

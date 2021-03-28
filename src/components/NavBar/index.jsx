@@ -15,14 +15,14 @@ function NavBar(props) {
       <div className={!isMobile ? classes.container : classes.containerMobile}>
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolbar} variant="dense">
-            <Link to="/" class="text-link">
+            <Link to="/" className="text-link">
               <div className={classes.leftSegment}>Home</div>
             </Link>
             <div className={classes.leftAppbar}>
-              <Link to="/food" class="text-link">
+              <Link to="/food" className="text-link">
                 <div className={classes.segment}>Food</div>
               </Link>
-              <Link to="/projects" class="text-link">
+              <Link to="/projects" className="text-link">
                 <div className={classes.segment}>Projects</div>
               </Link>
             </div>

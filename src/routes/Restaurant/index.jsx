@@ -67,38 +67,34 @@ function Restaurant(props) {
   const numImagesHead = Math.min(data.images, 2);
   const images = (
     <div className={classes.images}>
-      {range(numImagesHead, data.images).map((i) => {
-        return (
-          <div>
-            <Image ref={elRefs[i]} i={i} />
-            {!isMobile && (
-              <Tippy
-                content={data.captions[i]}
-                reference={elRefs[i]}
-                theme="material"
-              />
-            )}
-          </div>
-        );
-      })}
+      {range(numImagesHead, data.images).map((i) => (
+        <div key={i}>
+          <Image ref={elRefs[i]} i={i} />
+          {!isMobile && (
+            <Tippy
+              content={data.captions[i]}
+              reference={elRefs[i]}
+              theme="material"
+            />
+          )}
+        </div>
+      ))}
     </div>
   );
   const imagesHead = (
     <div className={classes.images}>
-      {range(numImagesHead).map((i) => {
-        return (
-          <div>
-            <Image ref={headElRefs[i]} i={i} />
-            {!isMobile && (
-              <Tippy
-                content={data.captions[i]}
-                reference={headElRefs[i]}
-                theme="material"
-              />
-            )}
-          </div>
-        );
-      })}
+      {range(numImagesHead).map((i) => (
+        <div key={i}>
+          <Image ref={headElRefs[i]} i={i} />
+          {!isMobile && (
+            <Tippy
+              content={data.captions[i]}
+              reference={headElRefs[i]}
+              theme="material"
+            />
+          )}
+        </div>
+      ))}
     </div>
   );
 
@@ -140,7 +136,9 @@ function Restaurant(props) {
             }
           >
             {data.text.map((t) => (
-              <p className={classes.p}>{t}</p>
+              <p className={classes.p} key={t}>
+                {t}
+              </p>
             ))}
           </div>
           {images}
@@ -153,7 +151,9 @@ function Restaurant(props) {
             <p className={classes.p}>Dishes tasted:</p>
             <ul>
               {data.dishes.map((d) => (
-                <li className={classes.li}>{d}</li>
+                <li className={classes.li} key={d}>
+                  {d}
+                </li>
               ))}
             </ul>
           </div>

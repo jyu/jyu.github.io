@@ -19,6 +19,7 @@ function App() {
         <Route exact path="/spotRecs" component={SpotRecs} />
         {keys(restaurants).map((key) => (
           <Route
+            key={key}
             exact
             path={"/" + key}
             render={(props) => <Restaurant {...props} name={key} />}
