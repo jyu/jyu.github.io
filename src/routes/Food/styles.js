@@ -3,7 +3,7 @@ const styles = (theme) => ({
     backgroundColor: "#222",
     minHeight: "100vh",
     minWidth: "920px",
-    paddingBottom: '4em',
+    paddingBottom: "4em",
   },
   container: {
     padding: "0em 8em 1em 8em",
@@ -39,7 +39,7 @@ const styles = (theme) => ({
   },
   li: {
     color: "#c2c2c2",
-    marginBottom: '0.5em'
+    marginBottom: "0.5em",
   },
 });
 

@@ -117,14 +117,16 @@ function Food(props) {
             />
           </div>
           <div
-              className={!isMobile ? classes.container : classes.containerMobile}
-            >
-            <p className={classes.p}>
-              Notes            
-            </p>
+            className={!isMobile ? classes.container : classes.containerMobile}
+          >
+            <p className={classes.p}>Notes</p>
             <ul>
-              <li className={classes.li}>Prices are all in USD</li>
-              <li className={classes.li}>This blog is WIP, many more restaurants to come soon. :)</li>
+              <li className={classes.li}>
+                Prices are all in USD and for each person
+              </li>
+              <li className={classes.li}>
+                This blog is WIP, many more restaurants to come soon. :)
+              </li>
             </ul>
           </div>
         </div>
