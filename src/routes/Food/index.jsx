@@ -98,9 +98,6 @@ function Food(props) {
                 </a>
                 .
               </p>
-              <p className={classes.p}>
-                WIP, many more restaurants to come soon. :)
-              </p>
             </div>
           </div>
           <div className={classes.grid}>
@@ -118,6 +115,17 @@ function Food(props) {
                 window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
               }}
             />
+          </div>
+          <div
+              className={!isMobile ? classes.container : classes.containerMobile}
+            >
+            <p className={classes.p}>
+              Notes            
+            </p>
+            <ul>
+              <li className={classes.li}>Prices are all in USD</li>
+              <li className={classes.li}>This blog is WIP, many more restaurants to come soon. :)</li>
+            </ul>
           </div>
         </div>
       </div>
