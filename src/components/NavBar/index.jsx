@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -9,7 +10,6 @@ import styles from "./styles";
 
 function NavBar(props) {
   const { classes } = props;
-  const isMobile = window.innerWidth <= 800;
   return (
     <div className={classes.component}>
       <div className={!isMobile ? classes.container : classes.containerMobile}>

@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -9,7 +10,6 @@ import Cake from "../../media/cake.jpg";
 
 function Food(props) {
   const { classes } = props;
-  const isMobile = window.innerWidth <= 800;
   return (
     <div>
       <NavBar />

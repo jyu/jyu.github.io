@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { shuffle, zip } from "lodash";
+import { isMobile } from "react-device-detect";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -29,7 +30,6 @@ const zipBg = shuffle(zip(bgs, descriptions));
 
 function Home(props) {
   const { classes } = props;
-  const isMobile = window.innerWidth <= 800;
   const numBgs = bgs.length;
   const [index, setIndex] = useState(0);
 

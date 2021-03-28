@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect, createRef } from "react";
 import { range } from "lodash";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
+import { isMobile } from "react-device-detect";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -25,7 +26,6 @@ const prices = [
 
 function Restaurant(props) {
   const { classes, name } = props;
-  const isMobile = window.innerWidth <= 800;
   const data = restaurants[name];
 
   const [elRefs, setElRefs] = React.useState([]);

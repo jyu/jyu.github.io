@@ -1,5 +1,6 @@
 import React from "react";
 import { values, sortBy, reverse } from "lodash";
+import { isMobile } from "react-device-detect";
 
 import {
   withStyles,
@@ -49,7 +50,6 @@ const theme = createMuiTheme({
 
 function Food(props) {
   const { classes } = props;
-  const isMobile = window.innerWidth <= 800;
   const columns = [
     { field: "name", headerName: "Name", width: 250, sortable: false },
     { field: "style", headerName: "Style", width: 150, sortable: false },

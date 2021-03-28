@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
+import { isMobile } from "react-device-detect";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -16,7 +17,6 @@ import tldw from "../../media/projects/tldw.png";
 
 function Projects(props) {
   const { classes } = props;
-  const isMobile = window.innerWidth <= 800;
   return (
     <div>
       <NavBar />
