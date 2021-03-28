@@ -32,7 +32,7 @@ const styles = (theme) => ({
     cursor: "pointer",
   },
   grid: {
-    height: 600,
+    height: 660,
     width: 920,
     margin: "auto",
     marginBottom: "1em",
