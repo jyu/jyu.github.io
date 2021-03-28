@@ -7,7 +7,6 @@ import styles from "./styles";
 
 import Aus from "../../media/bgs/aus.jpg";
 import Boats from "../../media/bgs/boats.jpg";
-import SF from "../../media/bgs/sf.jpg";
 import Singapore from "../../media/bgs/singapore.jpg";
 import CentralPark from "../../media/bgs/centralpark.jpg";
 import Port from "../../media/bgs/port.jpg";
@@ -15,19 +14,34 @@ import Gardens from "../../media/bgs/gardens.jpg";
 import Bangkok from "../../media/bgs/bangkok.jpg";
 import Tokyo from "../../media/bgs/tokyo.jpg";
 import Ameya from "../../media/bgs/ameya.jpg";
+import Dolores from "../../media/bgs/dolores.jpg";
+import Palace from "../../media/bgs/palace.jpg";
 
-const bgs = [Aus, Boats, Singapore, Port, CentralPark, SF, Gardens, Bangkok, Tokyo, Ameya];
+const bgs = [
+  Aus,
+  Boats,
+  Singapore,
+  Port,
+  CentralPark,
+  Gardens,
+  Bangkok,
+  Tokyo,
+  Ameya,
+  Dolores,
+  Palace,
+];
 const descriptions = [
   "Coogee to Bondi Walk, Sydney",
   "Damnoen Saduak Floating Market, Bangkok",
   "Merlion Park, Singapore",
   "Praça do Comércio, Lisbon",
   "Central Park, New York City",
-  "From the Golden Gate Bridge, San Francisco",
   "Gardens by the Bay, Singapore",
   "Ratchathewi, Bangkok",
   "Sake Barrels at Meiji Jingu, Tokyo",
-  "Restaurant in Ameya Yokocho Market, Tokyo"
+  "Restaurant in Ameya Yokocho Market, Tokyo",
+  "Mission Dolores Park, San Francisco",
+  "Palace of Fine Arts, San Francisco",
 ];
 
 const zipBg = shuffle(zip(bgs, descriptions));
