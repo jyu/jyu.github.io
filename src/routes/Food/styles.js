@@ -31,9 +31,10 @@ const styles = (theme) => ({
     cursor: "pointer",
   },
   grid: {
-    height: 400,
+    height: 600,
     width: 920,
     margin: "auto",
+    paddingBottom: '2rem',
   },
 });
 

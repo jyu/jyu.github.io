@@ -105,7 +105,7 @@ function Food(props) {
             <DataGrid
               rows={rows}
               columns={columns}
-              pageSize={5}
+              pageSize={10}
               className={classes.table}
               disableSelectionOnClick
               disableColumnMenu
