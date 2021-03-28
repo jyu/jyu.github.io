@@ -46,7 +46,7 @@ function Restaurant(props) {
         .fill()
         .map((_, i) => headElRefs[i] || createRef())
     );
-  }, [Math.min(2, data.images)]);
+  }, [data.images]);
 
   const Image = forwardRef((props, ref) => {
     return (
