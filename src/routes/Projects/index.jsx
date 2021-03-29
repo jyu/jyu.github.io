@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import { isMobile } from "react-device-detect";
 
@@ -17,6 +17,11 @@ import tldw from "../../media/projects/tldw.png";
 
 function Projects(props) {
   const { classes } = props;
+
+  useEffect(() => {
+    document.title = "Projects";
+  }, []);
+
   return (
     <div>
       <NavBar />

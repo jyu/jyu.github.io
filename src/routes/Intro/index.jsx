@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect";
@@ -8,7 +8,11 @@ import styles from "./styles";
 
 import Cake from "../../media/cake.jpg";
 
-function Food(props) {
+function Intro(props) {
+  useEffect(() => {
+    document.title = "Food - Intro";
+  }, []);
+
   const { classes } = props;
   return (
     <div>
@@ -76,4 +80,4 @@ function Food(props) {
   );
 }
 
-export default withStyles(styles)(Food);
+export default withStyles(styles)(Intro);

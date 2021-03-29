@@ -28,6 +28,10 @@ function Restaurant(props) {
   const { classes, name } = props;
   const data = restaurants[name];
 
+  useEffect(() => {
+    document.title = data.name;
+  }, []);
+
   const [elRefs, setElRefs] = React.useState([]);
   useEffect(() => {
     // add or remove refs

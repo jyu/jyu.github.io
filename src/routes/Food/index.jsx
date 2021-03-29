@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { values, sortBy, reverse } from "lodash";
 import { isMobile } from "react-device-detect";
 
@@ -50,6 +50,11 @@ const theme = createMuiTheme({
 
 function Food(props) {
   const { classes } = props;
+
+  useEffect(() => {
+    document.title = "Food";
+  }, []);
+
   const columns = [
     { field: "name", headerName: "Name", width: 250, sortable: false },
     { field: "style", headerName: "Style", width: 150, sortable: false },
