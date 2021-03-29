@@ -283,6 +283,37 @@ const restaurants = {
     images: 2,
     captions: ["Scallops Wrapped in Yam Ring", "Chili Mud Crab"],
   },
+  bessou: {
+    id: 9,
+    url: "bessou",
+    name: "Bessou",
+    location: "New York City",
+    district: "Noho",
+    googleMaps: "https://goo.gl/maps/U5CZPHuTqjjk2ygUA",
+    rating: "8",
+    price: "2",
+    style: "Japanese",
+    lastVisited: "2021-03-26",
+    text: [
+      "TLDR: Upscale Japanese comfort food and one of my favorite fried chickens!",
+      'To me, Bessou in one word is "comfy". Inside, the resturant feels like eating at a friend\'s house with light wooden furniture, house plants, bookshelf decor, and chill lofi beats. In terms of covid measures, they had plastic dividers between each table and their front entrace opened up to let in fresh air.',
+      "We started off with Agedashi Tofu. Each piece was fried with potato starch and crispy, contrasting the soft tofu inside. The dashi sauce was slightly sweet, but not too salty and went great with the tofu. The tofu also came with dried scallops and when combined with the dashi soy, gave the dish a strong umami taste. The shaved green pepper added a freshness and another element of crisp.",
+      "My favorite part of the meal was the Chicken Karaage, which is probably one of the best fried chickens I've had. The chicken was covered in a super crispy shell made from potato starch, and is double fried for extra crunch. The spices on top (paprika, cumin, garlic, gochugaru) were super interesting and brought more of the chicken flavor. The chicken meat was thigh, and was incredibly juicy and tenderness inside. The karaage I've had in Japan used smaller pieces, but Bessou utilized the entire thigh, which I think helped prevent the chicken from being dry. What took the chicken to another level was the yuzu aioli, which added a creamy mayo sauce brightened up with a fresh citrus flavor.  Overall, I was surprised by how light the fried chicken tasted and all the flavors worked together well to make the chicken shine. And the pickle cauliflower on the side was delicous with a perfect level of sweetness and acidity.",
+      "I was decently filled with the amount of food we already had, but next came the Tuna Tataki Handroll Platter. I was a little disappointed with the amount of tuna, but the quality of the fish and the fish roe definitely made up for it. The crisp nori and the sushi rice were great supporting ingredients in bringing out the freshness of the seared tuna and roe. The slightly acidicidity in the shiso verde sauce was great with the fish. And the sauce reminded me of a tomatillo based Mexican salsa verde.",
+      "Overall, I loved Bessou's excellent use of high quality ingredients and traditional Japanese techniques that made the food taste amazing. Bessou in Japanese means home away from home, and I definitely felt that cozy homey atmosphere through the food at Bessou.",
+    ],
+    dishes: [
+      "Agedashi Tofu ($10) - Fried tofu served in a sweet light soy dashi sauce with shaved green pepper.",
+      "★ Chicken Karaage ($25) - Fried chicken with Moroccan spices, yuzu aioli, and pickled cauliflower.",
+      "Tuna Tataki Handroll Platter ($32) - Seared yellowfin tuna, ikura, tobiko with sushi rice, nori, cucumbers, and shiso verde sauce.",
+    ],
+    images: 3,
+    captions: [
+      "Agedashi Tofu",
+      "Chicken Karaage",
+      "Tuna Tataki Handroll Platter",
+    ],
+  },
 };
 
 export default restaurants;
