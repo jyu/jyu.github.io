@@ -56,8 +56,8 @@ function Food(props) {
   }, []);
 
   const columns = [
-    { field: "name", headerName: "Name", width: 250, sortable: false },
-    { field: "style", headerName: "Style", width: 150, sortable: false },
+    { field: "name", headerName: "Name", width: 250, sortable: true },
+    { field: "style", headerName: "Style", width: 150, sortable: true },
     {
       field: "rating",
       headerName: "Rating",
@@ -66,7 +66,7 @@ function Food(props) {
     {
       field: "location",
       headerName: "Location",
-      sortable: false,
+      sortable: true,
       width: 150,
     },
     {
@@ -101,7 +101,7 @@ function Food(props) {
                 <a className={classes.a} href="/intro">
                   here
                 </a>
-                . Click into a row below for more details.
+                . Click into a row for more info.
               </p>
             </div>
           </div>
