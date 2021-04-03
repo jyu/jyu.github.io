@@ -83,7 +83,7 @@ function Home(props) {
   };
 
   useEffect(() => {
-    const interval = startTimer();
+    startTimer();
     return () => clearInterval(timer);
   }, []);
 
