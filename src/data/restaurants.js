@@ -1,3 +1,23 @@
+// template {
+//   id: 9,
+//   url: "template",
+//   name: "template",
+//   location: "New York City",
+//   district: "",
+//   googleMaps: "",
+//   rating: "",
+//   price: "",
+//   style: "",
+//   lastVisited: "2021-03-26",
+//   text: [
+//   ],
+//   dishes: [
+//   ],
+//   images: 0,
+//   captions: [
+//   ],
+// },
+
 const restaurants = {
   arsimp: {
     id: 0,
@@ -312,6 +332,38 @@ const restaurants = {
       "Agedashi Tofu",
       "Chicken Karaage",
       "Tuna Tataki Handroll Platter",
+    ],
+  },
+  lostacosno1: {
+    id: 10,
+    url: "lostacosno1",
+    name: "Los Tacos No. 1",
+    location: "New York City",
+    district: "Tribeca",
+    googleMaps: "https://goo.gl/maps/bodWxAQU1u6vdWfs7",
+    rating: "5",
+    price: "1",
+    style: "Mexican",
+    lastVisited: "2021-03-28",
+    text: [
+      "TLDR: Decent tacos but overpriced.",
+      "DISCLAIMER: I had Los Tacos delivered, so the quality of the food would not have been as good as in person.",
+      "Los Tacos is very hyped as the \"Best Taco in Manhattan\". And I would agree because the tacos in Manhattan are not the greatest. I'm used to tacos being priced at less than $3, so Los Tacos' price range of around $4-$5 inherently makes me increase my expectations.",
+      "I started off with the Adobada Taco with a corn tortilla. The marinade on the pork was great, with a strong blend of spices and chillies. There was a ton of adobada in the taco and the pork was flavorful and juicy. The savory pork was balanced by the fresh toppings of sweet pineapple, radish, onions, and cilantro. The tacos also came with some dried chili peppers that added some much appreciated heat. The tortillas also were slightly charred, and made the corn tortilla more fragrant. It could been because of the delivery, but I didn't taste any charred bits of the pork or any fatty parts of the adobada.",
+      "The Quesadilla was the same meat and tortilla as the taco, but came with some melted high quality Monterrey cheese. It tasted great and is worth trying, but is pricy.",
+      "Just like the Adobada, there was alot of steak in the Carne Asada Taco. The flavors on the beef were good, but the steak tasted pretty tough to me. I did really enjoy the green sauce, which was creamy from the avocado while still retaining the classic salsa verde tomatillo freshness and flavors.",
+      "Overall, the meats and their flavors were definitely high qualiy at Los Tacos, but was missing some of the great taco meat flavors I was looking for in a great taco while being more expensive. It definitely satisfied my craving for Mexican food and I would get their adobada again, but this time in person."
+    ],
+    dishes: [
+      "★ Adobada Taco ($3.95) - Marinated grililed pork with fresh pineapple, cilantro, and onions.",
+      "★ Adobada Quesadilla ($4.95) - Same as the taco but with cheese.",
+      "Carne Asada Taco ($4.25) - Grilled steak taco with cilantro, onions, and a creamy avocado salsa verde.",
+
+    ],
+    images: 2,
+    captions: [
+      "Adobada Taco and Quesadilla",
+      "Carne Asada Taco",
     ],
   },
 };

@@ -70,7 +70,7 @@ function Restaurant(props) {
   });
   const numImagesHead = Math.min(data.images, 2);
   const images = (
-    <div className={classes.images}>
+    data.images > numImagesHead && <div className={classes.images}>
       {range(numImagesHead, data.images).map((i) => (
         <div key={i}>
           <Image ref={elRefs[i]} i={i} />
@@ -146,7 +146,6 @@ function Restaurant(props) {
             ))}
           </div>
           {images}
-
           <div
             className={
               !isMobile ? classes.containerText : classes.containerTextMobile
