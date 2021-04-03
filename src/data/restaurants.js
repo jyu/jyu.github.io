@@ -402,20 +402,20 @@ const restaurants = {
     style: "Mexican",
     lastVisited: "2019-08-19",
     text: [
-      "When I lived in the San Francisco Mission district, I ate as much Mexican food as I could. Pancho was a 5 min walk from our apartment, and they had an irresistable deal of 3 tacos for $7, so it was my goto place for tacos.",
-      "Pancho was always full of energy. Inside would always be packed with a long line of customers and an army of restaurant works cooking fresh meats, taking orders, and whizzng around making orders.",
+      "When I lived in the San Francisco Mission district, I ate as much Mexican food as I could. Pancho was a 5 min walk from our apartment, and they had an irresistible deal of 3 tacos for $7, so it was my go-to place for tacos.",
+      "Pancho was always full of energy. Inside would always be packed with a long line of customers and an army of restaurant workers cooking fresh meats, taking orders, and whizzing around finishing orders.",
       "Each taco came with a choice of meat, 2 tortillas, black or pinto refried beans, and fresh pico de gallo salsa. There was also an open salsa bar with a wide selection of toppings (lime, cilantro, onions, and more) and salsas of varying flavors and spices.",
-      "My main order would be the carne asada (steak), al pastor (marinated pork with onions), and carnitas (slow cooked pulled pork). All the meats are freshly made, tender, juicy, and flavorful. The beans help add a layer of creaminess to the taco and the salsa brings in acidity and freshness that lifts up the taco. I loved drenching my tacos in additional salsa verde, with its bright tomatillo flavor. Their orange salsa also had this unique smokiness and spiciness that brought another flavor dimension to the tacos.",
+      "My main order would be the carne asada (steak), al pastor (marinated pork with onions), and carnitas (slow-cooked pulled pork). All the meats are freshly made, tender, juicy, and flavorful. The beans help add a layer of creaminess to the taco and the salsa brings in acidity and freshness that lifts up the taco. I loved drenching my tacos in additional salsa verde, with its bright tomatillo flavor. Their orange salsa also had this unique smokiness and spiciness that brought another flavor dimension to the tacos.",
       "Another big plus is that the tacos came with chips that come with every order. They are great for adding some crisp with the tacos or for trying out all the salsas.",
-      "I've also had their burritos, but I thought they had too much rice. I've also tried their dinner plates, but also found it had too little meat and too much rice and beans.",
+      "I've also had their burritos, but I thought they had too much rice. I've also tried their dinner plates but also found it had too little meat and too much rice and beans.",
       "The nachos also are topped with their high-quality meats, salsas, sour cream, lettuce, and cheese. They're great while eating but are extremely heavy.",
-      "When I was living in Mission, Pancho started to feel like a second home with the amount of times I went to eat after work. The food was truly amazing and affordable and the atmosphere was always full of energy. I can't wait to go back the next time I'm in San Francisco.",
+      "During my time in SF, Pancho started to feel like a second home with the number of times I went to eat after work. The food was truly amazing and affordable and the atmosphere was always full of energy. I can't wait to go back the next time I'm in San Francisco.",
     ],
     dishes: [
-      "3 Taco Special ($7) - Amazing deal for high quaity meats, beans, and salsa.",
+      "3 Taco Special ($7) - Amazing deal for high quality meats, beans, and salsa.",
       "Super Burrito ($10.45) - With meat, beans, salsa, rice, cheese, guacamole, sour cream, and lettuce.",
       "Meat Super Nachos ($8.35) - Chips with beans, cheese, meat, salsa, guacamole, sour cream, lettuce, and tomato.",
-      "Carne Asada Dinner ($11.95) - Flaned broilked steak with rice, beans, salad, and tortillas.",
+      "Carne Asada Dinner ($11.95) - Grilled flank steak with rice, beans, salad, and tortillas.",
     ],
     images: 5,
     captions: [
@@ -426,6 +426,25 @@ const restaurants = {
       "Nachos",
     ],
   },
+  // latacqueria: {
+  //   id: 13,
+  //   url: "latacqueria",
+  //   name: "La Tacqueria",
+  //   location: "San Francisco",
+  //   district: "Mission",
+  //   googleMaps: "",
+  //   rating: "8",
+  //   price: "",
+  //   style: "",
+  //   lastVisited: "2021-03-26",
+  //   text: [
+  //   ],
+  //   dishes: [
+  //   ],
+  //   images: 0,
+  //   captions: [
+  //   ],
+  // },
 };
 
 export default restaurants;
