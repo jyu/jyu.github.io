@@ -101,7 +101,7 @@ function Food(props) {
                 <a className={classes.a} href="/intro">
                   here
                 </a>
-                .
+                . Click into a row below for more details!
               </p>
             </div>
           </div>
