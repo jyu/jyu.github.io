@@ -402,6 +402,7 @@ const restaurants = {
     style: "Mexican",
     lastVisited: "2019-08-19",
     text: [
+      "TLDR: Delicious and cheap tacos at the neighbordhood tacqueria",
       "When I lived in the San Francisco Mission district, I ate as much Mexican food as I could. Pancho was a 5 min walk from our apartment, and they had an irresistible deal of 3 tacos for $7, so it was my go-to place for tacos.",
       "Pancho was always full of energy. Inside would always be packed with a long line of customers and an army of restaurant workers cooking fresh meats, taking orders, and whizzing around finishing orders.",
       "Each taco came with a choice of meat, 2 tortillas, black or pinto refried beans, and fresh pico de gallo salsa. There was also an open salsa bar with a wide selection of toppings (lime, cilantro, onions, and more) and salsas of varying flavors and spices.",
@@ -426,25 +427,31 @@ const restaurants = {
       "Nachos",
     ],
   },
-  // latacqueria: {
-  //   id: 13,
-  //   url: "latacqueria",
-  //   name: "La Tacqueria",
-  //   location: "San Francisco",
-  //   district: "Mission",
-  //   googleMaps: "",
-  //   rating: "8",
-  //   price: "",
-  //   style: "",
-  //   lastVisited: "2021-03-26",
-  //   text: [
-  //   ],
-  //   dishes: [
-  //   ],
-  //   images: 0,
-  //   captions: [
-  //   ],
-  // },
+  latacqueria: {
+    id: 13,
+    url: "latacqueria",
+    name: "La Tacqueria",
+    location: "San Francisco",
+    district: "Mission",
+    googleMaps: "https://goo.gl/maps/fJwV6jh585m9c9Vx5",
+    rating: "8",
+    price: "1",
+    style: "Mexican",
+    lastVisited: "2019-07-31",
+    text: [
+      "TLDR: Best burritos I've had.",
+      "San Francisco is known for the Mission-style burrito, an oversized burrito stuffed with meat, beans, salsa, and guac. La Tacqueria executes each element perfectly all at an affordable price of $11.",
+      "La Tacqueria lies at the heart of the Mission district. Both the outside and inside are packed with customers, and the line to order snakes around the entire restaurant.",
+      "Jumping into the burrito, the meat to get at La Tacqueria is carne asada, freshly grilled pieces of marinated steak. The slight char on the carne asada adds a smokiness to the meat, and each piece is extremely tender. Accompanying the meat are the pinto beans that pop with flavor and add a creaminess to the burrito. Not to be outdone, avocado, sour cream, and cheese also add more layers of fat and flavor. What cuts through all the heaviness is the pico de gallo, with fresh pieces of tomatoes, onion, cilantro, and lime. The salsa verde on the side also has a deep roasted tomatillo flavor and brings some much-needed spice to the burrito. The owner has a strong preference that rice doesn't belong in burritos, and I have to agree when the lack of rice makes more room for so many of the other high-quality ingredients inside. ",
+      "What brings the burrito together is the flour tortilla. An important tip for ordering is to ask for the burrito grilled, which transforms the tortilla into a crispy golden shell. The outer layers of the tortilla add an element of crunch, while the inner layers are soft and steamed. The tortilla is the perfect delivery mechanism for everything inside.",
+      "What makes La Tacqueria special is that each ingredient stands out on its own, and the union of everything together is perfectly balanced and truly amazing. When I was living in Mission, it was always special to bring people to try La Tacqueria and see their entire perception of burritos change. I would recommend it as an essential stop in San Francisco and I can't wait to go back.",
+    ],
+    dishes: [
+      "Carne Asada Super Burrito Grilled ($10.95) - Freshly grilled steak with pinto beans, guacamole, sour cream, cheese, and pico de gallo all wrapped in a crispy golden tortilla.",
+    ],
+    images: 2,
+    captions: ["Burrito outside", "Burrito inside"],
+  },
 };
 
 export default restaurants;
