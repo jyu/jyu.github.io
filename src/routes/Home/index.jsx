@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { shuffle, zip } from "lodash";
 import { isMobile } from "react-device-detect";
+import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
@@ -121,16 +123,19 @@ function Home(props) {
         </div>
         <div className={classes.image}>
           <p className={classes.p}>Image: {zipBg[index][1]}</p>
-          <p className={classes.p}>
-            {" "}
-            <span className={classes.textButton} href={"#"} onClick={backFn}>
-              {"<"} Back
-            </span>{" "}
-            {index + 1} {"/"} {numBgs}{" "}
-            <span className={classes.textButton} href={"#"} onClick={forwardFn}>
-              Next {">"}
+          <div className={classes.controls}>
+            <KeyboardArrowLeftIcon
+              onClick={backFn}
+              className={classes.button}
+            />
+            <span>
+              {index + 1} {"/"} {numBgs}
             </span>
-          </p>
+            <KeyboardArrowRightIcon
+              onClick={forwardFn}
+              className={classes.button}
+            />
+          </div>
         </div>
       </div>
     </div>

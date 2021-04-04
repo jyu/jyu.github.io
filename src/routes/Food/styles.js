@@ -23,6 +23,7 @@ const styles = (theme) => ({
   },
   p: {
     color: "#c2c2c2",
+    marginBottom: "0.5em",
   },
   a: {
     color: "#c2c2c2",
@@ -39,6 +40,34 @@ const styles = (theme) => ({
   },
   li: {
     color: "#c2c2c2",
+    marginBottom: "0.5em",
+  },
+  buttonText: {
+    cursor: "pointer",
+    textDecoration: "underline",
+    color: "#c2c2c2",
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+  },
+  filters: {
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+  },
+  filter: {
+    color: "#c2c2c2",
+    marginTop: "0.5em",
+    marginRight: "0.5em",
+  },
+  checkbox: {
+    padding: "5px",
+    height: "0.7em",
+  },
+  filterControLabel: {
+    marginLeft: "-7px",
+  },
+  formLabel: {
     marginBottom: "0.5em",
   },
 });

@@ -24,15 +24,21 @@ const styles = (theme) => ({
   a: {
     color: "#c2c2c2",
   },
-  textButton: {
+  button: {
     color: "#c2c2c2",
     cursor: "pointer",
-    textDecoration: "underline",
-    display: "inline",
   },
   image: {
     position: "absolute",
     bottom: "4em",
+  },
+  controls: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+    color: "#c2c2c2",
+    verticalAlign: "middle",
+    marginBottom: "1em",
   },
 });
 
