@@ -23,7 +23,7 @@ import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/restaurants";
 
-const prices = ["$", "$$", "$$$", "$$$$", "$$$$$"];
+const dispPrices = ["$", "$$", "$$$", "$$$$", "$$$$$"];
 
 const theme = createMuiTheme({
   palette: {
@@ -58,19 +58,19 @@ const theme = createMuiTheme({
 
 function Food(props) {
   const { classes } = props;
-  const [filterOpen, setFilterOpen] = useState(true);
+  const [filterOpen, setFilterOpen] = useState(false);
   const [filters, setFilters] = useState([]);
 
   const toggleFilter = (name, type) => {
     const isOn =
-      filters.filter((f) => f["name"] !== name && f["type"] !== type).length >
+      filters.filter((f) => f["name"] === name && f["type"] === type).length >
       0;
     if (!isOn) {
       setFilters((arr) => [...arr, { name: name, type: type }]);
     } else {
-      setFilters((arr) => [
-        arr.filter((f) => f["name"] !== name && f["type"] !== type),
-      ]);
+      setFilters((arr) =>
+        arr.filter((f) => !(f["name"] === name && f["type"] === type))
+      );
     }
   };
 
@@ -97,7 +97,7 @@ function Food(props) {
       headerName: "Price",
       sortable: true,
       width: 100,
-      valueGetter: (params) => prices[params.row.price],
+      valueGetter: (params) => dispPrices[params.row.price],
     },
     {
       field: "lastVisited",
@@ -110,10 +110,12 @@ function Food(props) {
 
   const restaurant_list = values(restaurants);
   const locations = groupBy(restaurant_list, "location");
+  const styles = groupBy(restaurant_list, "style");
+  const prices = groupBy(restaurant_list, "price");
 
   const filtered_restaurants = restaurant_list.filter((r) => {
     // No filters
-    if (filters.length == 0) {
+    if (filters.length === 0) {
       return true;
     }
     // Apply filters
@@ -125,6 +127,41 @@ function Food(props) {
     return false;
   });
   const rows = reverse(sortBy(filtered_restaurants, (r) => r.lastVisited));
+
+  const filterGroup = (arr, filterType, filterName, valueGetter) => (
+    <div className={classes.filter}>
+      <FormControl component="fieldset" className={classes.formControl}>
+        <FormLabel component="legend" className={classes.formLabel}>
+          {filterName}:
+        </FormLabel>
+        <FormGroup>
+          {keys(arr).map((name) => (
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={
+                    filters.filter(
+                      (f) => f["name"] === name && f["type"] === filterType
+                    ).length > 0
+                  }
+                  onChange={() => toggleFilter(name, filterType)}
+                  name={name}
+                  className={classes.checkbox}
+                />
+              }
+              label={`${valueGetter ? valueGetter(name) : name} (${
+                arr[name].length
+              })`}
+              classes={{
+                label: classes.filterLabel,
+              }}
+              className={classes.filterControLabel}
+            />
+          ))}
+        </FormGroup>
+      </FormControl>
+    </div>
+  );
 
   return (
     <ThemeProvider theme={theme}>
@@ -152,44 +189,9 @@ function Food(props) {
               </div>
               {filterOpen && (
                 <div className={classes.filters}>
-                  <div className={classes.filter}>
-                    <FormControl
-                      component="fieldset"
-                      className={classes.formControl}
-                    >
-                      <FormLabel
-                        component="legend"
-                        className={classes.formLabel}
-                      >
-                        Locations:
-                      </FormLabel>
-                      <FormGroup>
-                        {keys(locations).map((loc) => (
-                          <FormControlLabel
-                            control={
-                              <Checkbox
-                                checked={
-                                  filters.filter(
-                                    (f) =>
-                                      f["name"] === loc &&
-                                      f["type"] === "location"
-                                  ).length > 0
-                                }
-                                onChange={() => toggleFilter(loc, "location")}
-                                name={loc}
-                                className={classes.checkbox}
-                              />
-                            }
-                            label={`${loc} (${locations[loc].length})`}
-                            classes={{
-                              label: classes.filterLabel,
-                            }}
-                            className={classes.filterControLabel}
-                          />
-                        ))}
-                      </FormGroup>
-                    </FormControl>
-                  </div>
+                  {filterGroup(styles, "style", "Styles")}
+                  {filterGroup(locations, "location", "Locations")}
+                  {filterGroup(prices, "price", "Prices", (p) => dispPrices[p])}
                 </div>
               )}
             </div>

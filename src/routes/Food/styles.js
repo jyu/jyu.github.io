@@ -58,7 +58,7 @@ const styles = (theme) => ({
   filter: {
     color: "#c2c2c2",
     marginTop: "0.5em",
-    marginRight: "0.5em",
+    marginRight: "2em",
   },
   checkbox: {
     padding: "5px",
