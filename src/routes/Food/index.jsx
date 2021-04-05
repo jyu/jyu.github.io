@@ -128,14 +128,14 @@ function Food(props) {
   });
   const rows = reverse(sortBy(filtered_restaurants, (r) => r.lastVisited));
 
-  const filterGroup = (arr, filterType, filterName, valueGetter) => (
+  const filterGroup = (arr, filterType, filterName, sortFn, valueGetter) => (
     <div className={classes.filter}>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend" className={classes.formLabel}>
           {filterName}:
         </FormLabel>
         <FormGroup>
-          {keys(arr).map((name) => (
+          {sortFn(arr).map((name) => (
             <FormControlLabel
               control={
                 <Checkbox
@@ -189,9 +189,19 @@ function Food(props) {
               </div>
               {filterOpen && (
                 <div className={classes.filters}>
-                  {filterGroup(styles, "style", "Styles")}
-                  {filterGroup(locations, "location", "Locations")}
-                  {filterGroup(prices, "price", "Prices", (p) => dispPrices[p])}
+                  {filterGroup(styles, "style", "Styles", (arr) =>
+                    reverse(sortBy(keys(arr), (n) => arr[n].length))
+                  )}
+                  {filterGroup(locations, "location", "Locations", (arr) =>
+                    reverse(sortBy(keys(arr), (n) => arr[n].length))
+                  )}
+                  {filterGroup(
+                    prices,
+                    "price",
+                    "Prices",
+                    (arr) => keys(arr).sort(),
+                    (p) => dispPrices[p]
+                  )}
                 </div>
               )}
             </div>
