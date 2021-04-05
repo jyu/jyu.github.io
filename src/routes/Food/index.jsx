@@ -104,7 +104,11 @@ function Food(props) {
       headerName: "Last Visit",
       width: 150,
       type: "date",
-      valueGetter: (params) => new Date(params.row.lastVisited),
+      valueGetter: (params) => {
+        const d = new Date(params.row.lastVisited);
+        d.setDate(d.getDate() + 1);
+        return d;
+      },
     },
   ];
 
