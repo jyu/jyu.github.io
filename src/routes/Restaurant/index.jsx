@@ -9,6 +9,7 @@ import styles from "./styles";
 import restaurants from "../../data/restaurants";
 import NavBar from "../../components/NavBar";
 import ModalImage from "react-modal-image";
+import YouTube from "react-youtube";
 
 const requestImageFile = require.context(
   "../../media/restaurants",
@@ -159,6 +160,20 @@ function Restaurant(props) {
                 </li>
               ))}
             </ul>
+            {data.video && (
+              <div>
+                <p className={classes.p}>
+                  Video that is not mine but does an amazing job representing
+                  the place:
+                </p>
+                <YouTube
+                  videoId={data.video.replace(
+                    "https://www.youtube.com/watch?v=",
+                    ""
+                  )}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

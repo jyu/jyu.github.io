@@ -152,6 +152,7 @@ const restaurants = {
       "Kimchi Stew, Dwen-jang Stew, and Egg Souffle",
       "Round 2 spread",
     ],
+    video: "https://www.youtube.com/watch?v=g8huTTHxjKw",
   },
   hawkerchan: {
     id: 4,
@@ -333,6 +334,7 @@ const restaurants = {
       "Chicken Karaage",
       "Tuna Tataki Handroll Platter",
     ],
+    video: "https://www.youtube.com/watch?v=dGeIla4Smoc",
   },
   lostacosno1: {
     id: 10,
@@ -361,6 +363,7 @@ const restaurants = {
     ],
     images: 2,
     captions: ["Adobada Taco and Quesadilla", "Carne Asada Taco"],
+    video: "https://www.youtube.com/watch?v=pSyCiMyQVgU",
   },
   laspalmas: {
     id: 11,
@@ -451,6 +454,7 @@ const restaurants = {
     ],
     images: 2,
     captions: ["Burrito outside", "Burrito inside"],
+    video: "https://www.youtube.com/watch?v=ajcJTpIh44o",
   },
   rubirosa: {
     id: 14,
@@ -475,11 +479,11 @@ const restaurants = {
       "I'd recommend Rubirosa to anyone who wants to eat pizza in NYC! Make sure to grab a reservation or go at open, because there's always a line right away.",
     ],
     dishes: [
-      "★ Calamari - Fried calamari with a flaky crust and an amazing slightly spicy and very tomato-ey marinara sauce",
-      "★ Supreme Pizza - Mozarella, cheese, tomato sauce, crispy crust, meatball, pepperoni, roaster garlic, and chopped basil.",
-      "★ Vodka Sauce Pizza - The vodka sauce is a creamier remix of the already amazing tomato sauce",
-      "Tie-Die Pizza - Mozzarella cheese, tomato, and pesto that brins a fresh kick to the pizza",
-      "Fresca Pizza - Fresh Mozzarella, tomato, and basil pizza that is no-nonsense. It focuses on the fundamentals and does a great job.",
+      "★ Calamari ($17)- Fried calamari with a flaky crust and an amazing slightly spicy and very tomato-ey marinara sauce",
+      "★ Supreme Pizza ($24) - Mozarella, cheese, tomato sauce, crispy crust, meatball, pepperoni, roaster garlic, and chopped basil.",
+      "★ Vodka Sauce Pizza ($22) - The vodka sauce is a creamier remix of the already amazing tomato sauce",
+      "Tie-Die Pizza ($24) - Mozzarella cheese, tomato, and pesto that brins a fresh kick to the pizza",
+      "Fresca Pizza ($21)- Fresh Mozzarella, tomato, and basil pizza that is no-nonsense. It focuses on the fundamentals and does a great job.",
     ],
     images: 4,
     captions: [
@@ -487,6 +491,36 @@ const restaurants = {
       "Half supreme half vodka sauce",
       "Half tie-die and half vodka sauce with pepperonis",
       "Half supreme half fresca",
+    ],
+  },
+  tsurutontan: {
+    id: 15,
+    url: "tsurutontan",
+    name: "Tsurutontan Udon Brasserie",
+    location: "New York",
+    district: "Union Square ",
+    googleMaps: "https://goo.gl/maps/L8WvvEVRTnhtMkAy7",
+    rating: "6",
+    price: "2",
+    style: "Japanese",
+    lastVisited: "2021-03-27",
+    text: [
+      "TLDR: Great udon with huge portions.",
+      "Tsurutontan is right off Union Square. What seems like a small restaurant expands into multiple large rooms inside with beautiful Japanese wood and lacquer finishes. The menu has an izakaya like casual vibe, with a large selection of udon, sashimi dons, appetizers, and drinks at great value",
+      "We started with the fried Tatsuta chicken. The chicken was Karaage, with a nice fried crust on the outside and topped with scallions and sesame. There was a lot of fried chicken for $12, but the chicken was a little dry.",
+      "I had the curry deluxe udon. When I got my udon, my initial reaction was wow this bowl is huge. It almost covered more than half of the width of the table we were eating on. The broth was rich and creamy, with a strong curry flavor that wasn't too overwhelming. The udon noodles had a great chew and were fantastic at soaking up the flavors of the broth. Scattered among the udon were thin pieces of pork, which was a welcome surprise. On top of the udon was a fried pork cutlet with shrimp tempura. I love the combination of curry and fried pork tonkatsu, and this udon satisfied that craving. The pork was a bit dryer than I expected but still went well with the noodles and the dish. It could be because we went to eat 30 minutes before closing, but it seemed like all the fried food I had was unfortunately dry.",
+      "However, I have to say that the fundamental flavors of the broth and udon delivered. We got a lot more food than expected, and it easily could have been 2 meals. If you like udon, I would recommend giving Tsurutontan a shot.",
+    ],
+    dishes: [
+      "Fried Tatsuta Chicken - Lots of fried chicken.",
+      "Curry Deluxe Udon - Curry broth with delightful noodles, fried pork cutlet, shrimp tempura, and slices of pork.",
+      "US Wagyu Beef Truffle - My roommate got this and I tried a bit. The broth had a strong truffle flavor.",
+    ],
+    images: 3,
+    captions: [
+      "Fried Tatsuta Chicken",
+      "Curry Deluxe",
+      "US Wagyu Beef Truffle",
     ],
   },
 };
