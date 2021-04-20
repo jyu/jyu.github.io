@@ -558,6 +558,7 @@ const restaurants = {
       "Matzoh Ball Soup",
       "Pastrami Sandwich with Pickles"
     ],
+    video: "https://www.youtube.com/watch?v=ydQ5UZpJRls",
   },
 
 };
