@@ -18,10 +18,10 @@ const requestImageFile = require.context(
 
 const prices = [
   "$ (1-10)",
-  "$$ (10-30)",
-  "$$$ (30-60)",
-  "$$$$ (60-120)",
-  "$$$$$ (100+)",
+  "$$ (11-30)",
+  "$$$ (31-60)",
+  "$$$$ (61-100)",
+  "$$$$$ (101+)",
 ];
 
 function Restaurant(props) {

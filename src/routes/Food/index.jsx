@@ -233,7 +233,7 @@ function Food(props) {
             <ul>
               <li className={classes.li}>All prices are in USD.</li>
               <li className={classes.li}>
-                A resturant's price estimate is for each person
+                A resturant's price estimate is for each person.
               </li>
               <li className={classes.li}>
                 This blog is WIP, many more restaurants to come soon. :)
