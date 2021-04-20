@@ -497,7 +497,7 @@ const restaurants = {
     id: 15,
     url: "tsurutontan",
     name: "Tsurutontan Udon Brasserie",
-    location: "New York",
+    location: "New York City",
     district: "Union Square ",
     googleMaps: "https://goo.gl/maps/L8WvvEVRTnhtMkAy7",
     rating: "6",
@@ -527,7 +527,7 @@ const restaurants = {
     id: 16,
     url: "katzdelicatessen",
     name: "Katz Delicatessen",
-    location: "New York",
+    location: "New York City",
     district: "Lower East Side ",
     googleMaps: "https://goo.gl/maps/KmETFGs8rFqXqkza8",
     rating: "5",
@@ -549,7 +549,6 @@ const restaurants = {
       "Potato Knish ($5.45) - Fried potato donut but unfortunately stale.",
       "Matzoh Ball Soup 1 Quart ($14.90) - Homey chicken broth with a Matzoh ball dumpling.",
       "Frankfurter Hot Dog ($4.95) - Tastes like a hot dog.",
-
     ],
     images: 4,
     captions: [
