@@ -62,7 +62,7 @@ function Home(props) {
       setIndex((index) => {
         return index === numBgs - 1 ? 0 : index + 1;
       });
-    }, 5000);
+    }, 10000);
     setTimer(interval);
     return interval;
   };
