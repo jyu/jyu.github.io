@@ -533,7 +533,7 @@ const restaurants = {
     rating: "5",
     price: "1",
     style: "Jewish",
-    lastVisited: "2021-03-27",
+    lastVisited: "2021-04-03",
     text: [
       "TLDR: Great pastrami sandwiches at an iconic New York deli.",
       "Katz is a New York institution with over 130 years of history, known for their iconic Pastrami sandwich. Katz has a classic New York vibe, with pictures of celebrities on the wall, slightly rude staff, and an overcomplicated ordering system.",
