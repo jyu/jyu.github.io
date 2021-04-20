@@ -501,7 +501,7 @@ const restaurants = {
     district: "Union Square ",
     googleMaps: "https://goo.gl/maps/L8WvvEVRTnhtMkAy7",
     rating: "6",
-    price: "2",
+    price: "1",
     style: "Japanese",
     lastVisited: "2021-03-27",
     text: [
@@ -512,9 +512,9 @@ const restaurants = {
       "However, I have to say that the fundamental flavors of the broth and udon delivered. We got a lot more food than expected, and it easily could have been 2 meals. If you like udon, I would recommend giving Tsurutontan a shot.",
     ],
     dishes: [
-      "Fried Tatsuta Chicken - Lots of fried chicken.",
-      "Curry Deluxe Udon - Curry broth with delightful noodles, fried pork cutlet, shrimp tempura, and slices of pork.",
-      "US Wagyu Beef Truffle - My roommate got this and I tried a bit. The broth had a strong truffle flavor.",
+      "Fried Tatsuta Chicken ($12) - Lots of fried chicken.",
+      "Curry Deluxe Udon ($22) - Curry broth with delightful noodles, fried pork cutlet, shrimp tempura, and slices of pork.",
+      "US Wagyu Beef Truffle ($20) - My roommate got this and I tried a bit. The broth had a strong truffle flavor.",
     ],
     images: 3,
     captions: [
@@ -523,6 +523,43 @@ const restaurants = {
       "US Wagyu Beef Truffle",
     ],
   },
+  katzdelicatessen: {
+    id: 16,
+    url: "katzdelicatessen",
+    name: "Katz Delicatessen",
+    location: "New York",
+    district: "Lower East Side ",
+    googleMaps: "https://goo.gl/maps/KmETFGs8rFqXqkza8",
+    rating: "5",
+    price: "1",
+    style: "Jewish",
+    lastVisited: "2021-03-27",
+    text: [
+      "TLDR: Great pastrami sandwiches at an iconic New York deli.",
+      "Katz is a New York institution with over 130 years of history, known for their iconic Pastrami sandwich. Katz has a classic New York vibe, with pictures of celebrities on the wall, slightly rude staff, and an overcomplicated ordering system.",
+      "DISCLAIMER: We picked up Katz, ~10 walking time before eating, so the food was not at its fresh optimal eating condition.",
+      "The pastrami sandwich was good. The pastrami almost fell apart, a sign of how long they slow cook the meat. Having it in a sandwich with all its layers allowed for bits of meat and fat to meld together and craft an amazing smoky meaty experience. They provided an excellent brown mustard that lifted the meats and broke the monotony of the pure pastrami flavor.",
+      "The pickles were also really good with the sandwich, with one stronger and one milder pickle. The acidity and freshness of the pickle were very much needed with all the meat, and that classic combination of pickles and meat was my favorite part.",
+      "The potato knish was like a mashed potato donut. Unfortunately, it was stale even after we toasted it again in our toaster oven.",
+      "The matzoh ball soup was interesting, with a clean chicken broth and a giant dumpling-like matzoh ball. The ball had a spongey texture and soaked up the soup, making the dish feel very homey like chicken noodle soup.",
+      "Overall, I felt that the food overall skewed bland and was pricier than what the food quality deserved. The price is to pay for the brand name of the institution, which I respect for being such an integral part of New York culture. I didn't regret my meal at Katz; I would say it's worth trying once."
+    ],
+    dishes: [
+      "★ Pastrami Sandwich ($24.45) - A pricy sandwich but worth trying once. Super meaty with all the layers of pastrami.",
+      "Potato Knish ($5.45) - Fried potato donut but unfortunately stale.",
+      "Matzoh Ball Soup 1 Quart ($14.90) - Homey chicken broth with a Matzoh ball dumpling.",
+      "Frankfurter Hot Dog ($4.95) - Tastes like a hot dog.",
+
+    ],
+    images: 4,
+    captions: [
+      "Pastrami Sandwich",
+      "Potato Knish",
+      "Matzoh Ball Soup",
+      "Pastrami Sandwich with Pickles"
+    ],
+  },
+
 };
 
 export default restaurants;
