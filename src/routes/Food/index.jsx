@@ -241,7 +241,7 @@ function Food(props) {
               <li className={classes.li}>
                 Ratings correspond to: [10 - lifechanging experience], [9 -
                 perfectly executed meal], [8 - strongly recommend], [7 - would
-                recommend with great value], [6 - would recommend trying once],
+                recommend], [6 - would recommend trying once],
                 [5 - recommend if you're into the cuisine], [less than 4 - would
                 not recommend]
               </li>
