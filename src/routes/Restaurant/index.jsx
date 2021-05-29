@@ -102,6 +102,7 @@ function Restaurant(props) {
       ))}
     </div>
   );
+  const video = data.video;
 
   return (
     <div>
@@ -160,17 +161,31 @@ function Restaurant(props) {
                 </li>
               ))}
             </ul>
-            {data.video && (
+            {video && (
               <div>
                 <p className={classes.p}>
-                  Video that is not mine but does an amazing job representing
-                  the place:
+                  Video that is not mine but does a great job representing the
+                  place:
                 </p>
                 <YouTube
-                  videoId={data.video.replace(
+                  videoId={video.replace(
                     "https://www.youtube.com/watch?v=",
                     ""
                   )}
+                  opts={{
+                    playerVars:
+                      video.indexOf("t=") !== -1
+                        ? {
+                            fs: 1,
+                            start: Number(
+                              video.substring(
+                                video.indexOf("t=") + 2,
+                                video.length
+                              )
+                            ),
+                          }
+                        : {},
+                  }}
                 />
               </div>
             )}

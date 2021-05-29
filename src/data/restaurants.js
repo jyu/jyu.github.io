@@ -1,3 +1,7 @@
+import upsidepiza from "./upsidepizza";
+
+const importedPlaces = [upsidepiza];
+
 // template: {
 //   id: 9,
 //   url: "template",
@@ -542,7 +546,7 @@ const restaurants = {
       "The pickles were also really good with the sandwich, with one stronger and one milder pickle. The acidity and freshness of the pickle were very much needed with all the meat, and that classic combination of pickles and meat was my favorite part.",
       "The potato knish was like a mashed potato donut. Unfortunately, it was stale even after we toasted it again in our toaster oven.",
       "The matzoh ball soup was interesting, with a clean chicken broth and a giant dumpling-like matzoh ball. The ball had a spongey texture and soaked up the soup, making the dish feel very homey like chicken noodle soup.",
-      "Overall, I felt that the food overall skewed bland and was pricier than what the food quality deserved. The price is to pay for the brand name of the institution, which I respect for being such an integral part of New York culture. I didn't regret my meal at Katz; I would say it's worth trying once."
+      "Overall, I felt that the food overall skewed bland and was pricier than what the food quality deserved. The price is to pay for the brand name of the institution, which I respect for being such an integral part of New York culture. I didn't regret my meal at Katz; I would say it's worth trying once.",
     ],
     dishes: [
       "★ Pastrami Sandwich ($24.45) - A pricy sandwich but worth trying once. Super meaty with all the layers of pastrami.",
@@ -555,11 +559,23 @@ const restaurants = {
       "Pastrami Sandwich",
       "Potato Knish",
       "Matzoh Ball Soup",
-      "Pastrami Sandwich with Pickles"
+      "Pastrami Sandwich with Pickles",
     ],
     video: "https://www.youtube.com/watch?v=ydQ5UZpJRls",
   },
-
 };
+
+let id = 17;
+for (let i = 0; i < importedPlaces.length; i++) {
+  const place = importedPlaces[i];
+  console.log(place);
+  console.log(Object.keys(place));
+  const key = Object.keys(place)[0];
+  place[key]["id"] = id;
+  id += 1;
+  restaurants[key] = place[key];
+}
+
+console.log(restaurants);
 
 export default restaurants;

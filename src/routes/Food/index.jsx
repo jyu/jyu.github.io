@@ -239,11 +239,10 @@ function Food(props) {
                 This blog is WIP, many more restaurants to come soon. :)
               </li>
               <li className={classes.li}>
-                Ratings correspond to: [10 - lifechanging experience], [9 -
-                perfectly executed meal], [8 - strongly recommend], [7 - would
-                recommend], [6 - would recommend trying once],
-                [5 - recommend if you're into the cuisine], [less than 4 - would
-                not recommend]
+                Ratings correspond to: [10 - lifechanging], [9 - perfect meal],
+                [8 - strongly recommend], [7 - would recommend], [6 - would
+                recommend trying once], [5 - recommend if you're into the
+                cuisine], [less than 4 - would not recommend]
               </li>
             </ul>
           </div>
