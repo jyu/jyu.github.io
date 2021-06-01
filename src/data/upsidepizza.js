@@ -23,6 +23,7 @@ const place = {
     images: 1,
     captions: ["Pepperoni Slice"],
     video: "https://www.youtube.com/watch?v=cTW1T3GAH_s?t=20",
+    times: 1,
   },
 };
 

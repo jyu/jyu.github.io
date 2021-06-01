@@ -1,6 +1,7 @@
-import upsidepiza from "./upsidepizza";
+import upsidepizza from "./upsidepizza";
+import abckitchen from "./abckitchen";
 
-const importedPlaces = [upsidepiza];
+const importedPlaces = [upsidepizza, abckitchen];
 
 // template: {
 //   id: 9,
@@ -55,6 +56,7 @@ const restaurants = {
       "Shrimp Pad Thai",
       "Egg Wrapped Pad Thai. Roast Pork Pad Thai",
     ],
+    times: 3,
   },
   supanniga: {
     id: 1,
@@ -86,6 +88,7 @@ const restaurants = {
       "Tom Yum Mushroom",
       "Is it Michelin rated if there's no sticker?",
     ],
+    times: 1
   },
   tuome: {
     id: 2,
@@ -120,6 +123,7 @@ const restaurants = {
       "Grilled Octopus with Pork XO and Fingerling Potatoes",
       "Crispy Roast Berkshire Pork, Spicy Peanut Noodles, Side Salad",
     ],
+    times: 1,
   },
   cote: {
     id: 3,
@@ -157,6 +161,7 @@ const restaurants = {
       "Round 2 spread",
     ],
     video: "https://www.youtube.com/watch?v=g8huTTHxjKw",
+    times: 1,
   },
   hawkerchan: {
     id: 4,
@@ -190,6 +195,7 @@ const restaurants = {
       "Michelin flex",
       "Busy storefront before closing",
     ],
+    times: 1,
   },
   foodloft: {
     id: 5,
@@ -217,6 +223,7 @@ const restaurants = {
     captions: [
       "Singaporean Breakfast - Soft boiled egg, kaya toast, iced coffee",
     ],
+    times: 2
   },
   breadstreetkitchen: {
     id: 6,
@@ -253,6 +260,7 @@ const restaurants = {
       "Gordon's face outside the restaurant",
       "Inside the restaurant",
     ],
+    times: 1,
   },
   marinasouthdeliciousfood: {
     id: 7,
@@ -282,6 +290,7 @@ const restaurants = {
       "Char Kway Teow and Oyster Egg",
       "The Stall and Legendary Auntie",
     ],
+    times: 1,
   },
   jumboseafood: {
     id: 8,
@@ -307,6 +316,7 @@ const restaurants = {
     ],
     images: 2,
     captions: ["Scallops Wrapped in Yam Ring", "Chili Mud Crab"],
+    times: 1,
   },
   bessou: {
     id: 9,
@@ -339,6 +349,7 @@ const restaurants = {
       "Tuna Tataki Handroll Platter",
     ],
     video: "https://www.youtube.com/watch?v=dGeIla4Smoc",
+    times: 1,
   },
   lostacosno1: {
     id: 10,
@@ -368,6 +379,7 @@ const restaurants = {
     images: 2,
     captions: ["Adobada Taco and Quesadilla", "Carne Asada Taco"],
     video: "https://www.youtube.com/watch?v=pSyCiMyQVgU",
+    times: 1,
   },
   laspalmas: {
     id: 11,
@@ -396,6 +408,7 @@ const restaurants = {
       "Chorizo, Carne Asada, and Carnitas tacos (left to right) topped with salsa verde, onions, and cilantro.",
       "Carne Asada, Chicken, and Fajita mix tacos (top to bot) topped with salsa verde, onions, and cilantro.",
     ],
+    times: "5+",
   },
   panchovilla: {
     id: 12,
@@ -433,6 +446,7 @@ const restaurants = {
       "Lengua, Al Pastor, and Carne Asada tacos (left to right)",
       "Nachos",
     ],
+    times: "10+",
   },
   latacqueria: {
     id: 13,
@@ -459,6 +473,7 @@ const restaurants = {
     images: 2,
     captions: ["Burrito outside", "Burrito inside"],
     video: "https://www.youtube.com/watch?v=ajcJTpIh44o",
+    times: "3+",
   },
   rubirosa: {
     id: 14,
@@ -496,6 +511,7 @@ const restaurants = {
       "Half tie-die and half vodka sauce with pepperonis",
       "Half supreme half fresca",
     ],
+    times: "4+",
   },
   tsurutontan: {
     id: 15,
@@ -562,14 +578,13 @@ const restaurants = {
       "Pastrami Sandwich with Pickles",
     ],
     video: "https://www.youtube.com/watch?v=ydQ5UZpJRls",
+    times: 1,
   },
 };
 
 let id = 17;
 for (let i = 0; i < importedPlaces.length; i++) {
   const place = importedPlaces[i];
-  console.log(place);
-  console.log(Object.keys(place));
   const key = Object.keys(place)[0];
   place[key]["id"] = id;
   id += 1;
