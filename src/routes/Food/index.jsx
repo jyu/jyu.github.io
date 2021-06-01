@@ -222,7 +222,8 @@ function Food(props) {
               // Pagination: CustomPagination,
               // }}
               onRowClick={(c) => {
-                window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
+                window.open(process.env.PUBLIC_URL + "/" + c.row.url, "_blank")
+                // window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
               }}
             />
           </div>
