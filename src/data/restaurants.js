@@ -1,7 +1,8 @@
 import upsidepizza from "./upsidepizza";
 import abckitchen from "./abckitchen";
+import foxface from "./foxface";
 
-const importedPlaces = [upsidepizza, abckitchen];
+const importedPlaces = [upsidepizza, abckitchen, foxface];
 
 // template: {
 //   id: 9,
@@ -88,7 +89,7 @@ const restaurants = {
       "Tom Yum Mushroom",
       "Is it Michelin rated if there's no sticker?",
     ],
-    times: 1
+    times: 1,
   },
   tuome: {
     id: 2,
@@ -223,7 +224,7 @@ const restaurants = {
     captions: [
       "Singaporean Breakfast - Soft boiled egg, kaya toast, iced coffee",
     ],
-    times: 2
+    times: 2,
   },
   breadstreetkitchen: {
     id: 6,
