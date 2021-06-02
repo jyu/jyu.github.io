@@ -130,9 +130,7 @@ function Restaurant(props) {
               <div className={classes.header}>
                 Last Visited: {data.lastVisited}
               </div>
-              <div className={classes.header}>
-                Times Visited: {data.times}
-              </div>
+              <div className={classes.header}>Times Visited: {data.times}</div>
               {data.michelin && (
                 <div className={classes.header}>{data.michelin}</div>
               )}

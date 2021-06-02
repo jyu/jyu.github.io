@@ -116,23 +116,52 @@ function Food(props) {
   const locations = groupBy(restaurant_list, "location");
   const styles = groupBy(restaurant_list, "style");
   const prices = groupBy(restaurant_list, "price");
+  const ratings = groupBy(restaurant_list, "rating");
 
   const filtered_restaurants = restaurant_list.filter((r) => {
     // No filters
     if (filters.length === 0) {
       return true;
     }
+    const filters_by_type = groupBy(filters, "type");
+    const filter_types = Object.keys(filters_by_type);
     // Apply filters
-    for (let i = 0; i < filters.length; i++) {
-      if (r[filters[i].type] === filters[i].name) {
-        return true;
+    // Across filter types (location, rating) is AND filter
+    for (let i = 0; i < filter_types.length; i++) {
+      const filter_type = filter_types[i];
+      // Within a type is OR filter
+      let pass = false;
+      for (let j = 0; j < filters_by_type[filter_type].length; j++) {
+        const filter = filters_by_type[filter_type][j];
+        if (r[filter.type] === filter.name) {
+          pass = true;
+        }
+      }
+      if (!pass) {
+        return false;
       }
     }
-    return false;
+
+    return true;
   });
+  const filtered_locations = groupBy(filtered_restaurants, "location");
+  const filtered_styles = groupBy(filtered_restaurants, "style");
+  const filtered_prices = groupBy(filtered_restaurants, "price");
+  const filtered_ratings = groupBy(filtered_restaurants, "rating");
+  console.log(locations);
+  console.log(filtered_locations);
+
   const rows = reverse(sortBy(filtered_restaurants, (r) => r.lastVisited));
 
-  const filterGroup = (arr, filterType, filterName, sortFn, valueGetter) => (
+  const filterGroup = (
+    arr,
+    filtered_arr,
+    filters,
+    filterType,
+    filterName,
+    sortFn,
+    valueGetter
+  ) => (
     <div className={classes.filter}>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend" className={classes.formLabel}>
@@ -153,9 +182,20 @@ function Food(props) {
                   className={classes.checkbox}
                 />
               }
-              label={`${valueGetter ? valueGetter(name) : name} (${
-                arr[name].length
-              })`}
+              label={
+                filters.length > 0
+                  ? filtered_arr[name] && filtered_arr[name].length > 0
+                    ? // Filter active and there is values
+                      `${valueGetter ? valueGetter(name) : name} (${
+                        filtered_arr[name].length
+                      })`
+                    : // Filter active and there are no values
+                      `${valueGetter ? valueGetter(name) : name}`
+                  : // No filter active
+                    `${valueGetter ? valueGetter(name) : name} (${
+                      arr[name].length
+                    })`
+              }
               classes={{
                 label: classes.filterLabel,
               }}
@@ -193,18 +233,38 @@ function Food(props) {
               </div>
               {filterOpen && (
                 <div className={classes.filters}>
-                  {filterGroup(styles, "style", "Styles", (arr) =>
-                    reverse(sortBy(keys(arr), (n) => arr[n].length))
+                  {filterGroup(
+                    styles,
+                    filtered_styles,
+                    filters,
+                    "style",
+                    "Styles",
+                    (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
                   )}
-                  {filterGroup(locations, "location", "Locations", (arr) =>
-                    reverse(sortBy(keys(arr), (n) => arr[n].length))
+                  {filterGroup(
+                    locations,
+                    filtered_locations,
+                    filters,
+                    "location",
+                    "Locations",
+                    (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
                   )}
                   {filterGroup(
                     prices,
+                    filtered_prices,
+                    filters,
                     "price",
                     "Prices",
                     (arr) => keys(arr).sort(),
                     (p) => dispPrices[p]
+                  )}
+                  {filterGroup(
+                    ratings,
+                    filtered_ratings,
+                    filters,
+                    "rating",
+                    "Ratings",
+                    (arr) => keys(arr).sort()
                   )}
                 </div>
               )}
@@ -222,7 +282,7 @@ function Food(props) {
               // Pagination: CustomPagination,
               // }}
               onRowClick={(c) => {
-                window.open(process.env.PUBLIC_URL + "/" + c.row.url, "_blank")
+                window.open(process.env.PUBLIC_URL + "/" + c.row.url, "_blank");
                 // window.location.href = process.env.PUBLIC_URL + "/" + c.row.url;
               }}
             />
