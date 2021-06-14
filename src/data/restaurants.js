@@ -3,8 +3,16 @@ import abckitchen from "./abckitchen";
 import foxface from "./foxface";
 import cafehabana from "./cafehabana";
 import cocoron from "./cocoron";
+import casalafemme from "./casalafemme";
 
-const importedPlaces = [upsidepizza, abckitchen, foxface, cafehabana, cocoron];
+const importedPlaces = [
+  upsidepizza,
+  abckitchen,
+  foxface,
+  cafehabana,
+  cocoron,
+  casalafemme,
+];
 
 // template: {
 //   id: 9,
