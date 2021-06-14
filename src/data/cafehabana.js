@@ -6,7 +6,7 @@ const place = {
     district: "Nolita",
     googleMaps: "https://goo.gl/maps/NmeK9bNPQavLUEyAA",
     rating: "6",
-    price: 2,
+    price: 1,
     style: "Cuban",
     lastVisited: "2021-06-12",
     images: 4,
