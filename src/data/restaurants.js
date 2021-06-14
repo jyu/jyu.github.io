@@ -2,8 +2,9 @@ import upsidepizza from "./upsidepizza";
 import abckitchen from "./abckitchen";
 import foxface from "./foxface";
 import cafehabana from "./cafehabana";
+import cocoron from "./cocoron";
 
-const importedPlaces = [upsidepizza, abckitchen, foxface, cafehabana];
+const importedPlaces = [upsidepizza, abckitchen, foxface, cafehabana, cocoron];
 
 // template: {
 //   id: 9,

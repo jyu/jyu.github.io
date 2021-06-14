@@ -30,6 +30,7 @@ const place = {
       "Cuban sandwich",
       "Roast pork entre with sandwich and corn",
     ],
+    video: "https://www.youtube.com/watch?v=uqao3dOYO7U?t=230",
   },
 };
 
