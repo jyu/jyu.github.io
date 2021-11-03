@@ -43,8 +43,19 @@ function Food(props) {
     };
   });
   console.log(restaurantWithKey);
-  const sortedRestaurants = orderBy(restaurantWithKey, ["times", "rating"], ["desc", "desc"]);
+
+  const resturantByLocation = groupBy(restaurantWithKey, "location");
+  console.log(resturantByLocation);
+  console.log(resturantByLocation["New York City"]);
+  const sortedRestaurants = orderBy(
+    restaurantWithKey,
+    ["times", "rating"],
+    ["desc", "desc"]
+  );
   console.log(sortedRestaurants);
+
+  const orderFn = (restaurants) =>
+    orderBy(restaurants, ["times", "rating"], ["desc", "desc"]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -57,42 +68,52 @@ function Food(props) {
             <div className={!isMobile ? classes.header : classes.headerMobile}>
               <h1 className={classes.h1}>Restaurants</h1>
               <div className={classes.p}></div>
-              <div className={classes.foods}>
-                {map(sortedRestaurants, (data) => {
-                  return (
-                    <div className={classes.card}>
-                      <a
-                        className={classes.link}
-                        href={data.googleMaps}
-                        target="_blank"
-                      >
-                        <img
-                          key={props.i}
-                          src={requestImageFile(`./${data.key}.jpeg`).default}
-                          className={classes.img}
-                          alt={data.key}
-                        />
-                        <p className={classes.p}>
-                          {data.name} ({data.rating})
-                        </p>
-                      </a>
-                      <p className={classes.p}>{data.text}</p>
-                      <p className={classes.p}>
-                        {data.location}{" "}
-                        {data.district ? " - " + data.district : ""}
-                      </p>
-                      <p className={classes.p}>
-                        {data.style} {dispPrices[data.price]}
-                      </p>
-                      <p className={classes.p}>
-                        Visited {data.times}
-                        {data.times >= 4 ? "+" : ""}{" "}
-                        {data.times == "1" ? "time" : "times"}
-                      </p>
+              {map(keys(resturantByLocation), (location) => {
+                return (
+                  <div>
+                    <h2 className={classes.h2}>{location}</h2>
+                    <div className={classes.foodContainer}>
+                      {map(orderFn(resturantByLocation[location]), (data) => {
+                        return (
+                          <div className={classes.card}>
+                            <a
+                              className={classes.link}
+                              href={data.googleMaps}
+                              target="_blank"
+                            >
+                              <img
+                                key={props.i}
+                                src={
+                                  requestImageFile(`./${data.key}.jpeg`).default
+                                }
+                                className={classes.img}
+                                alt={data.key}
+                              />
+                              <p className={classes.p}>
+                                {data.name} ({data.rating})
+                              </p>
+                            </a>
+                            <p className={classes.p}>{data.text}</p>
+                            <p className={classes.p}>
+                              {data.location}{" "}
+                              {data.district ? " - " + data.district : ""}
+                            </p>
+                            <p className={classes.p}>
+                              {data.style} {dispPrices[data.price]}
+                            </p>
+                            <p className={classes.p}>
+                              Visited {data.times}
+                              {data.times >= 4 ? "+" : ""}{" "}
+                              {data.times == "1" ? "time" : "times"}
+                            </p>
+                          </div>
+                        );
+                      })}
                     </div>
-                  );
-                })}
-              </div>
+                    <p>asdfasdf</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

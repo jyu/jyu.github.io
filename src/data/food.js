@@ -133,7 +133,7 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Mexican",
-    text: "Pricy but high quality al pastor + carne asada tacos",
+    text: "Pricy but high quality adobada + carne asada tacos",
     times: 3,
   },
   nowon: {
@@ -221,7 +221,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Malaysian",
-    text: "Malaysian Chinese food, would rec the salted fish egg plant stone rice",
+    text:
+      "Malaysian Chinese food, would rec the salted fish egg plant stone rice",
     times: 1,
   },
 };

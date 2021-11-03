@@ -20,13 +20,20 @@ const styles = (theme) => ({
     marginBottom: "0.5em",
     color: "#fff",
   },
+  h2: {
+    fontSize: "2em",
+    fontWeight: 500,
+    marginTop: 0,
+    marginBottom: "0.5em",
+    color: "#fff",
+  },
   p: {
     color: "#c2c2c2",
     marginBottom: "0.5em",
     marginTop: "0",
     fontSize: "1em",
   },
-  foods: {
+  foodContainer: {
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
@@ -38,6 +45,7 @@ const styles = (theme) => ({
     width: "200px",
     fontSize: "1em",
     marginBottom: "12px",
+    marginRight: "0.5em",
   },
   link: {
     textDecoration: "none",
