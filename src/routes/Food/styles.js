@@ -2,7 +2,6 @@ const styles = (theme) => ({
   component: {
     backgroundColor: "#222",
     minHeight: "100vh",
-    minWidth: "920px",
     paddingBottom: "4em",
   },
   container: {
@@ -12,7 +11,7 @@ const styles = (theme) => ({
     marginRight: "auto",
   },
   containerMobile: {
-    padding: "1em",
+    padding: "2em",
   },
   h1: {
     fontSize: "3em",
@@ -24,50 +23,29 @@ const styles = (theme) => ({
   p: {
     color: "#c2c2c2",
     marginBottom: "0.5em",
+    marginTop: "0",
+    fontSize: "1em",
   },
-  a: {
-    color: "#c2c2c2",
-  },
-  table: {
-    color: "#c2c2c2 !important",
-    cursor: "pointer",
-  },
-  grid: {
-    height: 630,
-    width: 920,
-    margin: "auto",
-    marginBottom: "1em",
-  },
-  li: {
-    color: "#c2c2c2",
-    marginBottom: "0.5em",
-  },
-  buttonText: {
-    cursor: "pointer",
-    textDecoration: "underline",
-    color: "#c2c2c2",
-    display: "flex",
-    alignItems: "center",
-    flexWrap: "wrap",
-  },
-  filters: {
+  foods: {
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
+    justifyContent: "space-evenly",
   },
-  filter: {
-    color: "#c2c2c2",
-    marginTop: "0.5em",
-    marginRight: "2em",
+  card: {
+    display: "block",
+    textAlign: "left",
+    width: "200px",
+    fontSize: "1em",
+    marginBottom: "12px",
   },
-  checkbox: {
-    padding: "5px",
-    height: "0.7em",
+  link: {
+    textDecoration: "none",
   },
-  filterControLabel: {
-    marginLeft: "-7px",
-  },
-  formLabel: {
+  img: {
+    width: "200px",
+    height: "150px",
+    objectFit: "cover",
     marginBottom: "0.5em",
   },
 });

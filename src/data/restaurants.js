@@ -602,6 +602,4 @@ for (let i = 0; i < importedPlaces.length; i++) {
   restaurants[key] = place[key];
 }
 
-console.log(restaurants);
-
 export default restaurants;
