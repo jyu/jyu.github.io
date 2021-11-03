@@ -12,8 +12,7 @@ import NavBar from "../../components/NavBar";
 
 import restaurants from "../../data/food";
 
-const requestImageFile = require.context("../../media/food", true, /.jpg$/);
-// const loadImage = imageName => (requestImageFile(`./${imageName}`).default);
+const requestImageFile = require.context("../../media/food", true, /.jpeg$/);
 
 const dispPrices = ["$", "$$", "$$$", "$$$$", "$$$$$"];
 
@@ -44,7 +43,7 @@ function Food(props) {
     };
   });
   console.log(restaurantWithKey);
-  const sortedRestaurants = orderBy(restaurantWithKey, ["times"], ["desc"]);
+  const sortedRestaurants = orderBy(restaurantWithKey, ["times", "rating"], ["desc", "desc"]);
   console.log(sortedRestaurants);
 
   return (
@@ -69,7 +68,7 @@ function Food(props) {
                       >
                         <img
                           key={props.i}
-                          src={requestImageFile(`./${data.key}.jpg`).default}
+                          src={requestImageFile(`./${data.key}.jpeg`).default}
                           className={classes.img}
                           alt={data.key}
                         />
