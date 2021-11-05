@@ -6,7 +6,7 @@ const styles = (theme) => ({
   },
   container: {
     padding: "0em 8em 1em 8em",
-    width: 920,
+    width: 900,
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -37,7 +37,7 @@ const styles = (theme) => ({
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "start",
   },
   card: {
     display: "block",
@@ -45,7 +45,7 @@ const styles = (theme) => ({
     width: "200px",
     fontSize: "1em",
     marginBottom: "12px",
-    marginRight: "0.5em",
+    marginRight: "25px",
   },
   link: {
     textDecoration: "none",

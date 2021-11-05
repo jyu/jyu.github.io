@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { isMobile } from "react-device-detect";
 import { map, orderBy, sortBy, reverse, keys, groupBy } from "lodash";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
 
 import {
   withStyles,
@@ -15,6 +17,13 @@ import restaurants from "../../data/food";
 const requestImageFile = require.context("../../media/food", true, /.jpeg$/);
 
 const dispPrices = ["$", "$$", "$$$", "$$$$", "$$$$$"];
+const pricesToNum = {
+  $: "$1-$15",
+  $$: "$15-$30",
+  $$$: "$31-$60",
+  $$$$: "$61-$100",
+  $$$$$: "$101+",
+};
 
 const theme = createMuiTheme({
   palette: {
@@ -90,7 +99,7 @@ function Food(props) {
                                 alt={data.key}
                               />
                               <p className={classes.p}>
-                                {data.name} ({data.rating})
+                                {data.name} ({data.rating}) {data.michelin}
                               </p>
                             </a>
                             <p className={classes.p}>{data.text}</p>
@@ -99,7 +108,13 @@ function Food(props) {
                               {data.district ? " - " + data.district : ""}
                             </p>
                             <p className={classes.p}>
-                              {data.style} {dispPrices[data.price]}
+                              {data.style}{" "}
+                              <Tippy
+                                content={pricesToNum[dispPrices[data.price]]}
+                                theme="material"
+                              >
+                                <span>{dispPrices[data.price]}</span>
+                              </Tippy>
                             </p>
                             <p className={classes.p}>
                               Visited {data.times}
@@ -110,7 +125,6 @@ function Food(props) {
                         );
                       })}
                     </div>
-                    <p>asdfasdf</p>
                   </div>
                 );
               })}
