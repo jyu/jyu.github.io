@@ -46,10 +46,10 @@ const ratingToDisp = {
   10: "10",
 };
 const rankingToOrder = {
-  'price': 'asc',
-  'rating': 'desc',
-  'times': 'asc'
-}
+  price: "asc",
+  rating: "desc",
+  times: "asc",
+};
 
 const theme = createMuiTheme({
   palette: {
@@ -93,7 +93,7 @@ function Food(props) {
       );
     }
   };
-  console.log("filters", filters)
+  console.log("filters", filters);
   const restaurant_list = values(restaurant_with_key);
   const locations = groupBy(restaurant_list, "location");
   const styles = groupBy(restaurant_list, "style");
@@ -221,7 +221,7 @@ function Food(props) {
   const sorted_group_by_frequency = sortBy(group_by_keys, (key) =>
     groupByVal == "location" || groupByVal == "style"
       ? -1 * restaurant_group_by[key].length
-      : (groupByVal == "rating" || groupByVal == "times")
+      : groupByVal == "rating" || groupByVal == "times"
       ? -1 * Number(key)
       : Number(key)
   );
@@ -287,9 +287,8 @@ function Food(props) {
                       "times",
                       "Times",
                       (arr) => sortBy(keys(arr), (r) => -1 * Number(r)),
-                      t => t >= 4 ? `${t}+` : t
+                      (t) => (t >= 4 ? `${t}+` : t)
                     )}
-
                   </div>
                 )}
                 <div
