@@ -33,11 +33,47 @@ const styles = (theme) => ({
     marginTop: "0",
     fontSize: "1em",
   },
+  buttonText: {
+    cursor: "pointer",
+    textDecoration: "underline",
+    color: "#c2c2c2",
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+  },
+  filters: {
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+    marginBottom: "1.5em",
+  },
+  filter: {
+    color: "#c2c2c2",
+    marginTop: "0.5em",
+    marginRight: "2em",
+  },
+  checkbox: {
+    padding: "5px",
+    height: "0.7em",
+  },
+  filterControLabel: {
+    marginLeft: "-7px",
+  },
+  formLabel: {
+    marginBottom: "0.5em",
+  },
+
   foodContainer: {
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
     justifyContent: "start",
+  },
+  foodContainerMobile: {
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+    justifyContent: "center",
   },
   card: {
     display: "block",
@@ -47,12 +83,25 @@ const styles = (theme) => ({
     marginBottom: "12px",
     marginRight: "25px",
   },
+  cardMobile: {
+    display: "block",
+    textAlign: "left",
+    width: "100%",
+    fontSize: "1em",
+    marginBottom: "12px",
+  },
   link: {
     textDecoration: "none",
   },
   img: {
     width: "200px",
     height: "150px",
+    objectFit: "cover",
+    marginBottom: "0.5em",
+  },
+  imgMobile: {
+    width: "100%",
+    height: "200px",
     objectFit: "cover",
     marginBottom: "0.5em",
   },
