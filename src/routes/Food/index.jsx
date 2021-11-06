@@ -224,9 +224,9 @@ function Food(props) {
   );
   const group_by_keys = keys(restaurant_group_by);
   const sorted_group_by_frequency = sortBy(group_by_keys, (key) =>
-    groupByVal == "location" || groupByVal == "style"
+    groupByVal === "location" || groupByVal === "style"
       ? -1 * restaurant_group_by[key].length
-      : groupByVal == "rating" || groupByVal == "times"
+      : groupByVal === "rating" || groupByVal === "times"
       ? -1 * Number(key)
       : Number(key)
   );
@@ -315,7 +315,7 @@ function Food(props) {
                             <FormControlLabel
                               control={
                                 <Checkbox
-                                  checked={groupByVal == name}
+                                  checked={groupByVal === name}
                                   onChange={() => setGroupByVal(name)}
                                   name={name}
                                   className={classes.checkbox}
@@ -351,7 +351,7 @@ function Food(props) {
                           <FormControlLabel
                             control={
                               <Checkbox
-                                checked={rank == name}
+                                checked={rank === name}
                                 onChange={() => setRank(name)}
                                 name={name}
                                 className={classes.checkbox}
@@ -375,7 +375,7 @@ function Food(props) {
                           <FormControlLabel
                             control={
                               <Checkbox
-                                checked={order == name}
+                                checked={order === name}
                                 onChange={() => setOrder(name)}
                                 name={name}
                                 className={classes.checkbox}
@@ -399,9 +399,9 @@ function Food(props) {
                 return (
                   <div>
                     <h2 className={classes.h2}>
-                      {groupByVal == "price"
+                      {groupByVal === "price"
                         ? pricesToNum[dispPrices[groupByKey]]
-                        : groupByVal == "rating"
+                        : groupByVal === "rating"
                         ? ratingToDisp[groupByKey]
                         : groupByKey}
                     </h2>
@@ -423,6 +423,7 @@ function Food(props) {
                               className={classes.link}
                               href={data.googleMaps}
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <img
                                 key={props.i}
@@ -455,7 +456,7 @@ function Food(props) {
                             <p className={classes.p}>
                               Visited {data.times}
                               {data.times >= 4 ? "+" : ""}{" "}
-                              {data.times == "1" ? "time" : "times"}
+                              {data.times === "1" ? "time" : "times"}
                             </p>
                           </div>
                         );

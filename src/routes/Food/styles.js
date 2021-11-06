@@ -55,6 +55,7 @@ const styles = (theme) => ({
   },
   controls: {
     color: "#c2c2c2",
+    marginBottom: "1em",
   },
   filter: {
     color: "#c2c2c2",
@@ -119,9 +120,6 @@ const styles = (theme) => ({
     height: "200px",
     objectFit: "cover",
     marginBottom: "0.5em",
-  },
-  controls: {
-    marginBottom: "1em",
   },
 });
 
