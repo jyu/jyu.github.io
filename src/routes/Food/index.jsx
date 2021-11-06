@@ -45,6 +45,11 @@ const ratingToDisp = {
   9: "9",
   10: "10",
 };
+const rankingToOrder = {
+  'price': 'asc',
+  'rating': 'desc',
+  'times': 'asc'
+}
 
 const theme = createMuiTheme({
   palette: {
@@ -88,12 +93,13 @@ function Food(props) {
       );
     }
   };
-
+  console.log("filters", filters)
   const restaurant_list = values(restaurant_with_key);
   const locations = groupBy(restaurant_list, "location");
   const styles = groupBy(restaurant_list, "style");
   const prices = groupBy(restaurant_list, "price");
   const ratings = groupBy(restaurant_list, "rating");
+  const times = groupBy(restaurant_list, "times");
 
   const filtered_restaurants = restaurant_list.filter((r) => {
     // No filters
@@ -125,6 +131,7 @@ function Food(props) {
   const filtered_styles = groupBy(filtered_restaurants, "style");
   const filtered_prices = groupBy(filtered_restaurants, "price");
   const filtered_ratings = groupBy(filtered_restaurants, "rating");
+  const filtered_times = groupBy(filtered_restaurants, "times");
 
   const filterGroup = (
     arr,
@@ -182,16 +189,20 @@ function Food(props) {
   // Filter logic end ----------
 
   // Ranking logic start ----------
+  const [rankingOpen, setRankingOpen] = useState(false);
+  const [ranking, setRanking] = useState("times");
+
   const orderFn = (restaurants) => {
-    const restaurants_with_num_rating = restaurants.map((r) => {
+    const restaurants_with_num_fields = restaurants.map((r) => {
       return {
         ...r,
         rating: Number(r.rating),
+        times: Number(r.times),
       };
     });
     return orderBy(
-      restaurants_with_num_rating,
-      ["times", "rating"],
+      restaurants_with_num_fields,
+      [ranking, "rating"],
       ["desc", "desc"]
     );
   };
@@ -200,8 +211,6 @@ function Food(props) {
   // Group logic start ----------
   const [groupOpen, setGroupOpen] = useState(false);
   const [groupByVal, setGroupByVal] = useState("location");
-  console.log("group open", groupOpen);
-  console.log("group by val", groupByVal);
 
   // Group By
   const restaurant_group_by = groupBy(
@@ -212,7 +221,7 @@ function Food(props) {
   const sorted_group_by_frequency = sortBy(group_by_keys, (key) =>
     groupByVal == "location" || groupByVal == "style"
       ? -1 * restaurant_group_by[key].length
-      : groupByVal == "rating"
+      : (groupByVal == "rating" || groupByVal == "times")
       ? -1 * Number(key)
       : Number(key)
   );
@@ -271,6 +280,16 @@ function Food(props) {
                       "Ratings",
                       (arr) => sortBy(keys(arr), (r) => -1 * Number(r))
                     )}
+                    {filterGroup(
+                      times,
+                      filtered_times,
+                      filters,
+                      "times",
+                      "Times",
+                      (arr) => sortBy(keys(arr), (r) => -1 * Number(r)),
+                      t => t >= 4 ? `${t}+` : t
+                    )}
+
                   </div>
                 )}
                 <div
@@ -287,7 +306,7 @@ function Food(props) {
                       className={classes.formControl}
                     >
                       <FormGroup>
-                        {["style", "location", "price", "rating"].map(
+                        {["style", "location", "price", "rating", "times"].map(
                           (name) => (
                             <FormControlLabel
                               control={

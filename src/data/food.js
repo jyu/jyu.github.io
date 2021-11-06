@@ -10,7 +10,7 @@ const restaurants = {
     style: "Italian",
     lastVisited: "2021-04-17",
     text: "Thin crust pizza, the best in NYC",
-    times: 5,
+    times: "5",
   },
   upsidepizza: {
     name: "Upside Pizza",
@@ -23,7 +23,7 @@ const restaurants = {
     lastVisited: "2021-05-28",
     text: "Sourdough crusted thick pizza",
     video: "https://www.youtube.com/watch?v=cTW1T3GAH_s?t=20",
-    times: 1,
+    times: "1",
   },
   foxface: {
     name: "Foxface",
@@ -33,7 +33,7 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "American",
-    times: 1,
+    times: "1",
     text: "Smoky, meaty, delicious sandwiches",
   },
   bessou: {
@@ -46,7 +46,7 @@ const restaurants = {
     style: "Japanese",
     text: "Japanese comfort food and super crispy fried chicken",
     video: "https://www.youtube.com/watch?v=dGeIla4Smoc",
-    times: 4,
+    times: "4",
   },
   brotherjimmys: {
     name: "Brother Jimmys",
@@ -57,7 +57,7 @@ const restaurants = {
     price: "1",
     style: "American",
     text: "BBQ, would rec fish bowl and brisket",
-    times: 1,
+    times: "1",
   },
   chachantang: {
     name: "Cha Chan Tang",
@@ -68,7 +68,7 @@ const restaurants = {
     price: "0",
     style: "Chinese",
     text: "Eastern taken on Western food",
-    times: 4,
+    times: "4",
   },
   cote: {
     name: "Cote",
@@ -79,7 +79,7 @@ const restaurants = {
     price: "4",
     style: "Korean",
     text: "Highroll kbbq, would rec the steak omakase",
-    times: 3,
+    times: "3",
     michelin: "*",
   },
   itaewonpocha: {
@@ -91,7 +91,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Korean drinking spot, would rec seafood ricecake",
-    times: 3,
+    times: "3",
   },
   kimura: {
     name: "Kimura",
@@ -102,7 +102,7 @@ const restaurants = {
     price: "2",
     style: "Japanese",
     text: "Shabushabu with great sauces",
-    times: 1,
+    times: "1",
   },
   koko: {
     name: "Koko Sushi",
@@ -113,7 +113,7 @@ const restaurants = {
     price: "1",
     style: "Japanese",
     text: "AYCE sushi lol, quantity over quality",
-    times: 1,
+    times: "1",
   },
   littlealley: {
     name: "Little Alley",
@@ -124,7 +124,7 @@ const restaurants = {
     price: "1",
     style: "Chinese",
     text: "Shanghainese food, would rec Yan Du Xian",
-    times: 3,
+    times: "3",
   },
   lostacosno1: {
     name: "Los Tacos No 1",
@@ -135,7 +135,7 @@ const restaurants = {
     price: "1",
     style: "Mexican",
     text: "Pricy but high quality adobada + carne asada tacos",
-    times: 3,
+    times: "3",
   },
   nowon: {
     name: "Nowon",
@@ -146,7 +146,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Korean American Pocha with delicious food + drinks",
-    times: 3,
+    times: "3",
   },
   pocha32: {
     name: "Pocha 32",
@@ -157,7 +157,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Soy garlic fried chicken is the optimal drinking food",
-    times: 4,
+    times: "4",
   },
   raku: {
     name: "Raku",
@@ -168,7 +168,7 @@ const restaurants = {
     price: "2",
     style: "Japanese",
     text: "Udon spot with great karaage",
-    times: 3,
+    times: "3",
   },
   santambroeus: {
     name: "Sant Ambroeus",
@@ -179,7 +179,7 @@ const restaurants = {
     price: "2",
     style: "Italian",
     text: "Pasta",
-    times: 1,
+    times: "1",
   },
   scampi: {
     name: "Scampi",
@@ -190,7 +190,7 @@ const restaurants = {
     price: "2",
     style: "Italian",
     text: "Pasta",
-    times: 1,
+    times: "1",
   },
   uluh: {
     name: "Uluh",
@@ -201,7 +201,7 @@ const restaurants = {
     price: "2",
     style: "Chinese",
     text: "Authentic Chinese food from multiple regions",
-    times: 1,
+    times: "1",
   },
   wokuni: {
     name: "Wokuni",
@@ -212,7 +212,7 @@ const restaurants = {
     price: "2",
     style: "Japanese",
     text: "Super fresh fish, would rec the tempura and karaage as well.",
-    times: 1,
+    times: "1",
   },
   wokwok: {
     name: "Wok Wok",
@@ -224,7 +224,7 @@ const restaurants = {
     style: "Malaysian",
     text:
       "Malaysian Chinese food, would rec the salted fish egg plant stone rice",
-    times: 1,
+    times: "1",
   },
   thaidiner: {
     name: "Thai Diner",
@@ -235,7 +235,7 @@ const restaurants = {
     price: "1",
     style: "Thai",
     text: "Thai fusion food, big fan of the fried chicken pad see ew",
-    times: 4,
+    times: "4",
   },
   abckitchen: {
     name: "ABC Kitchen",
@@ -246,7 +246,7 @@ const restaurants = {
     price: "2",
     style: "American",
     text: "Fresh modern American food, crab toast is great",
-    times: 2,
+    times: "2",
   },
   atoboy: {
     name: "Atoboy",
@@ -258,7 +258,7 @@ const restaurants = {
     style: "Korean",
     text:
       "Fine dining-esque Korean fusion tapas, prepare to be exposed to new flavors",
-    times: 1,
+    times: "1",
   },
   baekjong: {
     name: "Baekjong",
@@ -269,7 +269,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "High quality super tender KBBQ ",
-    times: 2,
+    times: "2",
   },
   barnjoo: {
     name: "Barn Joo",
@@ -280,7 +280,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Good drinks + Korean tapas",
-    times: 2,
+    times: "2",
   },
   bbqchicken: {
     name: "BBQ Chicken",
@@ -291,7 +291,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Korean fried chicken and beer",
-    times: 2,
+    times: "2",
   },
   bobwhites: {
     name: "Bobwhite Counter",
@@ -302,7 +302,7 @@ const restaurants = {
     price: "0",
     style: "American",
     text: "Buffalo Fried Chicken Sandwich + Mac",
-    times: 4,
+    times: "4",
   },
   gammeok: {
     name: "Gameeok",
@@ -313,7 +313,7 @@ const restaurants = {
     price: "1",
     style: "American",
     text: "Traditional korean soups and food",
-    times: 1,
+    times: "1",
   },
   gogocurry: {
     name: "Go Go Curry",
@@ -324,7 +324,7 @@ const restaurants = {
     price: "0",
     style: "Japanese",
     text: "Fast food Japanese curry",
-    times: 2,
+    times: "2",
   },
   jejunoodlebar: {
     name: "Jeju Noodle Bar",
@@ -335,7 +335,7 @@ const restaurants = {
     price: "2",
     style: "Korean",
     text: "Korean Ramyun with strong broths",
-    times: 2,
+    times: "2",
     michelin: "*",
   },
   mamounsfalafel: {
@@ -347,7 +347,7 @@ const restaurants = {
     price: "0",
     style: "Middle Eastern",
     text: "Fast, cheap, delicious falfel + shawarma sandwiches",
-    times: 3,
+    times: "3",
   },
   nonono: {
     name: "Nonono",
@@ -358,7 +358,7 @@ const restaurants = {
     price: "2",
     style: "Japanese",
     text: "Yakitori skewers + ramen spot, Japanese Tapas",
-    times: 3,
+    times: "3",
   },
   cocoron: {
     name: "Cocoron",
@@ -369,7 +369,7 @@ const restaurants = {
     price: "1",
     style: "Japanese",
     text: "Japanese curry and udon spot",
-    times: 1,
+    times: "1",
   },
   princest: {
     name: "Prince St Pizza",
@@ -380,7 +380,7 @@ const restaurants = {
     price: "1",
     style: "American",
     text: "Thick crust square pizza with thick grease pool peps",
-    times: 3,
+    times: "3",
   },
   shabushabumayumon: {
     name: "Shabushabu Mayumon",
@@ -391,7 +391,7 @@ const restaurants = {
     price: "4",
     style: "Japanese",
     text: "Mindblowing A5 Miyazaki wagyu with assorted sauces and preparation",
-    times: 1,
+    times: "1",
   },
   sushinakazawa: {
     name: "Sushi Nakazawa",
@@ -402,7 +402,7 @@ const restaurants = {
     price: "4",
     style: "Japanese",
     text: "Omakase, favorites were smoked mackarel, chutoro, otoro, monkfish",
-    times: 1,
+    times: "1",
     michelin: "*",
   },
   tacombi: {
@@ -414,7 +414,7 @@ const restaurants = {
     price: "1",
     style: "Mexican",
     text: "Would rec adobada and ensenada burritos",
-    times: 3,
+    times: "3",
   },
   taiwanporkchophouse: {
     name: "Taiwan Porkchop House",
@@ -425,7 +425,7 @@ const restaurants = {
     price: "0",
     style: "Taiwanese",
     text: "Would rec porkchop + rice, salt + pepper chicken",
-    times: 4,
+    times: "4",
   },
   tomoesushi: {
     name: "Tomoe Sushi",
@@ -436,7 +436,7 @@ const restaurants = {
     price: "1",
     style: "Japanese",
     text: "The best non omakase sushi in nyc, but permanently closed",
-    times: 4,
+    times: "4",
   },
   tonybaloneys: {
     name: "Tony Baloneys",
@@ -447,7 +447,7 @@ const restaurants = {
     price: "1",
     style: "American",
     text: "Fun pizza but really heavy ",
-    times: 4,
+    times: "4",
   },
 };
 
