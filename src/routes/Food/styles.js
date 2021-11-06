@@ -6,7 +6,7 @@ const styles = (theme) => ({
   },
   container: {
     padding: "0em 8em 1em 8em",
-    width: 1125,
+    width: 900,
     marginLeft: "auto",
     marginRight: "auto",
   },
