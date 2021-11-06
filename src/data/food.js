@@ -80,7 +80,7 @@ const restaurants = {
     style: "Korean",
     text: "Highroll kbbq, would rec the steak omakase",
     times: 3,
-    michelin: "*"
+    michelin: "*",
   },
   itaewonpocha: {
     name: "Itaewon Pocha",
@@ -256,7 +256,8 @@ const restaurants = {
     rating: "7",
     price: "3",
     style: "Korean",
-    text: "Fine dining-esque Korean fusion tapas, prepare to be exposed to new flavors",
+    text:
+      "Fine dining-esque Korean fusion tapas, prepare to be exposed to new flavors",
     times: 1,
   },
   baekjong: {
@@ -335,7 +336,7 @@ const restaurants = {
     style: "Korean",
     text: "Korean Ramyun with strong broths",
     times: 2,
-    michelin: "*"
+    michelin: "*",
   },
   mamounsfalafel: {
     name: "Mamoun's",
@@ -402,7 +403,7 @@ const restaurants = {
     style: "Japanese",
     text: "Omakase, favorites were smoked mackarel, chutoro, otoro, monkfish",
     times: 1,
-    michelin: "*"
+    michelin: "*",
   },
   tacombi: {
     name: "Tacombi",
@@ -448,7 +449,6 @@ const restaurants = {
     text: "Fun pizza but really heavy ",
     times: 4,
   },
-
 };
 
 let id = 0;

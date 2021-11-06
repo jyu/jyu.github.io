@@ -53,7 +53,6 @@ function Food(props) {
     document.title = "Food";
   }, []);
 
-
   const restaurant_with_key = keys(restaurants).map((key) => {
     return {
       key,
@@ -61,11 +60,10 @@ function Food(props) {
     };
   });
 
-
   // Filter logic start ----------
   const [filterOpen, setFilterOpen] = useState(false);
   const [filters, setFilters] = useState([]);
-  console.log("filters", filters)
+  console.log("filters", filters);
   const toggleFilter = (name, type) => {
     const isOn =
       filters.filter((f) => f["name"] === name && f["type"] === type).length >
@@ -84,7 +82,7 @@ function Food(props) {
   const styles = groupBy(restaurant_list, "style");
   const prices = groupBy(restaurant_list, "price");
   const ratings = groupBy(restaurant_list, "rating");
-  console.log('ratings', ratings)
+  console.log("ratings", ratings);
 
   const filtered_restaurants = restaurant_list.filter((r) => {
     // No filters
@@ -171,19 +169,22 @@ function Food(props) {
     </div>
   );
   // Filter logic end ----------
-  console.log("filtered restaurants", filtered_restaurants)
+  console.log("filtered restaurants", filtered_restaurants);
 
-  const orderFn = (restaurants) =>
-    {
-      const restaurants_with_num_rating = restaurants.map(r => {
-        return {
+  const orderFn = (restaurants) => {
+    const restaurants_with_num_rating = restaurants.map((r) => {
+      return {
         ...r,
         rating: Number(r.rating),
-
-      }})
-      console.log(restaurants_with_num_rating)
-      return orderBy(restaurants_with_num_rating, ["times", "rating"], ["desc", "desc"])
-    };
+      };
+    });
+    console.log(restaurants_with_num_rating);
+    return orderBy(
+      restaurants_with_num_rating,
+      ["times", "rating"],
+      ["desc", "desc"]
+    );
+  };
   // Group By
   const group_by_field = "location";
   const restaurant_group_by = groupBy(
@@ -246,7 +247,7 @@ function Food(props) {
                     filters,
                     "rating",
                     "Ratings",
-                    (arr) => sortBy(keys(arr), r => -1 * Number(r))
+                    (arr) => sortBy(keys(arr), (r) => -1 * Number(r))
                   )}
                 </div>
               )}
