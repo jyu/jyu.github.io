@@ -48,7 +48,11 @@ const ratingToDisp = {
 const rankingToOrder = {
   price: "asc",
   rating: "desc",
-  times: "asc",
+  times: "desc",
+};
+const dispOrder = {
+  asc: "ascending",
+  desc: "descending",
 };
 
 const theme = createMuiTheme({
@@ -93,7 +97,7 @@ function Food(props) {
       );
     }
   };
-  console.log("filters", filters);
+
   const restaurant_list = values(restaurant_with_key);
   const locations = groupBy(restaurant_list, "location");
   const styles = groupBy(restaurant_list, "style");
@@ -188,9 +192,10 @@ function Food(props) {
   );
   // Filter logic end ----------
 
-  // Ranking logic start ----------
-  const [rankingOpen, setRankingOpen] = useState(false);
-  const [ranking, setRanking] = useState("times");
+  // Rank logic start ----------
+  const [rankOpen, setRankOpen] = useState(false);
+  const [rank, setRank] = useState("times");
+  const [order, setOrder] = useState(rankingToOrder[rank]);
 
   const orderFn = (restaurants) => {
     const restaurants_with_num_fields = restaurants.map((r) => {
@@ -202,8 +207,8 @@ function Food(props) {
     });
     return orderBy(
       restaurants_with_num_fields,
-      [ranking, "rating"],
-      ["desc", "desc"]
+      [rank, "rating"],
+      [order, "desc"]
     );
   };
   // Ranking logic end ----------
@@ -242,7 +247,7 @@ function Food(props) {
                   className={classes.buttonText}
                   onClick={() => setFilterOpen(!filterOpen)}
                 >
-                  <span>Filters</span>{" "}
+                  <span>Filter By</span>{" "}
                   {filterOpen ? <ExpandLess /> : <ExpandMore />}
                 </div>
                 {filterOpen && (
@@ -311,11 +316,7 @@ function Food(props) {
                               control={
                                 <Checkbox
                                   checked={groupByVal == name}
-                                  onChange={() =>
-                                    groupByVal != name
-                                      ? setGroupByVal(name)
-                                      : setGroupByVal(name)
-                                  }
+                                  onChange={() => setGroupByVal(name)}
                                   name={name}
                                   className={classes.checkbox}
                                 />
@@ -328,6 +329,65 @@ function Food(props) {
                             />
                           )
                         )}
+                      </FormGroup>
+                    </FormControl>
+                  </div>
+                )}
+                <div
+                  className={classes.buttonText}
+                  onClick={() => setRankOpen(!rankOpen)}
+                >
+                  <span>Rank By</span>{" "}
+                  {rankOpen ? <ExpandLess /> : <ExpandMore />}
+                </div>
+                {rankOpen && (
+                  <div className={classes.groupControls}>
+                    <FormControl
+                      component="fieldset"
+                      className={classes.formControl}
+                    >
+                      <FormGroup>
+                        {["price", "rating", "times"].map((name) => (
+                          <FormControlLabel
+                            control={
+                              <Checkbox
+                                checked={rank == name}
+                                onChange={() => setRank(name)}
+                                name={name}
+                                className={classes.checkbox}
+                              />
+                            }
+                            label={name}
+                            classes={{
+                              label: classes.filterLabel,
+                            }}
+                            className={classes.filterControLabel}
+                          />
+                        ))}
+                      </FormGroup>
+                    </FormControl>
+                    <FormControl
+                      component="fieldset"
+                      className={classes.formControl}
+                    >
+                      <FormGroup>
+                        {["asc", "desc"].map((name) => (
+                          <FormControlLabel
+                            control={
+                              <Checkbox
+                                checked={order == name}
+                                onChange={() => setOrder(name)}
+                                name={name}
+                                className={classes.checkbox}
+                              />
+                            }
+                            label={dispOrder[name]}
+                            classes={{
+                              label: classes.filterLabel,
+                            }}
+                            className={classes.filterControLabel}
+                          />
+                        ))}
                       </FormGroup>
                     </FormControl>
                   </div>
