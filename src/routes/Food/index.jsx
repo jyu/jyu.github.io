@@ -69,12 +69,33 @@ const theme = createMuiTheme({
   },
 });
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
 function Food(props) {
   const { classes } = props;
   useEffect(() => {
     document.title = "Food";
   }, []);
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
 
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const { height, width } = windowDimensions;
+  console.log(height, width);
   const restaurant_with_key = keys(restaurants).map((key) => {
     return {
       key,
@@ -238,7 +259,13 @@ function Food(props) {
         <NavBar />
         <div className={classes.component}>
           <div
-            className={!isMobile ? classes.container : classes.containerMobile}
+            className={
+              !isMobile
+                ? width > 1400
+                  ? classes.containerLarge
+                  : classes.container
+                : classes.containerMobile
+            }
           >
             <div className={!isMobile ? classes.header : classes.headerMobile}>
               <h1 className={classes.h1}>Restaurants</h1>

@@ -10,6 +10,13 @@ const styles = (theme) => ({
     marginLeft: "auto",
     marginRight: "auto",
   },
+  containerLarge: {
+    padding: "0em 8em 1em 8em",
+    width: 1125,
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+
   containerMobile: {
     padding: "2em",
   },
@@ -51,7 +58,7 @@ const styles = (theme) => ({
     color: "#c2c2c2",
     marginTop: "0.5em",
     marginRight: "2em",
-    marginBottom: '1em'
+    marginBottom: "1em",
   },
   controls: {
     color: "#c2c2c2",
