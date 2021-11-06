@@ -43,9 +43,8 @@ const ratingToDisp = {
   7: "7: Would recommend",
   8: "8: Strongly recommend",
   9: "9",
-  10: "10"
-
-}
+  10: "10",
+};
 
 const theme = createMuiTheme({
   palette: {
@@ -201,8 +200,8 @@ function Food(props) {
   // Group logic start ----------
   const [groupOpen, setGroupOpen] = useState(false);
   const [groupByVal, setGroupByVal] = useState("location");
-  console.log("group open", groupOpen)
-  console.log("group by val", groupByVal)
+  console.log("group open", groupOpen);
+  console.log("group by val", groupByVal);
 
   // Group By
   const restaurant_group_by = groupBy(
@@ -210,9 +209,12 @@ function Food(props) {
     groupByVal
   );
   const group_by_keys = keys(restaurant_group_by);
-  const sorted_group_by_frequency = sortBy(
-    group_by_keys,
-    (key) => (groupByVal == 'location' || groupByVal == 'style') ? -1 * restaurant_group_by[key].length : groupByVal == 'rating'  ? -1 * Number(key) : Number(key)
+  const sorted_group_by_frequency = sortBy(group_by_keys, (key) =>
+    groupByVal == "location" || groupByVal == "style"
+      ? -1 * restaurant_group_by[key].length
+      : groupByVal == "rating"
+      ? -1 * Number(key)
+      : Number(key)
   );
   // Group logic end ----------
 
@@ -318,7 +320,13 @@ function Food(props) {
               {map(sorted_group_by_frequency, (groupByKey) => {
                 return (
                   <div>
-                    <h2 className={classes.h2}>{groupByVal == 'price' ? pricesToNum[dispPrices[groupByKey]] : groupByVal == 'rating' ? ratingToDisp[groupByKey] : groupByKey}</h2>
+                    <h2 className={classes.h2}>
+                      {groupByVal == "price"
+                        ? pricesToNum[dispPrices[groupByKey]]
+                        : groupByVal == "rating"
+                        ? ratingToDisp[groupByKey]
+                        : groupByKey}
+                    </h2>
                     <div
                       className={
                         !isMobile
