@@ -52,6 +52,12 @@ const styles = (theme) => ({
     marginTop: "0.5em",
     marginRight: "2em",
   },
+  filterMobile: {
+    color: "#c2c2c2",
+    marginTop: "0.5em",
+    marginRight: "1em",
+    width: "45%",
+  },
   checkbox: {
     padding: "5px",
     height: "0.7em",

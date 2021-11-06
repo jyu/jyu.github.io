@@ -124,7 +124,7 @@ function Food(props) {
     sortFn,
     valueGetter
   ) => (
-    <div className={classes.filter}>
+    <div className={!isMobile ? classes.filter : classes.filterMobile}>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend" className={classes.formLabel}>
           {filterName}:
