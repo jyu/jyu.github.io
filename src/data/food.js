@@ -223,7 +223,7 @@ const restaurants = {
     price: "1",
     style: "Malaysian",
     text:
-      "Malaysian Chinese food, would rec the salted fish egg plant stone rice",
+      "Malaysian Chinese food, would rec their salted fish egg plant stone rice",
     times: "1",
   },
   thaidiner: {
@@ -234,7 +234,7 @@ const restaurants = {
     rating: "8",
     price: "1",
     style: "Thai",
-    text: "Thai fusion food, big fan of the fried chicken pad see ew",
+    text: "Thai fusion food, big fan of their fried chicken pad see ew",
     times: "4",
   },
   abckitchen: {
@@ -435,7 +435,7 @@ const restaurants = {
     rating: "8",
     price: "1",
     style: "Japanese",
-    text: "The best non omakase sushi in nyc, but permanently closed",
+    text: "The best non omakase sushi in NYC, but permanently closed",
     times: "4",
   },
   tonybaloneys: {

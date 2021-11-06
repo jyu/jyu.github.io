@@ -6,7 +6,7 @@ const styles = (theme) => ({
   },
   container: {
     padding: "0em 8em 1em 8em",
-    width: 900,
+    width: 1125,
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -45,12 +45,13 @@ const styles = (theme) => ({
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
-    marginBottom: "1.5em",
+    marginBottom: "1em",
   },
   groupControls: {
     color: "#c2c2c2",
     marginTop: "0.5em",
     marginRight: "2em",
+    marginBottom: '1em'
   },
   controls: {
     color: "#c2c2c2",
