@@ -47,6 +47,14 @@ const styles = (theme) => ({
     flexDirection: "row",
     marginBottom: "1.5em",
   },
+  groupControls: {
+    color: "#c2c2c2",
+    marginTop: "0.5em",
+    marginRight: "2em",
+  },
+  controls: {
+    color: "#c2c2c2",
+  },
   filter: {
     color: "#c2c2c2",
     marginTop: "0.5em",
@@ -110,6 +118,9 @@ const styles = (theme) => ({
     height: "200px",
     objectFit: "cover",
     marginBottom: "0.5em",
+  },
+  controls: {
+    marginBottom: "1em",
   },
 });
 

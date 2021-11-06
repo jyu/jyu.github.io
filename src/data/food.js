@@ -433,7 +433,7 @@ const restaurants = {
     district: "Greenwich Village",
     googleMaps: "https://goo.gl/maps/7ZyeaqbTRifJCSe2A",
     rating: "8",
-    price: "0",
+    price: "1",
     style: "Japanese",
     text: "The best non omakase sushi in nyc, but permanently closed",
     times: 4,

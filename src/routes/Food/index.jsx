@@ -32,6 +32,20 @@ const pricesToNum = {
   $$$$: "$61-$100",
   $$$$$: "$101+",
 };
+const ratingToDisp = {
+  0: "0: Would not recommend",
+  1: "1: Would not recommend",
+  2: "2: Would not recommend",
+  3: "3: Would not recommend",
+  4: "4",
+  5: "5: Would recommend if you're into it",
+  6: "6: Would recommend trying once",
+  7: "7: Would recommend",
+  8: "8: Strongly recommend",
+  9: "9",
+  10: "10"
+
+}
 
 const theme = createMuiTheme({
   palette: {
@@ -63,7 +77,6 @@ function Food(props) {
   // Filter logic start ----------
   const [filterOpen, setFilterOpen] = useState(false);
   const [filters, setFilters] = useState([]);
-  console.log("filters", filters);
   const toggleFilter = (name, type) => {
     const isOn =
       filters.filter((f) => f["name"] === name && f["type"] === type).length >
@@ -82,7 +95,6 @@ function Food(props) {
   const styles = groupBy(restaurant_list, "style");
   const prices = groupBy(restaurant_list, "price");
   const ratings = groupBy(restaurant_list, "rating");
-  console.log("ratings", ratings);
 
   const filtered_restaurants = restaurant_list.filter((r) => {
     // No filters
@@ -169,8 +181,8 @@ function Food(props) {
     </div>
   );
   // Filter logic end ----------
-  console.log("filtered restaurants", filtered_restaurants);
 
+  // Ranking logic start ----------
   const orderFn = (restaurants) => {
     const restaurants_with_num_rating = restaurants.map((r) => {
       return {
@@ -178,24 +190,31 @@ function Food(props) {
         rating: Number(r.rating),
       };
     });
-    console.log(restaurants_with_num_rating);
     return orderBy(
       restaurants_with_num_rating,
       ["times", "rating"],
       ["desc", "desc"]
     );
   };
+  // Ranking logic end ----------
+
+  // Group logic start ----------
+  const [groupOpen, setGroupOpen] = useState(false);
+  const [groupByVal, setGroupByVal] = useState("location");
+  console.log("group open", groupOpen)
+  console.log("group by val", groupByVal)
+
   // Group By
-  const group_by_field = "location";
   const restaurant_group_by = groupBy(
     reverse(filtered_restaurants),
-    group_by_field
+    groupByVal
   );
   const group_by_keys = keys(restaurant_group_by);
   const sorted_group_by_frequency = sortBy(
     group_by_keys,
-    (key) => -1 * restaurant_group_by[key].length
+    (key) => (groupByVal == 'location' || groupByVal == 'style') ? -1 * restaurant_group_by[key].length : groupByVal == 'rating'  ? -1 * Number(key) : Number(key)
   );
+  // Group logic end ----------
 
   return (
     <ThemeProvider theme={theme}>
@@ -207,56 +226,99 @@ function Food(props) {
           >
             <div className={!isMobile ? classes.header : classes.headerMobile}>
               <h1 className={classes.h1}>Restaurants</h1>
-              <div
-                className={classes.buttonText}
-                onClick={() => setFilterOpen(!filterOpen)}
-              >
-                <span>Filters</span>{" "}
-                {filterOpen ? <ExpandLess /> : <ExpandMore />}
-              </div>
-              {filterOpen && (
-                <div className={classes.filters}>
-                  {filterGroup(
-                    styles,
-                    filtered_styles,
-                    filters,
-                    "style",
-                    "Styles",
-                    (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
-                  )}
-                  {filterGroup(
-                    locations,
-                    filtered_locations,
-                    filters,
-                    "location",
-                    "Locations",
-                    (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
-                  )}
-                  {filterGroup(
-                    prices,
-                    filtered_prices,
-                    filters,
-                    "price",
-                    "Prices",
-                    (arr) => keys(arr).sort(),
-                    (p) => dispPrices[p]
-                  )}
-                  {filterGroup(
-                    ratings,
-                    filtered_ratings,
-                    filters,
-                    "rating",
-                    "Ratings",
-                    (arr) => sortBy(keys(arr), (r) => -1 * Number(r))
-                  )}
+              <div className={classes.controls}>
+                <div
+                  className={classes.buttonText}
+                  onClick={() => setFilterOpen(!filterOpen)}
+                >
+                  <span>Filters</span>{" "}
+                  {filterOpen ? <ExpandLess /> : <ExpandMore />}
                 </div>
-              )}
+                {filterOpen && (
+                  <div className={classes.filters}>
+                    {filterGroup(
+                      styles,
+                      filtered_styles,
+                      filters,
+                      "style",
+                      "Styles",
+                      (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
+                    )}
+                    {filterGroup(
+                      locations,
+                      filtered_locations,
+                      filters,
+                      "location",
+                      "Locations",
+                      (arr) => reverse(sortBy(keys(arr), (n) => arr[n].length))
+                    )}
+                    {filterGroup(
+                      prices,
+                      filtered_prices,
+                      filters,
+                      "price",
+                      "Prices",
+                      (arr) => keys(arr).sort(),
+                      (p) => dispPrices[p]
+                    )}
+                    {filterGroup(
+                      ratings,
+                      filtered_ratings,
+                      filters,
+                      "rating",
+                      "Ratings",
+                      (arr) => sortBy(keys(arr), (r) => -1 * Number(r))
+                    )}
+                  </div>
+                )}
+                <div
+                  className={classes.buttonText}
+                  onClick={() => setGroupOpen(!groupOpen)}
+                >
+                  <span>Group By</span>{" "}
+                  {groupOpen ? <ExpandLess /> : <ExpandMore />}
+                </div>
+                {groupOpen && (
+                  <div className={classes.groupControls}>
+                    <FormControl
+                      component="fieldset"
+                      className={classes.formControl}
+                    >
+                      <FormGroup>
+                        {["style", "location", "price", "rating"].map(
+                          (name) => (
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  checked={groupByVal == name}
+                                  onChange={() =>
+                                    groupByVal != name
+                                      ? setGroupByVal(name)
+                                      : setGroupByVal(name)
+                                  }
+                                  name={name}
+                                  className={classes.checkbox}
+                                />
+                              }
+                              label={name}
+                              classes={{
+                                label: classes.filterLabel,
+                              }}
+                              className={classes.filterControLabel}
+                            />
+                          )
+                        )}
+                      </FormGroup>
+                    </FormControl>
+                  </div>
+                )}
+              </div>
 
               <div className={classes.p}></div>
               {map(sorted_group_by_frequency, (groupByKey) => {
                 return (
                   <div>
-                    <h2 className={classes.h2}>{groupByKey}</h2>
+                    <h2 className={classes.h2}>{groupByVal == 'price' ? pricesToNum[dispPrices[groupByKey]] : groupByVal == 'rating' ? ratingToDisp[groupByKey] : groupByKey}</h2>
                     <div
                       className={
                         !isMobile
