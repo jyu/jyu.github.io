@@ -40,6 +40,14 @@ const styles = (theme) => ({
     marginTop: "0",
     fontSize: "1em",
   },
+  name: {
+    color: "#c2c2c2",
+    marginBottom: "0.5em",
+    marginTop: "0",
+    fontSize: "1em",
+    fontWeight: 700,
+  },
+
   buttonText: {
     cursor: "pointer",
     textDecoration: "underline",
@@ -53,7 +61,7 @@ const styles = (theme) => ({
     flexWrap: "wrap",
     flexDirection: "row",
     marginBottom: "1em",
-    width: '100%'
+    width: "100%",
   },
   groupControls: {
     color: "#c2c2c2",

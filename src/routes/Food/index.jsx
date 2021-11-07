@@ -463,7 +463,7 @@ function Food(props) {
                                 }
                                 alt={data.key}
                               />
-                              <p className={classes.p}>
+                              <p className={classes.name}>
                                 {data.name} ({data.rating}) {data.michelin}
                               </p>
                             </a>
@@ -484,14 +484,22 @@ function Food(props) {
                             <p className={classes.p}>
                               Visited {data.times}
                               {data.times >= 4 ? "+" : ""}{" "}
-                              {data.times === "1" ? "time" : "times"}
+                              {data.times === 1 ? "time" : "times"}
                             </p>
-                            {data.video &&                           <a
-                              className={classes.videoLink}
-                              href={data.video}
-                              target="_blank"
-                              rel="noreferrer"
-                            > Video </a>}
+                            {data.video && (
+                              <a
+                                className={classes.videoLink}
+                                href={data.video}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {" "}
+                                Video{" "}
+                              </a>
+                            )}
+                            {data.closed && (
+                              <p className={classes.p}>Permanently Closed</p>
+                            )}
                           </div>
                         );
                       })}
