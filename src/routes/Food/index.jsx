@@ -268,7 +268,10 @@ function Food(props) {
             }
           >
             <div className={!isMobile ? classes.header : classes.headerMobile}>
-              <h1 className={classes.h1}>Restaurants</h1>
+              <div className={classes.headerupdate}>
+                <h1 className={classes.h1}>Restaurants</h1>
+                <div className={classes.update}>Last updated: 11/7/2021 (NYC, Tokyo, Sydney, SEA)</div>
+              </div>
               <div className={classes.controls}>
                 <div
                   className={classes.buttonText}

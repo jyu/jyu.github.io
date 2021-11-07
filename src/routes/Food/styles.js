@@ -20,12 +20,23 @@ const styles = (theme) => ({
   containerMobile: {
     padding: "2em",
   },
+  headerupdate: {
+    display: 'flex',
+    align: 'bottom',
+  },
+  update: {
+    color: "#c2c2c2",
+    marginBottom: "1.5em",
+    marginTop: "auto",
+    fontSize: "1em",
+  },
   h1: {
     fontSize: "3em",
     fontWeight: 500,
     marginTop: 0,
     marginBottom: "0.5em",
     color: "#fff",
+    flexGrow: 2
   },
   h2: {
     fontSize: "2em",

@@ -448,7 +448,7 @@ const restaurants = {
     price: "1",
     style: "American",
     text: "Fun pizza but really heavy ",
-    times: "4",
+    times: "1",
   },
   banhmisaigon: {
     name: "Banh Mi Saigon",
