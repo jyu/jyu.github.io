@@ -657,7 +657,7 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Japanese",
-    text: "My favorite ramen in NYC, the tokyo pork tonkatsu is great",
+    text: "Best ramen in NYC, the tokyo pork tonkatsu is great",
     times: "4",
   },
   casalafemme: {
@@ -1246,7 +1246,7 @@ const restaurants = {
     style: "Australian",
     text:
       "Incredible seafood featuring dry aged fish grilled on charcoal, scallops, grilled octopus and enoki mushroom, and oysters",
-    times: "4",
+    times: "1",
   },
   seveneleven: {
     name: "Seven Eleven Japan",
