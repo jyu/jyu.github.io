@@ -939,7 +939,7 @@ const restaurants = {
     style: "Japanese",
     text: "Closest thing to Japanese sashimi I've had in Pittsburgh",
     times: "1",
-    closed: true
+    closed: true,
   },
   chodumplingking: {
     name: "Cho Dumpling King",
@@ -951,7 +951,7 @@ const restaurants = {
     style: "Chinese",
     text: "Would rec the eggplant potstickers",
     times: "1",
-    closed: true
+    closed: true,
   },
   coogeepavilion: {
     name: "Coogee Pavilion",
@@ -1060,9 +1060,10 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "Indonesian",
-    text: "One of my first exposures to south east asian food, amazing spicy mie tek-tek noodles and nasi lemak ",
+    text:
+      "One of my first exposures to south east asian food, amazing spicy mie tek-tek noodles and nasi lemak ",
     times: "3",
-    closed: true
+    closed: true,
   },
   jiromaru: {
     name: "Jiromaru",
@@ -1149,7 +1150,8 @@ const restaurants = {
     rating: "6",
     price: "0",
     style: "Chinese",
-    text: "Sichuan noodle spot from the Meng Fei, the host of the popular Chinese Dating show",
+    text:
+      "Sichuan noodle spot from the Meng Fei, the host of the popular Chinese Dating show",
     times: "1",
   },
   nemurohanamaru: {
@@ -1160,7 +1162,8 @@ const restaurants = {
     rating: "9",
     price: "2",
     style: "Japanese",
-    text: "Amazingly fresh sushi train, every piece from their wide selection was fantastic",
+    text:
+      "Amazingly fresh sushi train, every piece from their wide selection was fantastic",
     times: "2",
   },
   newmalaysia: {
@@ -1171,7 +1174,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Malysian",
-    text: "Cheap and delicious Malaysian curries and noodles with large portions",
+    text:
+      "Cheap and delicious Malaysian curries and noodles with large portions",
     times: "2",
   },
   ootoya: {
@@ -1182,7 +1186,8 @@ const restaurants = {
     rating: "8",
     price: "1",
     style: "Japanese",
-    text: "Love their miso tonkatsu don, fried pork cutlet covered in a strong miso gravy",
+    text:
+      "Love their miso tonkatsu don, fried pork cutlet covered in a strong miso gravy",
     times: "4",
   },
   pelicana: {
@@ -1204,7 +1209,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Japanese",
-    text: "Kalbi pizza was uprisingly really good, sausage crust is a gamechanger",
+    text:
+      "Kalbi pizza was uprisingly really good, sausage crust is a gamechanger",
     times: "1",
   },
   rokurinsha: {
@@ -1215,7 +1221,8 @@ const restaurants = {
     rating: "9",
     price: "1",
     style: "Japanese",
-    text: "Umami bomb dipping ramen, noodles were springy, perfect egg, rich broth",
+    text:
+      "Umami bomb dipping ramen, noodles were springy, perfect egg, rich broth",
     times: "1",
   },
   roseteacafe: {
@@ -1237,7 +1244,8 @@ const restaurants = {
     rating: "10",
     price: "4",
     style: "Australian",
-    text: "Incredible seafood featuring dry aged fish grilled on charcoal, scallops, grilled octopus and enoki mushroom, and oysters",
+    text:
+      "Incredible seafood featuring dry aged fish grilled on charcoal, scallops, grilled octopus and enoki mushroom, and oysters",
     times: "4",
   },
   seveneleven: {
@@ -1248,7 +1256,8 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "Japanese",
-    text: "7/11 is insane in Japan with snacks, drinks, bentos, and more. Would rec fruit cream custard sandos",
+    text:
+      "7/11 is insane in Japan with snacks, drinks, bentos, and more. Would rec fruit cream custard sandos",
     times: "3",
   },
   shinyokohamaramenmuseum: {
@@ -1294,7 +1303,7 @@ const restaurants = {
     style: "Thai",
     text: "Traditional Thai food, enjoyed the crab curry and roasted fish",
     times: "1",
-    closed: true
+    closed: true,
   },
   sushirio: {
     name: "Sushirio",
@@ -1359,7 +1368,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Japanese",
-    text: "Multiple floors of food court with all sorts of bento boxes. Sushi box was fantastic quality",
+    text:
+      "Multiple floors of food court with all sorts of bento boxes. Sushi box was fantastic quality",
     times: "1",
   },
   tokyostationyakiudon: {
@@ -1370,7 +1380,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Japanese",
-    text: "Didn't get the name since we randomly walked in. Stir fried udon was charred perfectly",
+    text:
+      "Didn't get the name since we randomly walked in. Stir fried udon was charred perfectly",
     times: "1",
   },
   tonkatsumarugo: {
