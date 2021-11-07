@@ -53,6 +53,7 @@ const styles = (theme) => ({
     flexWrap: "wrap",
     flexDirection: "row",
     marginBottom: "1em",
+    width: '100%'
   },
   groupControls: {
     color: "#c2c2c2",
@@ -72,8 +73,8 @@ const styles = (theme) => ({
   filterMobile: {
     color: "#c2c2c2",
     marginTop: "0.5em",
-    marginRight: "1em",
-    width: "45%",
+    marginRight: "2%",
+    width: "48%",
   },
   checkbox: {
     padding: "5px",
@@ -116,6 +117,10 @@ const styles = (theme) => ({
   link: {
     textDecoration: "none",
   },
+  videoLink: {
+    color: "#c2c2c2",
+  },
+
   img: {
     width: "200px",
     height: "150px",

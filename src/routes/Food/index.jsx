@@ -422,7 +422,7 @@ function Food(props) {
                   </div>
                 )}
               </div>
-              <div className={classes.p}></div>a
+              <div className={classes.p}></div>
               {map(sorted_group_by_frequency, (groupByKey) => {
                 return (
                   <div key={groupByKey}>
@@ -486,6 +486,12 @@ function Food(props) {
                               {data.times >= 4 ? "+" : ""}{" "}
                               {data.times === "1" ? "time" : "times"}
                             </p>
+                            {data.video &&                           <a
+                              className={classes.videoLink}
+                              href={data.video}
+                              target="_blank"
+                              rel="noreferrer"
+                            > Video </a>}
                           </div>
                         );
                       })}

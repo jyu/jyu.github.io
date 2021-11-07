@@ -1,6 +1,24 @@
 import os
 
+images = [
+    'arsimp.jpeg',
+    'bondisushi.jpeg',
+    'breadstreetkitchen.jpeg',
+    'casalafemme.jpeg',
+    'foodloft.jpeg',
+    'hawkerchans.jpeg',
+    'jumboseafood.jpeg',
+    'katzdelicatessen.jpeg',
+    'laspalmas.jpeg',
+    'latacqueria.jpeg',
+    'marinasouthdeliciousfood.jpeg',
+    'panchovilla.jpeg',
+    'supanniga.jpeg',
+    'tsurutontan.jpeg',
+    'tuome.jpeg'
+]
 
-images = os.listdir('.')
+# images = os.listdir('.')
 for i in images:
-    os.system('magick ' + str(i) + '  -resize "50%" ' + str(i))
+    if ".jpeg" in i:
+        os.system('magick ' + str(i) + '  -resize "25%" ' + str(i))
