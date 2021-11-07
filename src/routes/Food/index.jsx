@@ -353,6 +353,7 @@ function Food(props) {
                                 label: classes.filterLabel,
                               }}
                               className={classes.filterControLabel}
+                              key={name}
                             />
                           )
                         )}
@@ -389,6 +390,7 @@ function Food(props) {
                               label: classes.filterLabel,
                             }}
                             className={classes.filterControLabel}
+                            key={name}
                           />
                         ))}
                       </FormGroup>
@@ -420,11 +422,10 @@ function Food(props) {
                   </div>
                 )}
               </div>
-
-              <div className={classes.p}></div>
+              <div className={classes.p}></div>a
               {map(sorted_group_by_frequency, (groupByKey) => {
                 return (
-                  <div>
+                  <div key={groupByKey}>
                     <h2 className={classes.h2}>
                       {groupByVal === "price"
                         ? pricesToNum[dispPrices[groupByKey]]
@@ -445,6 +446,7 @@ function Food(props) {
                             className={
                               !isMobile ? classes.card : classes.cardMobile
                             }
+                            key={data.name}
                           >
                             <a
                               className={classes.link}
@@ -453,7 +455,6 @@ function Food(props) {
                               rel="noreferrer"
                             >
                               <img
-                                key={props.i}
                                 src={
                                   requestImageFile(`./${data.key}.jpeg`).default
                                 }

@@ -622,7 +622,8 @@ const restaurants = {
     rating: "8",
     price: "2",
     style: "Korean",
-    text: "Modern Korean pub food with cozy vibes, would rec white peach Makgeolli",
+    text:
+      "Modern Korean pub food with cozy vibes, would rec white peach Makgeolli",
     times: "4",
   },
   thaivilla: {
@@ -658,7 +659,6 @@ const restaurants = {
     text: "My favorite ramen in NYC, the tokyo pork tonkatsu is great",
     times: "4",
   },
-
 };
 
 let id = 0;
