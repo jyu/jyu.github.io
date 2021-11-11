@@ -471,7 +471,14 @@ function Food(props) {
                                 alt={data.key}
                               />
                               <p className={classes.name}>
-                                {data.name} ({data.rating}) {data.michelin}
+                                {data.name}{" "}
+                                <Tippy
+                                  content={ratingToDisp[data.rating]}
+                                  theme="material"
+                                >
+                                  <span>({data.rating})</span>
+                                </Tippy>
+                                {data.michelin}
                               </p>
                             </a>
                             <p className={classes.p}>{data.text}</p>
