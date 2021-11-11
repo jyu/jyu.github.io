@@ -270,7 +270,11 @@ function Food(props) {
             <div className={!isMobile ? classes.header : classes.headerMobile}>
               <div className={classes.headerupdate}>
                 <h1 className={classes.h1}>Restaurants</h1>
-                {!isMobile && <div className={classes.update}>Last updated: 11/11/2021 (NYC, Pittsburgh, Bay Area, SEA)</div>}
+                {!isMobile && (
+                  <div className={classes.update}>
+                    Last updated: 11/11/2021 (NYC, Pittsburgh, Bay Area, SEA)
+                  </div>
+                )}
               </div>
               <div className={classes.controls}>
                 <div

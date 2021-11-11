@@ -21,8 +21,8 @@ const styles = (theme) => ({
     padding: "2em",
   },
   headerupdate: {
-    display: 'flex',
-    align: 'bottom',
+    display: "flex",
+    align: "bottom",
   },
   update: {
     color: "#c2c2c2",
@@ -36,7 +36,7 @@ const styles = (theme) => ({
     marginTop: 0,
     marginBottom: "0.5em",
     color: "#fff",
-    flexGrow: 2
+    flexGrow: 2,
   },
   h2: {
     fontSize: "2em",

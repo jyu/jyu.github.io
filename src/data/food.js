@@ -817,7 +817,8 @@ const restaurants = {
     price: "0",
     style: "Mexican",
     lastVisited: "2019-08-19",
-    text: "Delicious tacos and salsas at the neighbordhood tacqueria. Favorites were carne asada, al pastor, carnitas.",
+    text:
+      "Delicious tacos and salsas at the neighbordhood tacqueria. Favorites were carne asada, al pastor, carnitas.",
     times: "5",
   },
   latacqueria: {
@@ -1469,7 +1470,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "American",
-    text: "Absolute banger American diner, would country fried steak for breakfast",
+    text:
+      "Absolute banger American diner, would country fried steak for breakfast",
     times: "3",
   },
   dandelionchocolate: {
@@ -1513,7 +1515,8 @@ const restaurants = {
     rating: "8",
     price: "2",
     style: "Argentinian",
-    text: "Wood fire grilled steaks with assorted house sauces, big fan of the chimichurri",
+    text:
+      "Wood fire grilled steaks with assorted house sauces, big fan of the chimichurri",
     times: "2",
   },
   guisados: {
@@ -1524,7 +1527,8 @@ const restaurants = {
     rating: "8",
     price: "1",
     style: "Mexican",
-    text: "Taco spot specializing in stewed meats, favorites were birria and cabeza",
+    text:
+      "Taco spot specializing in stewed meats, favorites were birria and cabeza",
     times: "1",
   },
   inoodle: {
@@ -1535,7 +1539,8 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "Chinese",
-    text: "Literally a meme at CMU but the fried chicken + sweet chili sauce was delicious. Japanese curry, steamed fish, eggplant, veggies were great too.",
+    text:
+      "Literally a meme at CMU but the fried chicken + sweet chili sauce was delicious. Japanese curry, steamed fish, eggplant, veggies were great too.",
     times: "5",
   },
   italianhomemade: {
@@ -1546,7 +1551,8 @@ const restaurants = {
     rating: "8",
     price: "1",
     style: "Italian",
-    text: "Love their lasagna and pastas, their bolognese is so incredibly meaty and umami. Big fan of their tiramisu too.",
+    text:
+      "Love their lasagna and pastas, their bolognese is so incredibly meaty and umami. Big fan of their tiramisu too.",
     times: "5",
   },
   laburdick: {
@@ -1568,7 +1574,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Mexican",
-    text: "Big fan of al pastor super burrito, their orange sauce is incredibly addicting",
+    text:
+      "Big fan of al pastor super burrito, their orange sauce is incredibly addicting",
     times: "5",
   },
   levain: {
@@ -1579,7 +1586,8 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "Dessert",
-    text: "Giant cookie with crispy edges, cookie dough like gooey inside. Would rec chocolate walnut cookie",
+    text:
+      "Giant cookie with crispy edges, cookie dough like gooey inside. Would rec chocolate walnut cookie",
     times: "3",
   },
   missionchinesefood: {
@@ -1590,7 +1598,8 @@ const restaurants = {
     rating: "7",
     price: "1",
     style: "Chinese",
-    text: "Chinese fusion, would rec thrice cooked bacon rice cakes and Chongqing chili wings",
+    text:
+      "Chinese fusion, would rec thrice cooked bacon rice cakes and Chongqing chili wings",
     times: "1",
   },
   nara: {
@@ -1612,7 +1621,8 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "Thai",
-    text: "Thai street food noodle spot, would rec pad see ew and chiang mai curry, their spice is spicy!",
+    text:
+      "Thai street food noodle spot, would rec pad see ew and chiang mai curry, their spice is spicy!",
     times: "5",
   },
   orientexpress: {
@@ -1656,7 +1666,8 @@ const restaurants = {
     rating: "7",
     price: "0",
     style: "American",
-    text: "Amazing vegeterian pizza spot that does one unique pizza a day, love their green sauce",
+    text:
+      "Amazing vegeterian pizza spot that does one unique pizza a day, love their green sauce",
     times: "4",
   },
   snowcrave: {
@@ -1678,7 +1689,8 @@ const restaurants = {
     rating: "7",
     price: "2",
     style: "Japanese",
-    text: "Trust me provides an affordable multi course sushi experience with great fish, but a little strongly seasoned.",
+    text:
+      "Trust me provides an affordable multi course sushi experience with great fish, but a little strongly seasoned.",
     times: "4",
   },
   supertaco: {
@@ -1758,7 +1770,6 @@ const restaurants = {
     text: "Great half off pizza on weekday nights",
     times: "4",
   },
-
 };
 
 let id = 0;
